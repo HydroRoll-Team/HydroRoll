@@ -9,7 +9,7 @@ export const Stats = asyncComponent(async () => {
     .get("envshare:metrics:reads")
     .get("envshare:metrics:writes")
     .exec<[number, number]>();
-  const stars = await fetch("https://api.github.com/repos/chronark/envshare")
+  const stars = await fetch("https://api.github.com/repos/retrofor/ChienDice")
     .then((res) => res.json())
     .then((json) => json.stargazers_count as number);
 

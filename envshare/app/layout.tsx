@@ -33,7 +33,7 @@ export default function RootLayout({
               </Link>
               and{" "}
               <Link
-                href="https://github.com/chronark/envshare/graphs/contributors"
+                href="https://github.com/retrofor/ChienDice/graphs/contributors"
                 className="underline duration-150 hover:text-zinc-200"
               >
                 many others{" "}

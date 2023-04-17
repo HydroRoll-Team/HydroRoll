@@ -12,14 +12,13 @@ const navigation = [
     name: "Unseal",
     href: "/unseal",
   },
-
-  {
-    name: "Deploy",
-    href: "/deploy",
-  },
+  // {
+  //   name: "Deploy",
+  //   href: "/deploy",
+  // },
   {
     name: "GitHub",
-    href: "https://github.com/chronark/envshare",
+    href: "https://github.com/retrofor/ChienDice",
     external: true,
   },
 ] satisfies { name: string; href: string; external?: boolean }[];
