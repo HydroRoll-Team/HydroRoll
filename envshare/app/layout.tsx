@@ -28,8 +28,8 @@ export default function RootLayout({
           <div className="flex flex-col gap-1 px-6 py-12 mx-auto text-xs text-center text-zinc-700 max-w-7xl lg:px-8">
             <p>
               Built by{" "}
-              <Link href="https://twitter.com/chronark_" className="font-semibold duration-150 hover:text-zinc-200">
-                @chronark_
+              <Link href="https://github.com/HsiangNianian" className="font-semibold duration-150 hover:text-zinc-200">
+                @简律纯
               </Link>
               and{" "}
               <Link
