@@ -53,48 +53,48 @@ export const Testimonials = () => {
       ),
       link: "https://twitter.com/FrederikMarkor/status/1615299856205250560",
       author: {
-        name: <Author href="https://twitter.com/FrederikMarkor">Frederik Markor</Author>,
-        title: <Title href="https://discreet.net">CEO @discreet</Title>,
-        image: "https://pbs.twimg.com/profile_images/1438061314010664962/NecuMIGR_400x400.jpg",
+        name: <Author href="https://jyunko.cn">HsiangNianian</Author>,
+        title: <Title href="https://github.com/Hsiangianian">Owner/Contributor @简律纯</Title>,
+        image: "https://github.com/HsiangNianian.png",
       },
     },
-    {
-      content: (
-        <div>
-          <p>I'm particularly chuffed about this launch, for a couple of reasons:</p>
-          <ul>
-            <li>
-              ◆ Built on <TwitterHandle>@nextjs</TwitterHandle> + <TwitterHandle>@upstash</TwitterHandle>, hosted on{" "}
-              <TwitterHandle>@vercel</TwitterHandle>
-            </li>
-            <li>◆ 100% free to use & open source</li>
-            <li>◆ One-click deploy via Vercel + Upstash integration</li>
-          </ul>
-          <p>Deploy your own → http://vercel.fyi/envshare</p>
-        </div>
-      ),
-      link: "https://twitter.com/steventey/status/1615035241772482567?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1615035241772482567%7Ctwgr%5E1db44bb10c690189e24c980fcd787299961c34c6%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Fsteventey2Fstatus2F1615035241772482567widget%3DTweet",
-      author: {
-        name: <Author href="https://twitter.com/steventey">Steven Tey</Author>,
-        title: <Title href="https://vercel.com">Senior Developer Advocate at Vercel</Title>,
-        image: "https://pbs.twimg.com/profile_images/1506792347840888834/dS-r50Je_400x400.jpg",
-      },
-    },
-    {
-      content: (
-        <div>
-          <p>
-            Congratulations on the launch <TwitterHandle>@chronark_</TwitterHandle>👏! This is such a valuable product
-            for developers. Icing on the cake is that it's open source! ✨
-          </p>
-        </div>
-      ),
-      link: "https://twitter.com/DesignSiddharth/status/1615293209164546048",
-      author: {
-        name: <Author href="https://twitter.com/DesignSiddharth">@DesignSiddharth</Author>,
-        image: "https://pbs.twimg.com/profile_images/1613772710009765888/MbSblJYf_400x400.jpg",
-      },
-    },
+    // {
+    //   content: (
+    //     <div>
+    //       <p>I'm particularly chuffed about this launch, for a couple of reasons:</p>
+    //       <ul>
+    //         <li>
+    //           ◆ Built on <TwitterHandle>@nextjs</TwitterHandle> + <TwitterHandle>@upstash</TwitterHandle>, hosted on{" "}
+    //           <TwitterHandle>@vercel</TwitterHandle>
+    //         </li>
+    //         <li>◆ 100% free to use & open source</li>
+    //         <li>◆ One-click deploy via Vercel + Upstash integration</li>
+    //       </ul>
+    //       <p>Deploy your own → http://vercel.fyi/envshare</p>
+    //     </div>
+    //   ),
+    //   link: "https://twitter.com/steventey/status/1615035241772482567?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1615035241772482567%7Ctwgr%5E1db44bb10c690189e24c980fcd787299961c34c6%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Fsteventey2Fstatus2F1615035241772482567widget%3DTweet",
+    //   author: {
+    //     name: <Author href="https://twitter.com/steventey">Steven Tey</Author>,
+    //     title: <Title href="https://vercel.com">Senior Developer Advocate at Vercel</Title>,
+    //     image: "https://pbs.twimg.com/profile_images/1506792347840888834/dS-r50Je_400x400.jpg",
+    //   },
+    // },
+    // {
+    //   content: (
+    //     <div>
+    //       <p>
+    //         Congratulations on the launch <TwitterHandle>@chronark_</TwitterHandle>👏! This is such a valuable product
+    //         for developers. Icing on the cake is that it's open source! ✨
+    //       </p>
+    //     </div>
+    //   ),
+    //   link: "https://twitter.com/DesignSiddharth/status/1615293209164546048",
+    //   author: {
+    //     name: <Author href="https://twitter.com/DesignSiddharth">@DesignSiddharth</Author>,
+    //     image: "https://pbs.twimg.com/profile_images/1613772710009765888/MbSblJYf_400x400.jpg",
+    //   },
+    // },
   ];
 
   return (
