@@ -1,8 +1,0 @@
-{
-    "rewrites": [
-      {
-        "source": "/envshare/(.*)",
-        "destination": "/api/.page.tsx"
-      }
-    ]
-  }
