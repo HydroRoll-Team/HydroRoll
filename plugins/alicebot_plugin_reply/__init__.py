@@ -1,7 +1,7 @@
 import re
 import json
 
-from plugins.alicebot_plugin_base import BasePlugin
+from plugins.iamai_plugin_base import BasePlugin
 
 from .config import Config
 

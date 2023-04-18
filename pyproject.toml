@@ -1,17 +1,17 @@
 [tool.poetry]
-name = "alicebot-example"
+name = "iamai-example"
 version = "0.1.0"
-description = "AliceBot Example Bot"
+description = "iamai Example Bot"
 license = "MIT"
 authors = ["st1020 <stone_1020@qq.com>"]
 readme = "README.md"
-repository = "https://github.com/st1020/alicebot-example"
+repository = "https://github.com/st1020/iamai-example"
 
 [tool.poetry.dependencies]
 python = "^3.8"
 watchfiles = "^0.16.0"
-alicebot = "^0.6.0"
-alicebot-adapter-cqhttp = "^0.6.0"
+iamai = "^0.6.0"
+iamai-adapter-cqhttp = "^0.6.0"
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"

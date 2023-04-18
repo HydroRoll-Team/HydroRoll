@@ -1,6 +1,6 @@
 [bot]
 plugin_dirs = ["plugins"]
-adapters = ["alicebot.adapter.cqhttp"]
+adapters = ["iamai.adapter.cqhttp"]
 
 [bot.log]
 verbose_exception = true

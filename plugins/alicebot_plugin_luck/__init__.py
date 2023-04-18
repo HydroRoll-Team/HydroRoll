@@ -2,7 +2,7 @@ import re
 import time
 import random
 
-from plugins.alicebot_plugin_base import CommandPluginBase
+from plugins.iamai_plugin_base import CommandPluginBase
 
 from .config import Config
 

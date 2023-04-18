@@ -2,9 +2,9 @@ import re
 from abc import ABC, abstractmethod
 from typing import Type, Union, Generic, TypeVar
 
-from alicebot import Plugin
-from alicebot.typing import T_State
-from alicebot.adapter.cqhttp.event import GroupMessageEvent, PrivateMessageEvent
+from iamai import Plugin
+from iamai.typing import T_State
+from iamai.adapter.cqhttp.event import GroupMessageEvent, PrivateMessageEvent
 
 from .config import BasePluginConfig, RegexPluginConfig, CommandPluginConfig
 

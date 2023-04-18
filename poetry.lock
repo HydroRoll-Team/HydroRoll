@@ -30,7 +30,7 @@ python-versions = ">=3.7"
 frozenlist = ">=1.1.0"
 
 [[package]]
-name = "alicebot"
+name = "iamai"
 version = "0.6.0"
 description = "A simply asynchronous python chatbot framework."
 category = "main"
@@ -45,15 +45,15 @@ tomli = {version = ">=2.0.0,<3.0.0", markers = "python_version < \"3.11\""}
 typing-extensions = ">=4.4.0,<5.0.0"
 
 [[package]]
-name = "alicebot-adapter-cqhttp"
+name = "iamai-adapter-cqhttp"
 version = "0.6.0"
-description = "OneBot(CQHTTP) adapter for AliceBot."
+description = "OneBot(CQHTTP) adapter for iamai."
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 
 [package.dependencies]
-alicebot = ">=0.6.0,<0.7.0"
+iamai = ">=0.6.0,<0.7.0"
 
 [[package]]
 name = "anyio"
@@ -546,13 +546,13 @@ aiosignal = [
     {file = "aiosignal-1.3.1-py3-none-any.whl", hash = "sha256:f8376fb07dd1e86a584e4fcdec80b36b7f81aac666ebc724e2c090300dd83b17"},
     {file = "aiosignal-1.3.1.tar.gz", hash = "sha256:54cd96e15e1649b75d6c87526a6ff0b6c1b0dd3459f43d9ca11d48c339b68cfc"},
 ]
-alicebot = [
-    {file = "alicebot-0.6.0-py3-none-any.whl", hash = "sha256:d59c45ba7f8404b8aa49e08e70030284b6178a74f63322971b5a1a7804c51d94"},
-    {file = "alicebot-0.6.0.tar.gz", hash = "sha256:378a74b636a74bf725797bcf8477c0f4a3a94383c544cf5b3010035cfc09505c"},
+iamai = [
+    {file = "iamai-0.6.0-py3-none-any.whl", hash = "sha256:d59c45ba7f8404b8aa49e08e70030284b6178a74f63322971b5a1a7804c51d94"},
+    {file = "iamai-0.6.0.tar.gz", hash = "sha256:378a74b636a74bf725797bcf8477c0f4a3a94383c544cf5b3010035cfc09505c"},
 ]
-alicebot-adapter-cqhttp = [
-    {file = "alicebot_adapter_cqhttp-0.6.0-py3-none-any.whl", hash = "sha256:c9be5242bdf65b7727380ff57c837815074b3ba1d29e43e0f7c63e094a06bdf6"},
-    {file = "alicebot_adapter_cqhttp-0.6.0.tar.gz", hash = "sha256:455704078137f2505b2e3cfa3616856cb9b25c2f75a58758a3e5621cec03f850"},
+iamai-adapter-cqhttp = [
+    {file = "iamai_adapter_cqhttp-0.6.0-py3-none-any.whl", hash = "sha256:c9be5242bdf65b7727380ff57c837815074b3ba1d29e43e0f7c63e094a06bdf6"},
+    {file = "iamai_adapter_cqhttp-0.6.0.tar.gz", hash = "sha256:455704078137f2505b2e3cfa3616856cb9b25c2f75a58758a3e5621cec03f850"},
 ]
 anyio = [
     {file = "anyio-3.6.2-py3-none-any.whl", hash = "sha256:fbbe32bd270d2a2ef3ed1c5d45041250284e31fc0a4df4a5a6071842051a51e3"},
