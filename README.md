@@ -15,12 +15,7 @@
 
 ## 🚀 Features
 
-- 🎪 **Interactive [docs](https://iamai.retrofor.space) &amp; [demos](https://iamai.retrofor.space/demos)**
-- 🕶 **Seamless migration**: Works for **both** [Rasa]() and [GPT]() and more...
-- ⚡ **Fully tree shakeable**: Only take what you want, [bundle size](https://iamai.retrofor.space/export-size)
-- 🔩 **Flexible**: Configurable event filters and targets
-- 🔌 **Optional [Add-ons](https://iamai.retrofor.space/add-ons)**: [Apscheduler](https://iamai.retrofor.space/add-ons/apscheduler), etc.
-- 👍 **Cross-platform**: [cqhttp](https://iamai.retrofor.space/guide/cqhttp-adapter.html), [dingtalk](https://iamai.retrofor.space/guide/dingtalk-adapter.html), [Mirai](https://iamai.retrofor.space/guide/mirai-adapter.html) etc.
+...
 
 ## ⬇️ Install
 
