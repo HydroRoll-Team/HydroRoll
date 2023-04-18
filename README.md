@@ -55,11 +55,6 @@
 
 [MIT](https://github.com/retrofor/ChienDice/blob/main/LICENSE) © 2023-PRESENT [简律纯](https://github.com/HsiangNianian)
 
-
-
-
-
-
 ### 第一个娘
 
 **pip部署**
