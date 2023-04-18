@@ -50,3 +50,12 @@
 - <https://flexirobo.retrofor.space/>
 - <https://cyberdynamix.retrofor.space/>
   
+## 👨‍🚀 Contributors
+
+<a href="https://github.com/retrofor/ChienDice/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=retrofor/ChienDice" />
+</a>
+
+## 📄 License
+
+[MIT](https://github.com/retrofor/ChienDice/blob/main/LICENSE) © 2023-PRESENT [简律纯](https://github.com/HsiangNianian)
