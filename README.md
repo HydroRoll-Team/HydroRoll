@@ -53,7 +53,7 @@
 ## 👨‍🚀 Contributors
 
 <a href="https://github.com/retrofor/ChienDice/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=retrofor/ChienDice" />
+  <img width="50" src="https://contrib.rocks/image?repo=retrofor/ChienDice" />
 </a>
 
 ## 📄 License
