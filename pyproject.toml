@@ -10,14 +10,14 @@ repository = "https://github.com/retrofor/ChienDice"
 [tool.poetry.dependencies]
 python = "^3.8"
 watchfiles = "^0.16.0"
-iamai = "^0.6.0"
-iamai-adapter-cqhttp = "^0.6.0"
+iamai = "^3.14"
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"
 isort = "^5.10.0"
 pre-commit = "^2.20.0"
 pre-commit-hooks = "^4.2.0"
+iamai-adapter-cqhttp = "^0.6"
 
 [tool.pydantic-pycharm-plugin]
 ignore-init-method-arguments = true
