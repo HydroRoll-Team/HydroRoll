@@ -1,0 +1,6 @@
+[bot]
+plugin_dirs = ["plugins"]
+adapters = ["alicebot.adapter.cqhttp"]
+
+[bot.log]
+verbose_exception = true
