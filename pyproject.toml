@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "iamai-example"
+name = "ChienDice"
 version = "0.1.0"
-description = "iamai Example Bot"
+description = "ChienDice"
 license = "MIT"
-authors = ["st1020 <stone_1020@qq.com>"]
+authors = ["HsiangNianian <admin@jyunko.cn>"]
 readme = "README.md"
-repository = "https://github.com/st1020/iamai-example"
+repository = "https://github.com/retrofor/ChienDice"
 
 [tool.poetry.dependencies]
 python = "^3.8"
