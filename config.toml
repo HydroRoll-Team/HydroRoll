@@ -1,6 +1,0 @@
-[bot]
-plugin_dirs = ["plugins"]
-adapters = ["iamai.adapter.cqhttp"]
-
-[bot.log]
-verbose_exception = true

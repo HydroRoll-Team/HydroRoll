@@ -1,0 +1,14 @@
+[bot]
+plugins = []
+plugin_dirs = ["plugins"]
+adapters = ["iamai.adapter.cqhttp"]
+
+[bot.log]
+level = "INFO"
+verbose_exception = true
+
+[adapter.cqhttp]
+adapter_type = "reverse-ws"
+host = "127.0.0.1"
+port = 8080
+url = "/cqhttp/ws"
