@@ -36,7 +36,7 @@
 ### 📌tutorial
 
 - <https://HydroRoll.retrofor.space/> _(recommend)_
-- <https://HydroRoll.vercel.app/>
+- <https://hydro-roll.vercel.app/>
 
 ### 📌tools
 
