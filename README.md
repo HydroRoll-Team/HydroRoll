@@ -2,11 +2,11 @@
 <p align="center"><img width="300" src="image/readme/1681811270177.png"></p>
 
 <h1 align="center">
-  ChienDice
+  HydroRoll
 </h1>
 
 <p align="center">
-简系
+水系 > <small>地理人狂喜</small>
 </p>
 
 ## 📘 Introduction
@@ -35,13 +35,13 @@
 
 ### 📌tutorial
 
-- <https://chien.retrofor.space/> _(recommend)_
-- <https://chien-dice.vercel.app/>
+- <https://HydroRoll.retrofor.space/> _(recommend)_
+- <https://HydroRoll.vercel.app/>
 
 ### 📌tools
 
 - <https://play.chien.retrofor.space/>
-- <https://envshare.chien.retrofor.space/>
+- <https://envshare.HydroRoll.retrofor.space/>
 - <https://flexirobo.retrofor.space/>
 - <https://cyberdynamix.retrofor.space/>
   
