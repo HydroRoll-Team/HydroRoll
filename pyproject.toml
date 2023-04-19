@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "ChienDice"
-version = "0.1.0"
+name = "HydroRoll"
+version = "0.1.1"
 description = "ChienDice"
 license = "MIT"
 authors = ["HsiangNianian <admin@jyunko.cn>"]
