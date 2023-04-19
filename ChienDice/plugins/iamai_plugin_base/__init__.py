@@ -70,7 +70,7 @@ class CommandPluginBase(RegexPluginBase[T_State, T_CommandPluginConfig], ABC):
     def str_match(self, msg_str: str) -> bool:
         if not hasattr(self, "command_re_pattern"):
             self.command_re_pattern = re.compile(
-                f'({"|".join(self.config.command_prefix)})'
+                f'[{"".join(self.config.command_prefix)}]'
                 f'({"|".join(self.config.command)})'
                 r"\s*(?P<command_args>.*)",
                 flags=re.I if self.config.ignore_case else 0,

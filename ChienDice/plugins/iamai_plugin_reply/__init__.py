@@ -11,7 +11,7 @@ class Reply(BasePlugin[None, Config]):
     Config = Config
 
     def __post_init__(self):
-        with open(self.config.data_file, "r") as fp:
+        with open(self.config.data_file, "r",encoding="utf-8") as fp:
             if self.config.data_type == "json":
                 json_data = json.load(fp)
             else:

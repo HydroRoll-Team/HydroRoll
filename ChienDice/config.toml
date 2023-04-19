@@ -1,7 +1,17 @@
+[Chien]
+version = "v0.1.0"
+svn = "1"
+author = "简律纯"
+
+[Chien.self]
+header = "Hydro系[1]号"
+info = "一只水系骰子..."
+
+
 [bot]
 plugins = []
 plugin_dirs = ["plugins"]
-adapters = ["iamai.adapter.cqhttp"]
+adapters = ["iamai.adapter.cqhttp","iamai.adapter.apscheduler"]
 
 [bot.log]
 level = "INFO"
@@ -12,3 +22,7 @@ adapter_type = "reverse-ws"
 host = "127.0.0.1"
 port = 8080
 url = "/cqhttp/ws"
+show_raw = false
+
+[adapter.apscheduler]
+scheduler_config = { "apscheduler.timezone" = "Asia/Shanghai" }

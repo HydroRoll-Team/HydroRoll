@@ -5,7 +5,7 @@ from iamai import ConfigModel
 
 class BasePluginConfig(ConfigModel):
     __config_name__ = ""
-    handle_all_message: bool = False
+    handle_all_message: bool = True
     """是否处理所有类型的消息，此配置为 True 时会覆盖 handle_friend_message 和 handle_group_message。"""
     handle_friend_message: bool = True
     """是否处理好友消息。"""
@@ -22,7 +22,7 @@ class RegexPluginConfig(BasePluginConfig):
 
 
 class CommandPluginConfig(RegexPluginConfig):
-    command_prefix: Set[str] = {".", "。"}
+    command_prefix: Set[str] = {".", "。","!"}
     """命令前缀。"""
     command: Set[str] = {}
     """命令文本。"""
