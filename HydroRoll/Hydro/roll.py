@@ -7,5 +7,6 @@ class Roll(Plugin):
     async def rule(self) -> bool:
         return(
             self.event.adapter.name == "cqhttp" and
+            self.event.type == "message" and
             self.event.get_plain_text() == "1"
         )

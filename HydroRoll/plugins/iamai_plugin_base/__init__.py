@@ -30,7 +30,7 @@ class BasePlugin(
     async def rule(self) -> bool:
         if self.event.adapter.name != "cqhttp":
             return False
-        if self.event.type != "message":
+        if self.event.type != "message_sent":
             return False
         if self.config.handle_all_message:
             return self.str_match(self.event.message.get_plain_text())

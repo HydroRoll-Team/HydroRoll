@@ -22,7 +22,7 @@ class RegexPluginConfig(BasePluginConfig):
 
 
 class CommandPluginConfig(RegexPluginConfig):
-    command_prefix: Set[str] = {".", "。","!"}
+    command_prefix: Set[str] = {".", "。","!",":"}
     """命令前缀。"""
     command: Set[str] = {}
     """命令文本。"""
