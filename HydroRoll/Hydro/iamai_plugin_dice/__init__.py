@@ -7,6 +7,7 @@ from plugins.iamai_plugin_base import CommandPluginBase
 
 from .config import Config
 
+__all__ = ["Dice"]
 
 class Dice(CommandPluginBase[None, Config]):
     Config = Config
