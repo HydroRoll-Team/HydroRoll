@@ -1,6 +1,6 @@
 from typing import Set, Optional
 
-from plugins.iamai_plugin_base import CommandPluginConfig
+from plugins.HydroRoll_plugin_base import CommandPluginConfig
 
 
 class Config(CommandPluginConfig):

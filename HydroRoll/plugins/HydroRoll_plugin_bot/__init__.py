@@ -1,7 +1,7 @@
 import re
 from importlib.metadata import version
 from plugins.HydroRoll_plugin_base import CommandPluginBase
-from HydroR.config import GlobalConfig
+from HydroRoll.config import GlobalConfig
 
 from .config import Config
 

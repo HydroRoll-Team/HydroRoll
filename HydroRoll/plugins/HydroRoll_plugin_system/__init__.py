@@ -3,7 +3,7 @@ from plugins.HydroRoll_plugin_base import CommandPluginBase
 from .config import Config
 import psutil
 import time
-from HydroR.config import GlobalConfig
+from HydroRoll.config import GlobalConfig
 
 
 class System(CommandPluginBase[None, Config]):
