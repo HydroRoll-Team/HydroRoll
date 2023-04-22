@@ -2,7 +2,7 @@ import re
 import time
 import random
 
-from plugins.iamai_plugin_base import CommandPluginBase
+from plugins.HydroRoll_plugin_base import CommandPluginBase
 
 from .config import Config
 

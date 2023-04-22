@@ -1,11 +1,11 @@
-[Chien]
+[HydroRoll]
 version = "v0.1.0"
 svn = "1"
 author = "简律纯"
 
-[Chien.self]
+[HydroRoll.self]
 header = "Hydro系[1]号"
-info = "一只水系骰子..."
+# info = "一只水系骰子..."
 
 
 [bot]

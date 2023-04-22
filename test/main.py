@@ -1,5 +1,4 @@
-from iamai import Bot
-
+from HydroR import Bot
 
 bot = Bot(hot_reload=True)
 
