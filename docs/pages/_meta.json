@@ -1,15 +1,34 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
+  "*": {
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+  "index": {
+    "display": "hidden",
+    "theme": {
+      "layout": "raw",
+      "sidebar": false,
+      "toc": true
+    }
+  },
+  "repo": "Repo",
+  "pack": "Pack",
+  "blog": {
+    "title": "Blog",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "showcase": "Showcase",
+  "confirm": {
+    "title": "Confirm",
+    "display": "hidden"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "display": "hidden"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "display": "hidden"
   }
 }
