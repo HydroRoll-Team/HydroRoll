@@ -1,0 +1,29 @@
+{
+  "$schema": "./docs/public/schema.json",
+  "pipeline": {
+    "test": {
+      "outputs": ["coverage/**/*"],
+      "dependsOn": ["cli#build", "^build"]
+    },
+
+    // lint tasks
+    "lint": {},
+    // root lint task runs toml check and prettier
+    // TODO: run prettier in individual workspaces instead of globally.
+    "//#lint": {
+      "dependsOn": ["//#check:toml", "//#check:prettier"]
+    },
+    "//#check:prettier": {},
+    "//#check:toml": {},
+    "check-types": {
+      "dependsOn": ["^build"]
+    },
+    "//#build:ts": {
+      "outputs": ["packages/**/dist"]
+    },
+    "build": {
+      "outputs": ["dist/**/*", ".next/**/*"],
+      "dependsOn": ["^build"]
+    }
+  }
+}

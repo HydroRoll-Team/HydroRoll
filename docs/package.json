@@ -1,7 +1,7 @@
 {
   "name": "docs",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "description": "turbo.build",
   "scripts": {
     "dev": "next",
@@ -11,7 +11,7 @@
     "rss": "node scripts/generate-rss.js",
     "schema": "turbo-types-generate ./public/schema.json"
   },
-  "author": "简律纯",
+  "author": "Jared Palmer",
   "license": "MPL-2.0",
   "dependencies": {
     "@headlessui/react": "^1.7.3",
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
+    "@turbo/types": "workspace:*",
     "@types/node": "^16.11.12",
     "@types/react": "18.0.21",
     "autoprefixer": "10.4.14",

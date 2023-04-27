@@ -1,0 +1,7 @@
+{
+  "extends": "@turbo/tsconfig/library.json",
+  "exclude": ["templates"],
+  "compilerOptions": {
+    "rootDir": "."
+  }
+}
