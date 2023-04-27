@@ -1,9 +1,6 @@
 <p align="center">
   <a href="https://turbo.build">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="image/readme/1682620162817.png">
       <img src="image/readme/1682620162817.png" height="128">
-    </picture>
     <h1 align="center">HydroRoll'水系</h1>
   </a>
 </p>
