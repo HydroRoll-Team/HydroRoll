@@ -18,16 +18,14 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
+watchfiles = "^0.18.0"
 python = "^3.8"
-watchfiles = "^0.16.0"
 iamai = "^3.14"
 iamai-adapter-cqhttp = "^0.6"
 iamai-adapter-apscheduler = "^0.6"
 
 [tool.poetry.group.dev.dependencies]
-watchfiles = "^0.18.0"
 sophia-doc = "^0.1.0"
-iamai-adapter-dingtalk = { path = "./packages/iamai-adapter-dingtalk", develop = true }
 black = "^23.1.0"
 isort = "^5.12.0"
 pre-commit = "^3.1.0"
