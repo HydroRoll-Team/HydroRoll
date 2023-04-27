@@ -1,7 +1,7 @@
 {
   "name": "docs",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "description": "turbo.build",
   "scripts": {
     "dev": "next",
