@@ -12,7 +12,7 @@
     "schema": "turbo-types-generate ./public/schema.json"
   },
   "author": "简律纯",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "dependencies": {
     "@headlessui/react": "^1.7.3",
     "@heroicons/react": "1.0.6",
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
+    "@turbo/types": "workspace:*",
     "@types/node": "^16.11.12",
     "@types/react": "18.0.21",
     "autoprefixer": "10.4.14",
