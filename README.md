@@ -4,18 +4,18 @@
       <source media="(prefers-color-scheme: dark)" srcset="image/readme/1682620162817.png">
       <img src="image/readme/1682620162817.png" height="128">
     </picture>
-    <h1 align="center">HydroRoll'</h1>
+    <h1 align="center">hydroroll'</h1>
   </a>
 </p>
 
 <p align="center">
-  <a aria-label="Vercel Site" href="https://HydroRoll.retrofor.space/">
+  <a aria-label="Vercel Site" href="https://hydroroll.retrofor.space/">
     <img src="https://img.shields.io/badge/DOCS%20AND%20BLOGS-000000.svg?style=for-the-badge&logo=Vercel&labelColor=000">
   </a>
-  <a aria-label="PYTHON version" href="https://pypi.org/project/HydroRoll">
+  <a aria-label="PYTHON version" href="https://pypi.org/project/hydroroll">
     <img alt="" src="https://img.shields.io/npm/v/turbo.svg?style=for-the-badge&labelColor=000000">
   </a>
-  <a aria-label="License" href="https://github.com/retrofor/HydroRoll/blob/main/LICENSE">
+  <a aria-label="License" href="https://github.com/retrofor/hydroroll/blob/main/LICENSE">
     <img alt="" src="https://img.shields.io/npm/l/turbo.svg?style=for-the-badge&labelColor=000000&color=">
   </a>
   <a aria-label="Join the community on GitHub" href="https://github.com/vercel/turbo/discussions">

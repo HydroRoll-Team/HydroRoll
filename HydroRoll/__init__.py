@@ -1,4 +1,4 @@
-name = "HydroRoll"
+name = "hydroroll"
 
-from HydroRoll.bot import Bot
-from HydroRoll.config import GlobalConfig
+from hydroroll.bot import Bot
+from hydroroll.config import GlobalConfig

@@ -1,9 +1,9 @@
 import re
-from plugins.HydroRoll_plugin_base import CommandPluginBase
+from plugins.hydroroll_plugin_base import CommandPluginBase
 from .config import Config
 import psutil
 import time
-from HydroRoll.config import GlobalConfig
+from hydroroll.config import GlobalConfig
 from iamai.adapter.cqhttp.message import CQHTTPMessageSegment
 
 class System(CommandPluginBase[None, Config]):

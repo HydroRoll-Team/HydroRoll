@@ -9,11 +9,11 @@ import threading
 
 
 # 创建全局 ArgumentParser 对象
-global_parser = argparse.ArgumentParser(description='HydroRoll[水系] 全局命令参数')
+global_parser = argparse.ArgumentParser(description='hydroroll[水系] 全局命令参数')
 
 # 定义全局配置类
 class GlobalConfig:
-    _name = "HydroRoll"
+    _name = "hydroroll"
     _version = "0.1.0"
     _svn = "2"
     _author = "简律纯"
@@ -25,7 +25,7 @@ class GlobalConfig:
     # 定义系统组件
     class HydroSystem:
         def __init__(self):
-            self.parser = argparse.ArgumentParser(description='HydroRoll[水系].system 系统命令参数')
+            self.parser = argparse.ArgumentParser(description='hydroroll[水系].system 系统命令参数')
             self.subparsers = self.parser.add_subparsers()
             self.status_parser = self.subparsers.add_parser('status', aliases=['s'], help='系统状态')
             self.reload_parser = self.subparsers.add_parser('reload', aliases=['rld'], help='重新加载系统')

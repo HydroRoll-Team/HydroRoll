@@ -3,7 +3,7 @@ import random
 
 from iamai.log import logger
 
-from plugins.HydroRoll_plugin_base import CommandPluginBase
+from plugins.hydroroll_plugin_base import CommandPluginBase
 
 from .config import Config
 

@@ -1,9 +1,9 @@
-[HydroRoll]
+[hydroroll]
 version = "v0.1.0"
 svn = "1"
 author = "简律纯"
 
-[HydroRoll.self]
+[hydroroll.self]
 header = "Hydro系[1]号"
 # info = "一只水系骰子..."
 
