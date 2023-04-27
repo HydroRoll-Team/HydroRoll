@@ -1,112 +1,72 @@
-
-<p align="center"><img width="300" src="image/readme/1681811270177.png"></p>
-
-<h1 align="center">
-  HydroRoll
-</h1>
-
 <p align="center">
-水系 > <small>地理人狂喜</small>
+  <a href="https://turbo.build">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="image/readme/1682620162817.png">
+      <img src="image/readme/1682620162817.png" height="128">
+    </picture>
+    <h1 align="center">HydroRoll'</h1>
+  </a>
 </p>
 
-## 📘 Introduction
-
-一个新的骰系
-
-## 🚀 Features
-
-...
-
-## ⬇️ Install
-
-### Docker
-
-通过Docker直接部署。
-
-### pip
-
-通过pip下载后导入包部署
-
-### Raw
-
-下载源码直接部署。
-
-## 🌈Site Preview
-
-### 📌tutorial
-
-- <https://HydroRoll.retrofor.space/> _(recommend)_
-- <https://hydro-roll.vercel.app/>
-
-### 📌tools
-
-- <https://play.chien.retrofor.space/>
-- <https://envshare.HydroRoll.retrofor.space/>
-- <https://flexirobo.retrofor.space/>
-- <https://cyberdynamix.retrofor.space/>
-  
-## 👨‍🚀 Contributors
-
-<a href="https://github.com/retrofor/ChienDice/graphs/contributors">
-  <img width="50" src="https://contrib.rocks/image?repo=retrofor/ChienDice" />
-</a>
-
-## 📄 License
-
-[MIT](https://github.com/retrofor/ChienDice/blob/main/LICENSE) © 2023-PRESENT [简律纯](https://github.com/HsiangNianian)
-
-### 第一个娘
-
-**pip部署**
-
-命令行输入
-
-``` shell
-pip install ChienDice
-```
-
-**创建main.py**
-
-``` py
-from ChienDice import Bot
-bot = Bot()
-
-if __name__ == "__main__":
-    bot.run()
-```
-
-**开启go-cqhttp**
-
-``` shell
-./go-cqhttp
-```
-
-**认主**
-
-输入`.get married`
-
-如此简单。
+<p align="center">
+  <a aria-label="Vercel Site" href="https://HydroRoll.retrofor.space/">
+    <img src="https://img.shields.io/badge/DOCS%20AND%20BLOGS-000000.svg?style=for-the-badge&logo=Vercel&labelColor=000">
+  </a>
+  <a aria-label="PYTHON version" href="https://pypi.org/project/HydroRoll">
+    <img alt="" src="https://img.shields.io/npm/v/turbo.svg?style=for-the-badge&labelColor=000000">
+  </a>
+  <a aria-label="License" href="https://github.com/retrofor/HydroRoll/blob/main/LICENSE">
+    <img alt="" src="https://img.shields.io/npm/l/turbo.svg?style=for-the-badge&labelColor=000000&color=">
+  </a>
+  <a aria-label="Join the community on GitHub" href="https://github.com/vercel/turbo/discussions">
+    <img alt="" src="https://img.shields.io/badge/Join%20the%20community-blueviolet.svg?style=for-the-badge&logo=turborepo&labelColor=000000&logoWidth=20&logoColor=white">
+  </a>
+</p>
 
 
-### 轻松入门
+Turbo is a next-generation toolchain for frontend development, written in Rust. It consists of 3 major parts:
 
-> 只需要记住两个命令即可轻松驾驭九只娘！
+- [**Turbopack:**](https://turbo.build/pack) an incremental bundler (the successor to Webpack)
+- [**Turborepo:**](https://turbo.build/repo) an incremental build system
+- The Turbo engine: a low-level incremental computation and memoization engine
 
-**入栈**
+## Getting Started
 
-`.set` 用于设置一切！
+Visit https://turbo.build to get started with Turbopack and Turborepo.
 
-**出栈**
+## Contributing
 
-`.get` 用于获取一切！
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for more information.
 
-#### 快速举例
+## Community
 
-**认主**: `.get married`
-**退群**: `.get lost`
-**获取`jrrp`**: `.get jrrp`
-**设置欢淫语**: `.set welcome [欢迎~] 可选添加 [{at}] [{nickname}] [{avatar}] [{id}]`
+The Turbo community can be found on [GitHub Discussions](https://github.com/vercel/turbo/discussions), where you can ask questions, voice ideas, and share your projects.
 
-## 命令列表
+To chat with other community members, you can join the [Turbo Discord](https://turbo.build/discord).
 
-> 还在为繁琐命令感到烦恼？使用简系，小学生都能记住的固定词组！
+Our [Code of Conduct](https://github.com/vercel/turbo/blob/main/CODE_OF_CONDUCT.md) applies to all Turbo community channels.
+
+## Who is using Turbo?
+
+Turbo is used by the world's leading companies. Check out the [Turbo Showcase](https://turbo.build/showcase) to learn more.
+
+## Updates
+
+Follow [@turborepo](https://twitter.com/turborepo) on Twitter and for project updates.
+
+## Authors
+
+**Turborepo**
+
+- Jared Palmer ([@jaredpalmer](https://twitter.com/jaredpalmer))
+
+**Turbopack and the Turbo engine**
+
+- Tobias Koppers ([@wSokra](https://twitter.com/wSokra))
+- Maia Teegarden ([@padmaia](https://twitter.com/padmaia))
+
+## Security
+
+If you believe you have found a security vulnerability in Turbo, we encourage you to responsibly disclose this and not open a public issue. We will investigate all legitimate reports. Email `security@vercel.com` to disclose any security vulnerabilities.
+
+https://vercel.com/security
