@@ -11,7 +11,7 @@
     "rss": "node scripts/generate-rss.js",
     "schema": "turbo-types-generate ./public/schema.json"
   },
-  "author": "Jared Palmer",
+  "author": "简律纯",
   "license": "MPL-2.0",
   "dependencies": {
     "@headlessui/react": "^1.7.3",
