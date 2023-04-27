@@ -31,19 +31,3 @@ jobs:
 
       - run: poetry publish --build
         shell: bash
-
-      - run: poetry publish --build
-        shell: bash
-        working-directory: ./packages/iamai-adapter-apscheduler
-
-      - run: poetry publish --build
-        shell: bash
-        working-directory: ./packages/iamai-adapter-cqhttp
-
-      - run: poetry publish --build
-        shell: bash
-        working-directory: ./packages/iamai-adapter-dingtalk
-
-      - run: poetry publish --build
-        shell: bash
-        working-directory: ./packages/iamai-adapter-mirai
