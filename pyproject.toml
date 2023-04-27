@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "HydroRoll"
 version = "0.1.1"
-description = "ChienDice"
+description = "A new Dice"
 license = "MIT"
 authors = ["HsiangNianian <admin@jyunko.cn>"]
 readme = "README.md"
-repository = "https://github.com/retrofor/ChienDice"
+repository = "https://github.com/retrofor/HydroRoll"
 
 [tool.poetry.dependencies]
 python = "^3.8"

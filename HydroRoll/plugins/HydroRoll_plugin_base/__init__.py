@@ -28,22 +28,30 @@ class BasePlugin(
         )
 
     async def rule(self) -> bool:
+        is_bot_off = True
+        
         if self.event.adapter.name != "cqhttp":
             return False
-        if self.event.type != "message_sent":
+        if self.event.type != "message":
             return False
+        match_str = self.event.message.get_plain_text()
+        if is_bot_off:
+            if self.event.message.startswith(f'[CQ:at,qq={self.event.self_id}]'):
+                match_str = re.sub(fr'^\[CQ:at,qq={self.event.self_id}\]', '', match_str)
+            else:
+                return False
         if self.config.handle_all_message:
-            return self.str_match(self.event.message.get_plain_text())
+            return self.str_match(match_str)
         elif self.config.handle_friend_message:
             if self.event.message_type == "private":
-                return self.str_match(self.event.message.get_plain_text())
+                return self.str_match(match_str)
         elif self.config.handle_group_message:
             if self.event.message_type == "group":
                 if (
                     self.config.accept_group is None
                     or self.event.group_id in self.config.accept_group
                 ):
-                    return self.str_match(self.event.message.get_plain_text())
+                    return self.str_match(match_str)
         return False
 
     @abstractmethod

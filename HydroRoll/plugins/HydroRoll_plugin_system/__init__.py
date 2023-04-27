@@ -4,10 +4,11 @@ from .config import Config
 import psutil
 import time
 from HydroRoll.config import GlobalConfig
-
+from iamai.adapter.cqhttp.message import CQHTTPMessageSegment
 
 class System(CommandPluginBase[None, Config]):
     priority: int = 0
+    block: bool = True
     Config = Config
     CurrentConfig = GlobalConfig
 
@@ -69,5 +70,6 @@ class System(CommandPluginBase[None, Config]):
             )
         else:
             await self.event.reply(
+                CQHTTPMessageSegment.reply(self.event.message_id) +
                 self.format_str(self.config.message_str, system.help)
             )
