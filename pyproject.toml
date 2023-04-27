@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "hydroroll"
-version = "0.1.1"
+version = "0.1.2"
 description = "bot framework."
 authors = ["简律纯 <admin@jyunko.cn>"]
-license = "MIT"
+license = "AGPL3.0"
 readme = "README.md"
 homepage = "https://hydroroll.retrofor.space/"
 repository = "https://github.com/retrofor/hydroroll"
