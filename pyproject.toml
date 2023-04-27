@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hydroroll"
-version = "0.1.2"
+version = "0.1.3"
 description = "bot framework."
 authors = ["简律纯 <admin@jyunko.cn>"]
 license = "GPL3.0"
