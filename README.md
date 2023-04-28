@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://turbo.build">
-      <img src="image/readme/1682620162817.png" height="128">
+      <img src="https://hydroroll.retrofor.space/background_or_logo.png" height="128">
     <h1 align="center">HydroRoll'水系</h1>
   </a>
 </p>
@@ -83,8 +83,8 @@ pip install --upgrade hyrdroroll
 ## 👨‍🚀 Contributors
 
 <a href="https://github.com/retrofor/HydroRoll/graphs/contributors">
-  <img width="80" src="https://contrib.rocks/image?repo=retrofor/HydroRoll"/>
-</1a>
+  <img src="https://contrib.rocks/image?repo=retrofor/HydroRoll"/>
+</a>
 
 ## 📄 License
 
