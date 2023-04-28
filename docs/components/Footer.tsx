@@ -30,7 +30,7 @@ function FooterHeader({ children }: { children: ReactNode }) {
 const navigation = {
   general: [
     { name: "Blog", href: "/blog" },
-    { name: "Releases", href: "https://github.com/vercel/turbo/releases" },
+    { name: "Releases", href: "https://github.com/retrofor/HydroRoll/releases" },
   ],
   repo: [
     { name: "Documentation", href: "/repo/docs" },
@@ -47,11 +47,11 @@ const navigation = {
   support: [
     {
       name: "GitHub",
-      href: "https://github.com/vercel/turbo",
+      href: "https://github.com/retrofor/HydroRoll",
     },
     {
       name: "Discord",
-      href: "https://turbo.build/discord",
+      href: "https://hydroroll.retrofor.space/discord",
     },
   ],
   company: (site: TurboSite) => [
@@ -96,7 +96,7 @@ export function FooterContent() {
                 </ul>
               </div>
               <div className="mt-12 md:!mt-0">
-                <FooterHeader>Turborepo</FooterHeader>
+                <FooterHeader>TRPG</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
                   {navigation.repo.map((item) => (
                     <li key={item.name}>
@@ -106,7 +106,7 @@ export function FooterContent() {
                 </ul>
               </div>
               <div className="mt-12 md:!mt-0">
-                <FooterHeader>Turbopack</FooterHeader>
+                <FooterHeader>AI</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
                   {navigation.pack.map((item) => (
                     <li key={item.name}>
