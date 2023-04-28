@@ -7,7 +7,7 @@ import HeaderLogo from "./components/HeaderLogo";
 import ExtraContent from "./components/ExtraContent";
 import { Discord, Github } from "./components/Social";
 
-const SITE_ROOT = "https://turbo.build";
+const SITE_ROOT = "https://hydroroll.retrofor.space";
 
 /**
  * @type {import('nextra-theme-docs').DocsThemeConfig}
@@ -16,7 +16,7 @@ const theme = {
   sidebar: {
     defaultMenuCollapseLevel: Number.POSITIVE_INFINITY,
   },
-  docsRepositoryBase: "https://github.com/vercel/turbo/blob/main/docs",
+  docsRepositoryBase: "https://github.com/retrofor/HydroRoll/blob/main/docs",
   useNextSeoProps: function SEO() {
     const router = useRouter();
     const { frontMatter } = useConfig();
@@ -147,8 +147,8 @@ const theme = {
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="Turbo Blog"
-          href="https://turbo.build/feed.xml"
+          title="HydroRoll Blog"
+          href="https://hydroroll.retrofor.space/feed.xml"
         />
       </>
     );

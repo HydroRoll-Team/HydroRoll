@@ -137,12 +137,12 @@ const nextConfig = withNextra({
       {
         source: "/discord{/}?",
         permanent: true,
-        destination: "https://discord.gg/sSzyjxvbf5",
+        destination: "https://discord.gg/JBe8BYJgKT",
       },
       {
         source: "/docs/changelog",
         permanent: true,
-        destination: "https://github.com/vercel/turbo/releases",
+        destination: "https://github.com/retrofor/HydroRoll/releases",
       },
       {
         source: "/docs/guides/complimentary-tools",
