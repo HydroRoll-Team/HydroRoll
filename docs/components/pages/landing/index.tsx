@@ -158,8 +158,8 @@ function Teams() {
         <Clients
           companyList={[
             "Vercel",
-            // "AWS",
-            // "Microsoft",
+            "AWS",
+            "Microsoft",
             // "Adobe",
             // "Disney",
             // "Netflix",
