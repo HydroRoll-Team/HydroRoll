@@ -164,7 +164,7 @@ export function FooterContent() {
               <HydroRolllogo />
             </a>
             <p className="mt-4 text-xs text-gray-500 dark:text-[#888888]">
-              &copy; {new Date().getFullYear()} retrofor, Inc. All rights
+              &copy; {new Date().getFullYear()} HydroRoll. All rights
               reserved.
             </p>
           </div>
