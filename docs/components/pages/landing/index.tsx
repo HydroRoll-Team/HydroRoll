@@ -153,6 +153,7 @@ function Teams() {
       <p className="bg-contain mb-2 md:!mb-4 text-sm font-semibold tracking-wide text-center text-[#666666] dark:text-[#888888] uppercase">
         Thx by teams from
         <br className="inline md:hidden" /> around the world
+        感谢以下来自世界各地的团队或组织的贡献
       </p>
       <div className="z-50 grid grid-flow-col grid-rows-6 sm:grid-rows-3 md:grid-rows-2 lg:grid-rows-1">
         <Clients
