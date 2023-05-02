@@ -60,7 +60,7 @@ function Card({
 }: {
   href: string;
   icon: React.ElementType;
-  title: "repo" | "pack";
+  title: "AI" | "TRPG";
   alt?: string;
   className?: string;
   children: React.ReactNode;
@@ -93,7 +93,7 @@ function Card({
         </div>
 
         <div className="flex flex-col items-center flex-1">
-          {title == "pack" ? (
+          {title == "TRPG" ? (
             <PackLogo
               alt={alt}
               className="w-[160px] md:w-[220px] mb-3 fill-black dark:fill-white"
@@ -119,7 +119,7 @@ function SiteCards() {
           title="AI"
           alt="HydroRollAI"
           icon={HydroRollAI}
-          href="/repo"
+          href="/AI"
           className="turborepoCardBg"
         >
           <p className="text-lg !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70">
