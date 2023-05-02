@@ -13,11 +13,11 @@ function dateSortDesc(a, b) {
 
 async function generate() {
   const feed = new RSS({
-    title: "Turbo Blog",
-    description: "Turbo news, updates, and announcements.",
-    site_url: "https://turbo.build",
-    feed_url: "https://turbo.build/feed.xml",
-    image_url: "https://turbo.build/api/og",
+    title: "HydroRoll Blog",
+    description: "HydroRoll news, updates, and announcements.",
+    site_url: "https://hydroroll.retrofor.space",
+    feed_url: "https://hydroroll.retrofor.space/feed.xml",
+    image_url: "https://hydroroll.retrofor.space/api/og",
   });
 
   const posts = await fs.readdir(path.join(__dirname, "..", "pages", "blog"));
@@ -41,11 +41,11 @@ async function generate() {
     );
     feed.item({
       title: frontmatter.data.title,
-      url: "https://turbo.build/blog/" + frontmatter.slug, // intentionally including slash here
+      url: "https://hydroroll.retrofor.space/blog/" + frontmatter.slug, // intentionally including slash here
       date: frontmatter.data.date,
       description: frontmatter.data.description,
       enclosure: {
-        url: "https://turbo.build" + frontmatter.data.ogImage, // intentionally omitting slash here
+        url: "https://hydroroll.retrofor.space" + frontmatter.data.ogImage, // intentionally omitting slash here
         type: "image/png",
         size: stat.size,
       },
