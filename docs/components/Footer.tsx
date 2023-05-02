@@ -32,15 +32,11 @@ const navigation = {
     { name: "Blog", href: "/blog" },
     { name: "Releases", href: "https://github.com/retrofor/HydroRoll/releases" },
   ],
-  repo: [
+  AI: [
     { name: "Documentation", href: "/AI/docs" },
-    {
-      name: "API Reference",
-      href: "/AI/docs/reference/command-line-reference",
-    },
     { name: "FAQ", href: "/AI/docs/faq" },
   ],
-  pack: [
+  TRPG: [
     { name: "Documentation", href: "/TRPG/docs" },
     { name: "Features", href: "/TRPG/docs/features" },
   ],
@@ -63,7 +59,7 @@ const navigation = {
     {
       name: "Contact Sales",
       href: `https://vercel.com/${
-        site === "repo" ? "solutions/turborepo" : "contact/sales"
+        site === "AI" ? "solutions/HydroRollAI" : "contact/sales"
       }?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-enterpriseLink`,
     },
     { name: "Twitter", href: "https://twitter.com/vercel" },
@@ -98,7 +94,7 @@ export function FooterContent() {
               <div className="mt-12 md:!mt-0">
                 <FooterHeader>TRPG</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
-                  {navigation.repo.map((item) => (
+                  {navigation.AI.map((item) => (
                     <li key={item.name}>
                       <FooterLink href={item.href}>{item.name}</FooterLink>
                     </li>
@@ -108,7 +104,7 @@ export function FooterContent() {
               <div className="mt-12 md:!mt-0">
                 <FooterHeader>AI</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
-                  {navigation.pack.map((item) => (
+                  {navigation.TRPG.map((item) => (
                     <li key={item.name}>
                       <FooterLink href={item.href}>{item.name}</FooterLink>
                     </li>
