@@ -11,14 +11,14 @@ export const HydroRollTRPGQuickstartArea = () => {
         feature={{
           Icon: QuestionMarkCircleIcon,
           description: `Learn why we created Turbopack, and why we think it’s the future of bundling for the web.`,
-          name: "Why Turbopack?",
+          name: "Why TRPG?",
         }}
-        href="/TRPG/docs/why-turbopack"
+        href="/TRPG/docs/why-trpg"
       ></DetailedFeatureLink>
       <DetailedFeatureLink
         feature={{
           Icon: LightBulbIcon,
-          description: `Learn about the innovative architecture that powers Turbopack’s speed improvements.`,
+          description: `Learn about the innovative architecture that powers TRPG’s speed improvements.`,
           name: "Core Concepts",
         }}
         href="/TRPG/docs/core-concepts"

@@ -144,10 +144,9 @@ export function FooterContent() {
             </div>
           </div>
           <div className="mt-12 xl:!mt-0">
-            <FooterHeader>Subscribe to our newsletter</FooterHeader>
+            <FooterHeader>Subscribe to HydroRoll  newsletter</FooterHeader>
             <p className="mt-4 text-sm text-gray-600 dark:text-[#888888]">
-              Subscribe to the Turbo newsletter and stay updated on new releases
-              and features, guides, and case studies.
+              订阅 水系 最新的blog与release内容，抑或是插件与模型的更新。
             </p>
             <SubmitForm />
           </div>
@@ -159,13 +158,13 @@ export function FooterContent() {
               className="text-current"
               target="_blank"
               rel="noopener noreferrer"
-              title="vercel.com homepage"
-              href="https://vercel.com?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-logoLink"
+              title="retrofor.space homepage"
+              href="https://hydroroll.retrofor.space/background_or_logo.png"
             >
               <VercelLogo />
             </a>
             <p className="mt-4 text-xs text-gray-500 dark:text-[#888888]">
-              &copy; {new Date().getFullYear()} Vercel, Inc. All rights
+              &copy; {new Date().getFullYear()} retrofor, Inc. All rights
               reserved.
             </p>
           </div>
@@ -215,7 +214,7 @@ function SubmitForm() {
           type="submit"
           className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-black border border-transparent rounded-md dark:bg-white dark:text-black sm:text-sm betterhover:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-800 dark:focus:ring-white dark:betterhover:hover:bg-gray-300"
         >
-          Subscribe
+          订阅 Subscribe
         </button>
       </div>
     </form>

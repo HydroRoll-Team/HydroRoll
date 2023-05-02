@@ -73,14 +73,13 @@ export function PackHero() {
           className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6"
         >
           <PackLogo
-            alt="Turbopack"
+            alt="HydroRollTRPG"
             width="200"
             className="w-[160px] md:w-[200px] fill-black dark:fill-white"
           />
-          <HeroText h1>The Rust-powered successor to Webpack</HeroText>
+          <HeroText h1>跑团</HeroText>
           <SectionSubtext hero>
-            Turbopack is an incremental bundler optimized for JavaScript and
-            TypeScript, written in Rust.
+            TRPG 模块是 水系 的另一个重要组成部分 
           </SectionSubtext>
         </FadeIn>
         <FadeIn
