@@ -21,12 +21,12 @@ const theme = {
     const router = useRouter();
     const { frontMatter } = useConfig();
 
-    let section = "Turbo";
-    if (router?.pathname.startsWith("/pack")) {
-      section = "Turbopack";
+    let section = "HydroRoll";
+    if (router?.pathname.startsWith("/AI")) {
+      section = "HydroRollAI";
     }
-    if (router?.pathname.startsWith("/repo")) {
-      section = "Turborepo";
+    if (router?.pathname.startsWith("/TRPG")) {
+      section = "HydroRollTRPG";
     }
 
     const defaultTitle = frontMatter.overrideTitle || section;
@@ -87,10 +87,10 @@ const theme = {
     } else if (frontMatter?.ogImage) {
       ogUrl = `${SITE_ROOT}${frontMatter.ogImage}`;
     } else {
-      const type = asPath.startsWith("/repo")
-        ? "repo"
-        : asPath.startsWith("/pack")
-        ? "pack"
+      const type = asPath.startsWith("/AI")
+        ? "AI"
+        : asPath.startsWith("/TRPG")
+        ? "TRPG"
         : "";
       const title = frontMatter.title
         ? `&title=${encodeURIComponent(frontMatter.title)}`
@@ -139,11 +139,11 @@ const theme = {
         <meta property="twitter:image" content={ogUrl} />
         <meta property="og:image" content={ogUrl} />
         <meta property="og:locale" content="en_IE" />
-        <meta property="og:site_name" content="Turbo" />
-        <link rel="prefetch" href="/repo" as="document" />
-        <link rel="prefetch" href="/repo/docs" as="document" />
-        <link rel="prefetch" href="/pack" as="document" />
-        <link rel="prefetch" href="/pack/docs" as="document" />
+        <meta property="og:site_name" content="HydroRoll" />
+        <link rel="prefetch" href="/AI" as="document" />
+        <link rel="prefetch" href="/AI/docs" as="document" />
+        <link rel="prefetch" href="/TRPG" as="document" />
+        <link rel="prefetch" href="/TRPG/docs" as="document" />
         <link
           rel="alternate"
           type="application/rss+xml"
