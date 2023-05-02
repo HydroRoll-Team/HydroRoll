@@ -1,8 +1,8 @@
-const HydroRoll = ({ height = 56 }: { height?: number }) => (
+const HydroRoll = ({ height = 20 }: { height?: number }) => (
   <svg height={height} viewBox="0 0 283 64" fill="none">
     <title>HydroRoll</title>
     <path
-      fill="currentColor"
+      fill="#000000"
       d="M0 350 l0 -350 350 0 350 0 0 350 0 350 -350 0 -350 0 0 -350z m170
 95 c0 -69 -3 -125 -7 -125 -5 0 -8 56 -8 125 0 69 3 125 8 125 4 0 7 -56 7
 -125z m57 -212 c-1 -65 -3 -14 -3 112 0 127 2 180 3 118 2 -62 2 -165 0 -230z
