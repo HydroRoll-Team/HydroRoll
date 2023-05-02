@@ -23,7 +23,7 @@ export default function Confirm() {
                   <p>
                     Thanks,
                     <br />
-                    The Turbo Team
+                    The HydroRoll'水系 Team.
                   </p>
                 </div>
               </div>

@@ -22,7 +22,7 @@ export const ExamplesArea = ({
               name,
             }}
             target="_blank"
-            href={`https://github.com/vercel/turbo/tree/main/examples/${slug}`}
+            href={`https://github.com/retrofor/HydroRoll/tree/main/examples/${slug}`}
           />
         ))}
     </div>

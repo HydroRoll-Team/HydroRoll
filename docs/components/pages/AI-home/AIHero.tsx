@@ -1,34 +1,33 @@
 import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
-// import { Marquee } from "../../clients/Marquee";
-// import { Clients } from "../../clients/Clients";
 import gradients from "../home-shared/gradients.module.css";
 import { HeroText, SectionSubtext } from "../home-shared/Headings";
 import { Gradient } from "../home-shared/Gradient";
 import { FadeIn } from "../home-shared/FadeIn";
 import { CTAButton } from "../home-shared/CTAButton";
-import PackLogo from "../../logos/PackLogo";
+import RepoLogo from "../../logos/RepoLogo";
 
-export function PackHero() {
+export function AIHero() {
   return (
     <>
       <FadeIn
         noVertical
         className="font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-16 lg:pt-20 flex justify-between gap-8 items-center flex-col relative z-0"
       >
-        <FadeIn className="z-50 flex items-center justify-center w-full">
+        <FadeIn className="z-50 flex items-center justify-center w-full ">
           <div className="absolute min-w-[614px] min-h-[614px]">
+            {/* TODO: On dark mode, there should be a "breathing" gradient inside the inner circle */}
             <Image
-              alt="HydroRollTRPG"
-              src="/images/docs/TRPG/turbopack-hero-hexagons-dark.svg"
+              alt="AI"
+              src="/images/docs/AI/repo-hero-circles-dark.svg"
               width={614}
               height={614}
               className="hidden dark:block"
             />
             <Image
-              alt="HydroRollTRPG"
-              src="/images/docs/TRPG/turbopack-hero-hexagons-light.svg"
+              alt="AI"
+              src="/images/docs/AI/repo-hero-circles-light.svg"
               width={614}
               height={614}
               className="block dark:hidden"
@@ -44,19 +43,19 @@ export function PackHero() {
             />
           </div>
 
-          <div className="w-[120px] z-50 mt-[-8.075px] mb-[-8.075px]">
+          <div className="w-[120px] h-[120px] z-50">
             <Image
               alt=""
-              src={`/images/docs/TRPG/turbopack-hero-logo-dark.svg`}
+              src={`/images/docs/AI/repo-hero-logo-dark.svg`}
               width={120}
-              height={136.15}
+              height={120}
               className="hidden dark:block"
             />
             <Image
               alt=""
-              src={`/images/docs/TRPG/turbopack-hero-logo-light.svg`}
+              src={`/images/docs/AI/repo-hero-logo-light.svg`}
               width={120}
-              height={136.15}
+              height={120}
               className="block dark:hidden"
             />
           </div>
@@ -72,15 +71,15 @@ export function PackHero() {
           delay={0.15}
           className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6"
         >
-          <PackLogo
-            alt="Turbopack"
+          <RepoLogo
+            alt="AI"
             width="200"
             className="w-[160px] md:w-[200px] fill-black dark:fill-white"
           />
-          <HeroText h1>The Rust-powered successor to Webpack</HeroText>
+          <HeroText h1>The build system that makes ship happen</HeroText>
           <SectionSubtext hero>
-            Turbopack is an incremental bundler optimized for JavaScript and
-            TypeScript, written in Rust.
+            Turborepo is a high-performance build system for JavaScript and
+            TypeScript codebases.
           </SectionSubtext>
         </FadeIn>
         <FadeIn
@@ -89,7 +88,7 @@ export function PackHero() {
         >
           <div className="flex flex-col w-full gap-3 md:!flex-row">
             <CTAButton>
-              <Link href="/TRPG/docs" className="block py-3">
+              <Link href="/AI/docs" className="block py-3">
                 Get Started
               </Link>
             </CTAButton>

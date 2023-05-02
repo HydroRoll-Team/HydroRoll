@@ -2,17 +2,17 @@ import cn from "classnames";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-export type TurboSite = "pack" | "repo";
+export type TurboSite = "TRPG" | "AI";
 
 export function useTurboSite(): TurboSite | undefined {
   const { pathname } = useRouter();
 
-  if (pathname.startsWith("/repo")) {
-    return "repo";
+  if (pathname.startsWith("/AI")) {
+    return "AI";
   }
 
-  if (pathname.startsWith("/pack")) {
-    return "pack";
+  if (pathname.startsWith("/TRPG")) {
+    return "TRPG";
   }
 
   return undefined;
@@ -45,7 +45,7 @@ function SiteSwitcher() {
           "indeterminate:after:hidden",
           {
             "after:hidden": !site,
-            "after:translate-x-[46px]": site === "pack",
+            "after:translate-x-[46px]": site === "TRPG",
           }
         )}
       />
@@ -56,8 +56,8 @@ function SiteSwitcher() {
           { "hover:text-black dark:hover:text-white": site }
         )}
       >
-        <SiteSwitcherLink href="/repo" text="Repo" isActive={site === "repo"} />
-        <SiteSwitcherLink href="/pack" text="Pack" isActive={site === "pack"} />
+        <SiteSwitcherLink href="/AI" text="AI" isActive={site === "AI"} />
+        <SiteSwitcherLink href="/TRPG" text="TRPG" isActive={site === "TRPG"} />
       </span>
     </div>
   );

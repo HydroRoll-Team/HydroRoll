@@ -20,7 +20,7 @@ export const QuickStartArea = () => {
           description: `Add Turborepo to any JavaScript or TypeScript project in minutes.`,
           name: "Add to existing project",
         }}
-        href="/repo/docs/getting-started/add-to-project"
+        href="/AI/docs/getting-started/add-to-project"
       ></DetailedFeatureLink>
       <DetailedFeatureLink
         feature={{
@@ -28,7 +28,7 @@ export const QuickStartArea = () => {
           description: `Build a brand-new monorepo with shared packages powered by Turborepo.`,
           name: "Create a new monorepo",
         }}
-        href="/repo/docs/getting-started/create-new"
+        href="/AI/docs/getting-started/create-new"
       ></DetailedFeatureLink>
       <DetailedFeatureLink
         feature={{
@@ -36,7 +36,7 @@ export const QuickStartArea = () => {
           description: `Incrementally add Turborepo to your existing monorepo codebase.`,
           name: "Add to existing monorepo",
         }}
-        href="/repo/docs/getting-started/existing-monorepo"
+        href="/AI/docs/getting-started/existing-monorepo"
       ></DetailedFeatureLink>
     </div>
   );
@@ -49,9 +49,9 @@ export const MonoreposArea = () => {
         feature={{
           Icon: LightBulbIcon,
           description: `Understand why monorepos don't scale - and why Turborepo is the solution.`,
-          name: "Why Turborepo?",
+          name: "Why AI?",
         }}
-        href="/repo/docs/core-concepts/monorepos"
+        href="/AI/docs/core-concepts/monorepos"
       ></DetailedFeatureLink>
       <DetailedFeatureLink
         feature={{
@@ -59,7 +59,7 @@ export const MonoreposArea = () => {
           description: `Learn the basics of monorepos before you dive in to Turborepo.`,
           name: "Read the Monorepo Handbook",
         }}
-        href="/docs/handbook"
+        href="/AI/handbook"
       ></DetailedFeatureLink>
     </div>
   );
@@ -74,7 +74,7 @@ export const LearnMoreArea = () => {
           description: `Turborepo remembers the output of any task you run - and can skip work that's already been done.`,
           name: "Never do the same work twice",
         }}
-        href="/repo/docs/core-concepts/caching"
+        href="/AI/docs/core-concepts/caching"
       />
       <DetailedFeatureLink
         feature={{
@@ -82,7 +82,7 @@ export const LearnMoreArea = () => {
           description: `The way you run your tasks is probably not optimized. Turborepo speeds them up with smart scheduling, minimising idle CPU's.`,
           name: "Maximum Multitasking",
         }}
-        href="/repo/docs/core-concepts/monorepos/running-tasks"
+        href="/AI/docs/core-concepts/monorepos/running-tasks"
       ></DetailedFeatureLink>
     </div>
   );

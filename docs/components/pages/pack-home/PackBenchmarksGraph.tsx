@@ -230,15 +230,15 @@ const GraphTimer = ({
       {turbo && (
         <div className="relative flex w-6 h-6">
           <Image
-            alt="Turbopack"
-            src="/images/docs/pack/turbo-benchmark-icon-light.svg"
+            alt="HydroRollTRPG"
+            src="/images/docs/TRPG/turbo-benchmark-icon-light.svg"
             width={32}
             height={32}
             className="block dark:hidden"
           />
           <Image
-            alt="Turbopack"
-            src="/images/docs/pack/turbo-benchmark-icon-dark.svg"
+            alt="HydroRollTRPG"
+            src="/images/docs/TRPG/turbo-benchmark-icon-dark.svg"
             width={32}
             height={32}
             className="hidden dark:block"

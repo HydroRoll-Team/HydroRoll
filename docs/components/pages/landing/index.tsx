@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import { Clients } from "../../clients/Clients";
 import { Marquee } from "../../clients/Marquee";
 import { TurboheroBackground } from "./TurboHeroBackground";
-import { Turborepo } from "./Turborepo";
-import { Turbopack } from "./Turbopack";
+import { HydroRollAI } from "./HydroRollAI";
+import { HydroRollTRPG } from "./HydroRollTRPG";
 import { FadeIn } from "../home-shared/FadeIn";
 import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
 import styles from "./index.module.css";
@@ -116,9 +116,9 @@ function SiteCards() {
     <div className="flex w-full container items-center justify-center gap-6 px-6 sm:mx-0 mt-8 md:!mt-14 lg:!mt-15 md:mb-0 flex-col lg:!flex-row z-10 lg:!translate-y-0">
       <FadeIn delay={0.1}>
         <Card
-          title="repo"
-          alt="Turborepo"
-          icon={Turborepo}
+          title="AI"
+          alt="HydroRollAI"
+          icon={HydroRollAI}
           href="/repo"
           className="turborepoCardBg"
         >
@@ -130,10 +130,10 @@ function SiteCards() {
       </FadeIn>
       <FadeIn delay={0.2}>
         <Card
-          title="pack"
-          alt="Turbopack"
-          icon={Turbopack}
-          href="/pack"
+          title="TRPG"
+          alt="HydroRollTRPG"
+          icon={HydroRollTRPG}
+          href="/TRPG"
           className="turbopackCardBg"
         >
           <div className="absolute top-3 left-3">

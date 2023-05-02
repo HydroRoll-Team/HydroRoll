@@ -20,7 +20,7 @@ function Discord() {
     <a
       href="https://hydroroll.retrofor.space/discord"
       className="hidden p-2 text-current sm:flex hover:opacity-75"
-      title="HydroROll Discord server"
+      title="HydroRoll Discord server"
       target="_blank"
       rel="noreferrer"
     >

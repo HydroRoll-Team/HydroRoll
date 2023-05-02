@@ -33,16 +33,16 @@ const navigation = {
     { name: "Releases", href: "https://github.com/retrofor/HydroRoll/releases" },
   ],
   repo: [
-    { name: "Documentation", href: "/repo/docs" },
+    { name: "Documentation", href: "/AI/docs" },
     {
       name: "API Reference",
-      href: "/repo/docs/reference/command-line-reference",
+      href: "/AI/docs/reference/command-line-reference",
     },
-    { name: "FAQ", href: "/repo/docs/faq" },
+    { name: "FAQ", href: "/AI/docs/faq" },
   ],
   pack: [
-    { name: "Documentation", href: "/pack/docs" },
-    { name: "Features", href: "/pack/docs/features" },
+    { name: "Documentation", href: "/TRPG/docs" },
+    { name: "Features", href: "/TRPG/docs/features" },
   ],
   support: [
     {

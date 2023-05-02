@@ -29,7 +29,7 @@ export default function RemoteCacheCounter() {
 
   return (
     <Link
-      href="/repo/docs/core-concepts/remote-caching"
+      href="/AI/docs/core-concepts/remote-caching"
       className="group mt-4 rounded-lg border border-transparent overflow-hidden bg-origin-border bg-gradient-to-r from-red-500 to-blue-500 dark:text-[#9ca3af] text-[#6b7280]"
     >
       <div className="p-4 dark:bg-[#111111] bg-white">

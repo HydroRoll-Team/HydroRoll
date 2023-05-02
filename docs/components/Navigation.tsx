@@ -28,7 +28,7 @@ function Navigation(props) {
       // https://github.com/shuding/nextra/issues/1028
       route: "enterprise",
       href: `https://vercel.com/${
-        site === "repo" ? "solutions/turborepo" : "contact/sales"
+        site === "AI" ? "solutions/HydroRollAI" : "contact/sales"
       }?utm_source=turbo.build&utm_medium=referral&utm_campaign=header-enterpriseLink`,
       id: "contextual-enterprise",
       key: "contextual-enterprise",
@@ -37,7 +37,7 @@ function Navigation(props) {
 
   // remove the top level repo and pack links
   const headerItems = props.items.filter((item) => {
-    return item.name !== "repo" && item.name !== "pack";
+    return item.name !== "AI" && item.name !== "TRPG";
   });
 
   // items last to override the default

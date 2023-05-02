@@ -4,7 +4,7 @@ import { useTurboSite } from "./SiteSwitcher";
 export default function ExtraContent() {
   const site = useTurboSite();
 
-  if (site === "repo") {
+  if (site === "AI") {
     return <RemoteCacheCounter />;
   }
 }

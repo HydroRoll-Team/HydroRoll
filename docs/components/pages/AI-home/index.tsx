@@ -1,22 +1,20 @@
-import { PackBenchmarks } from "./PackBenchmarks";
-import { PackHero } from "./PackHero";
-import { PackLetter } from "./PackLetter";
-import { PackFeatures } from "./PackFeatures";
+import { AIHero } from "./AIHero";
+import { AIFeatures } from "./AIFeatures";
+import { AILetter } from "./AILetter";
 import { GradientSectionBorder } from "../home-shared/GradientSectionBorder";
 import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
 
-export default function HydroRollTRPGHome() {
+export default function HydroRollAIHome() {
   return (
     <>
       <LandingPageGlobalStyles />
       <main className="relative">
-        <PackHero />
+        <AIHero />
         <GradientSectionBorder>
-          <PackBenchmarks />
-          <PackFeatures />
+          <AIFeatures />
         </GradientSectionBorder>
         <GradientSectionBorder>
-          <PackLetter />
+          <AILetter />
         </GradientSectionBorder>
       </main>
     </>
