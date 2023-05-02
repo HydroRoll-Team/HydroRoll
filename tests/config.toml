@@ -1,13 +1,3 @@
-[hydroroll]
-version = "v0.1.0"
-svn = "1"
-author = "简律纯"
-
-[hydroroll.self]
-header = "Hydro系[1]号"
-# info = "一只水系骰子..."
-
-
 [bot]
 plugins = []
 plugin_dirs = ["plugins"]

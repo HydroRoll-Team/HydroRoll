@@ -1,6 +1,6 @@
 from typing import Set, Optional
 
-from plugins.hydroroll_plugin_base import CommandPluginConfig
+from plugins.plugin_base import CommandPluginConfig
 
 
 class Config(CommandPluginConfig):

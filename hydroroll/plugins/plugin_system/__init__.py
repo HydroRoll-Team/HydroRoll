@@ -1,5 +1,5 @@
 import re
-from plugins.hydroroll_plugin_base import CommandPluginBase
+from plugins.plugin_base import CommandPluginBase
 from .config import Config
 import psutil
 import time

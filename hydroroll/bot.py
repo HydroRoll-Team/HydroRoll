@@ -2,13 +2,10 @@ from iamai import Bot as _Bot
 from typing import Optional, Dict, List, Type, Any, Union
 from pathlib import Path
 import os
-# 获取当前目录路径
+from hydroroll.config import GlobalConfig
+
 current_dir = Path.cwd()
-
-# 获取当前脚本文件路径
 script_file = current_dir.resolve() / __file__
-
-# 获取当前脚本文件所在目录路径
 script_dir = script_file.parent
 
 __all__ = ["Bot"]
@@ -26,10 +23,7 @@ class Bot:
                        config_dict=config_dict
                        )
         self.bot.load_plugins_from_dirs(Path(f"{script_dir}/plugins"))
-        self.create_folders()
-        self.init_data()
-        self.init_conf()
-        self.init_webui()
+        self.create_folder_structure(GlobalConfig._folder_dict)
     
     def run(self) -> None:
         self.bot.run()
@@ -53,12 +47,4 @@ class Bot:
                 os.mkdir(os.path.join(folder_path, 'logs'))
             if not os.path.isdir(os.path.join(folder_path, 'rules')):
                 os.mkdir(os.path.join(folder_path, 'rules'))
-    
-    def init_data(self):
-        ...
-        
-    def init_webui(self):
-        ...
-        
-    def init_conf(self):
-        ...
+
