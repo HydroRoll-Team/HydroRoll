@@ -123,8 +123,7 @@ function SiteCards() {
           className="turborepoCardBg"
         >
           <p className="text-lg !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70">
-            High-performance build system for JavaScript and TypeScript
-            codebases.
+            水系核心——AI模块
           </p>
         </Card>
       </FadeIn>
@@ -140,7 +139,7 @@ function SiteCards() {
             <CardBadge>alpha</CardBadge>
           </div>
           <p className="text-lg !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70 ">
-            Introducing the Rust-powered successor to Webpack.
+            阅读水系TRPG模块文档
           </p>
         </Card>
       </FadeIn>
@@ -183,7 +182,7 @@ function LandingPage() {
             Make it Happen
           </h1>
           <p className="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
-            HydroRoll&apos;水系 是一个基于nlp多任务模型的跨平台骰系，尽管只是作为深度学习框架iamai的插件，但它仍然有自己的创新之处与标准遵循。
+            HydroRoll&apos;水系 是一个基于nlp多任务模型的跨平台骰系，尽管只是作为深度学习框架iamai的插件并且借鉴了大量其它骰系较好的机制，但它仍然有自己的创新之处与标准遵循。
           </p>
         </FadeIn>
         <SiteCards />
