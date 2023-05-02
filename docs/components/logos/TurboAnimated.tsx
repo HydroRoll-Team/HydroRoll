@@ -25,7 +25,7 @@ const TurboAnimated = ({ height = 32, className = "" }: LogoProps) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>Turborepo</title>
+      <title>AI</title>
 
       <defs>
         <linearGradient
@@ -59,9 +59,9 @@ const TurboAnimated = ({ height = 32, className = "" }: LogoProps) => {
 
       <g mask="url(#logo-mask)" transform={`translate(${LEFT_PADDING},0)`}>
         <AnimatePresence mode="sync" initial={false}>
-          {site === "repo" || site === undefined ? (
+          {site === "AI" || site === undefined ? (
             <motion.g
-              key="turborepo"
+              key="HydroRollAI"
               variants={variants}
               initial="hidden"
               animate="visible"
@@ -82,7 +82,7 @@ const TurboAnimated = ({ height = 32, className = "" }: LogoProps) => {
             </motion.g>
           ) : (
             <motion.g
-              key="turbopack"
+              key="HydroRollTRPG"
               variants={variants}
               initial="hidden"
               animate="visible"
