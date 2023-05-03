@@ -1,4 +1,4 @@
-const HydroRoll = ({ height = 20 }: { height?: number }) => (
+const HydroRoll = ({ height =  }: { height?: number }) => (
   <svg height={height} viewBox="0 0 283 64" fill="none">
     <title>HydroRoll</title>
     <path
