@@ -11,7 +11,7 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'application/json')
         self.end_headers()
 
-        with open(join(dir, '..', 'data', 'file.txt'), 'r', encoding='utf-8') as file:
+        with open(join(dir, '..', 'data', 'roots.txt'), 'r', encoding='utf-8') as file:
             lines = file.readlines()
             random_line = random.choice(lines)
             response = {
