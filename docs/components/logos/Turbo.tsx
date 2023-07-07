@@ -12,7 +12,7 @@ const Turbo = ({ height = 32, className = "" }: LogoProps) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <title>AI</title>
+    <title>HydroRoll</title>
     <path
       d="M48.2623 11.2944V8.24418H33.5623V11.2944H39.1115V21.4374H42.713V11.2944H48.2623Z"
       className="dark:fill-white fill-black"
