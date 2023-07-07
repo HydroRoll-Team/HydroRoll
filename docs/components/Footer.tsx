@@ -30,43 +30,43 @@ function FooterHeader({ children }: { children: ReactNode }) {
 const navigation = {
   general: [
     { name: "Blog", href: "/blog" },
-    { name: "Releases", href: "https://github.com/retrofor/HydroRoll/releases" },
+    { name: "Releases", href: "https://github.com/HydroRoll-Team/HydroRoll/releases" },
   ],
   AI: [
-    { name: "Documentation", href: "/AI/docs" },
+    { name: "文档", href: "/AI/docs" },
     { name: "FAQ", href: "/AI/docs/faq" },
   ],
   TRPG: [
-    { name: "Documentation", href: "/TRPG/docs" },
-    { name: "Features", href: "/TRPG/docs/features" },
+    { name: "文档", href: "/TRPG/docs" },
+    { name: "特性", href: "/TRPG/docs/features" },
   ],
   support: [
     {
       name: "GitHub",
-      href: "https://github.com/retrofor/HydroRoll",
+      href: "https://github.com/HydroRoll-Team/support",
     },
     {
       name: "Discord",
       href: "https://hydroroll.retrofor.space/discord",
     },
   ],
-  company: (site: TurboSite) => [
-    { name: "Vercel", href: "https://vercel.com" },
+  links: (site: TurboSite) => [
+    { name: "Dice!", href: "https://forum.kokona.tech" },
     {
-      name: "Open Source Software",
-      href: "https://vercel.com/oss?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-ossLink",
+      name: "OlivOS",
+      href: "https://forum.olivos.run",
     },
-    {
-      name: "Contact Sales",
-      href: `https://vercel.com/${
-        site === "AI" ? "solutions/HydroRollAI" : "contact/sales"
-      }?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-enterpriseLink`,
-    },
-    { name: "Twitter", href: "https://twitter.com/vercel" },
+    { name: "SealDice", href: "https://dice.weizaima.com/"},
+    // {
+    //   name: "",
+    //   href: `https://vercel.com/${
+    //     site === "AI" ? "solutions/HydroRollAI" : "contact/sales"
+    //   }?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-enterpriseLink`,
+    // },
   ],
   legal: [
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Service", href: "/terms" },
+    { name: "隐私政策", href: "/privacy" },
+    // { name: "Terms of Service", href: "/terms" },
   ],
 };
 
@@ -112,9 +112,9 @@ export function FooterContent() {
                 </ul>
               </div>
               <div className="mt-12 md:!mt-0">
-                <FooterHeader>Company</FooterHeader>
+                <FooterHeader>Link Forum</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
-                  {navigation.company(site).map((item) => (
+                  {navigation.links(site).map((item) => (
                     <li key={item.name}>
                       <FooterLink href={item.href}>{item.name}</FooterLink>
                     </li>
@@ -144,9 +144,9 @@ export function FooterContent() {
             </div>
           </div>
           <div className="mt-12 xl:!mt-0">
-            <FooterHeader>Subscribe to HydroRoll  newsletter</FooterHeader>
+            <FooterHeader>Subscribe to HydroRoll newsletter</FooterHeader>
             <p className="mt-4 text-sm text-gray-600 dark:text-[#888888]">
-              订阅 水系 最新的blog与release内容，抑或是插件与模型的更新。
+              订阅水系最新的blog与release内容，抑或是插件与模型的更新。
             </p>
             <SubmitForm />
           </div>
@@ -159,12 +159,12 @@ export function FooterContent() {
               target="_blank"
               rel="noopener noreferrer"
               title="retrofor.space homepage"
-              href="https://hydroroll.retrofor.space/background_or_logo.png"
+              href="https://hydroroll.retrofor.space/"
             >
               <HydroRolllogo />
             </a>
             <p className="mt-4 text-xs text-gray-500 dark:text-[#888888]">
-              &copy; {new Date().getFullYear()} HydroRoll. All rights
+              &copy; {new Date().getFullYear()} HydroRoll-Team. All rights
               reserved.
             </p>
           </div>
