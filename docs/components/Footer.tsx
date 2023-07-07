@@ -56,7 +56,9 @@ const navigation = {
       name: "OlivOS",
       href: "https://forum.olivos.run",
     },
-    { name: "SealDice", href: "https://dice.weizaima.com/"},
+    { name: "Dicex骰子屋", href: "https://forum.dicex.link" },
+    // { name: "SealDice", href: "https://dice.weizaima.com/"},
+    { name: "HuggingFace", href: "https://huggingface.co  " }
     // {
     //   name: "",
     //   href: `https://vercel.com/${
@@ -112,7 +114,7 @@ export function FooterContent() {
                 </ul>
               </div>
               <div className="mt-12 md:!mt-0">
-                <FooterHeader>Link Forum</FooterHeader>
+                <FooterHeader>Links</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
                   {navigation.links(site).map((item) => (
                     <li key={item.name}>
