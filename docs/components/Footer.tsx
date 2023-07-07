@@ -94,7 +94,7 @@ export function FooterContent() {
                 </ul>
               </div>
               <div className="mt-12 md:!mt-0">
-                <FooterHeader>TRPG</FooterHeader>
+                <FooterHeader>AI Model</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
                   {navigation.AI.map((item) => (
                     <li key={item.name}>
@@ -104,7 +104,7 @@ export function FooterContent() {
                 </ul>
               </div>
               <div className="mt-12 md:!mt-0">
-                <FooterHeader>AI</FooterHeader>
+                <FooterHeader>TRPG</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
                   {navigation.TRPG.map((item) => (
                     <li key={item.name}>
