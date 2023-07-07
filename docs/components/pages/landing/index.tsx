@@ -11,8 +11,8 @@ import { HydroRollTRPG } from "./HydroRollTRPG";
 import { FadeIn } from "../home-shared/FadeIn";
 import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
 import styles from "./index.module.css";
-import PackLogo from "../../logos/PackLogo";
-import RepoLogo from "../../logos/RepoLogo";
+import PackLogo from "../../logos/TRPGLogo";
+import RepoLogo from "../../logos/AILogo";
 
 function Background() {
   return (
