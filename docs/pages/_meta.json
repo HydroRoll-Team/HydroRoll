@@ -10,7 +10,7 @@
       "toc": true
     }
   },
-  "AI": "AI",
+  "MODEL": "MODEL",
   "TRPG": "TRPG",
   "blog": {
     "title": "Blog",
@@ -21,10 +21,6 @@
   "showcase": "Showcase",
   "confirm": {
     "title": "Confirm",
-    "display": "hidden"
-  },
-  "terms": {
-    "title": "Terms of Service",
     "display": "hidden"
   },
   "privacy": {
