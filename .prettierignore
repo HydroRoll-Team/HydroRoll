@@ -10,10 +10,10 @@ pnpm-lock.yaml
 
 __generated__/
 /docs/public/schema.json
-# /packages/eslint-plugin-turbo/__tests__/fixtures/
-# /packages/turbo-codemod/templates/
+/packages/eslint-plugin-turbo/__tests__/fixtures/
+/packages/turbo-codemod/templates/
 /docs/components/pages/pack-home/benchmark-data/data.json
-# /examples/with-svelte
+/examples/with-svelte
 
 
 # crates

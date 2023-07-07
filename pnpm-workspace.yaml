@@ -2,7 +2,7 @@ packages:
   - ".github/actions/*"
   - "docs"
   - "cli"
-  # - "packages/*"
+  - "packages/*"
   - "benchmark"
   - "turborepo-tests/*"
   # Intentionally exclude the `npm` `turbo` package from the workspaces.
@@ -11,4 +11,4 @@ packages:
   - "crates/next-dev-tests/test-harness"
   - "crates/next-dev-tests/tests"
   - "crates/*/js"
-  # - examples
+  - examples
