@@ -56,7 +56,7 @@ const navigation = {
       name: "OlivOS",
       href: "https://forum.olivos.run",
     },
-    { name: "Dicex骰子屋", href: "https://forum.dicex.link" },
+    // { name: "Dicex骰子屋", href: "https://forum.dicex.link" },
     // { name: "SealDice", href: "https://dice.weizaima.com/"},
     { name: "HuggingFace", href: "https://huggingface.co  " }
     // {
