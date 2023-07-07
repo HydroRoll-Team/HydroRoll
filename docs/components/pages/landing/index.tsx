@@ -162,9 +162,7 @@ function Teams() {
             "Vercel",
             "AWS",
             "Microsoft",
-            // "Adobe",
-            // "Disney",
-            // "Netflix",
+            "Adobe"
           ]}
           staticWidth
         />
