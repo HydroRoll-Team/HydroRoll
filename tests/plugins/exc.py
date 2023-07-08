@@ -14,3 +14,5 @@ class Exec(Plugin):
         if self.event.type != "message":
             return False
         return self.event.message.startswith("t")
+
+print(1)

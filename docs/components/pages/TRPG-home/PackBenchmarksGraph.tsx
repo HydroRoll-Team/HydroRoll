@@ -317,12 +317,12 @@ function GraphLabel({
             gradients.benchmarkTurboLabel
           )}
         >
-          turbo
+          水系核心Core
         </p>
       )}
       {swc && (
         <p className="font-space-grotesk m-0 font-light text-[#666666]">
-          with SWC
+          with OlivaDiceCore
         </p>
       )}
       {esbuild && (

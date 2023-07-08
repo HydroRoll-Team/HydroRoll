@@ -13,10 +13,10 @@ export type BenchmarkCategory =
   | "code_build"
   | "build_from_cache";
 export interface BenchmarkData {
-  next13: number;
-  next12: number;
-  vite: number;
-  next11: number;
+  HydroRoll水系: number;
+  溯洄Shiki: number;
+  OlivOS青果: number;
+  SealDice海豹: number;
 }
 
 export interface BenchmarkBar {
@@ -28,42 +28,42 @@ export interface BenchmarkBar {
 
 export const DEFAULT_BARS: BenchmarkBar[] = [
   {
-    key: "next13",
-    label: "Next.js 13",
+    key: "HydroRoll水系",
+    label: "HydroRoll水系 CQHTTP",
     turbo: true,
   },
   {
-    key: "next12",
-    label: "Next.js 12",
+    key: "溯洄Shiki",
+    label: "溯洄Shiki GocqLite",
   },
   {
-    key: "vite",
-    label: "Vite",
+    key: "OlivOS青果",
+    label: "OlivOS青果 onebot",
     swc: true,
   },
   {
-    key: "next11",
-    label: "Next.js 11",
+    key: "SealDice海豹",
+    label: "SealDice海豹 qq",
   },
 ];
 export const HMR_BARS: BenchmarkBar[] = [
   {
-    key: "next13",
-    label: "Next.js 13",
+    key: "HydroRoll水系",
+    label: "HydroRoll水系 CQHTTP",
     turbo: true,
   },
   {
-    key: "vite",
-    label: "Vite",
+    key: "溯洄Shiki",
+    label: "溯洄Shiki GocqLite",
     swc: true,
   },
   {
-    key: "next12",
-    label: "Next.js 12",
+    key: "OlivOS青果",
+    label: "OlivOS青果 onebot",
   },
   {
-    key: "next11",
-    label: "Next.js 11",
+    key: "SealDice海豹",
+    label: "SealDice海豹 qq",
   },
 ];
 
@@ -75,7 +75,7 @@ export function PackBenchmarks() {
   return (
     <FadeIn className="relative flex flex-col items-center justify-center w-full gap-10 py-16 font-sans md:py-24 lg:py-32">
       <div className="flex flex-col items-center gap-5 md:gap-6">
-        <SectionHeader>Faster Than Fast</SectionHeader>
+        <SectionHeader>比快更快</SectionHeader>
         <SectionSubtext>
           Crafted by the creators of Webpack, Turbopack delivers unparalleled
           performance at scale.
