@@ -103,7 +103,7 @@ export function PackHero() {
               </a>
             </CTAButton>
           </div>
-          <p className="text-sm text-[#666666]">License: MIT</p>
+          <p className="text-sm text-[#666666]">License: GPL-3.0</p>
         </FadeIn>
         <FadeIn delay={0.5} className="relative w-full">
           <div className="absolute bottom-0 w-full dark:from-black from-white to-transparent h-72 bg-gradient-to-t" />
