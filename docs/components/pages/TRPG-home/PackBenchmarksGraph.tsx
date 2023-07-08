@@ -17,6 +17,7 @@ import {
   BenchmarkData,
   BenchmarkNumberOfModules,
 } from "./PackBenchmarks";
+import HydroRoll from "../../logos/HydroRoll";
 
 interface BenchmarksGraphProps {
   category: BenchmarkCategory;
@@ -56,9 +57,9 @@ export function BenchmarksGraph({
           return (
             <GraphBar
               key={bar.key}
-              turbo={bar.turbo}
+              core={bar.core}
               Label={
-                <GraphLabel label={bar.label} turbo={bar.turbo} swc={bar.swc} />
+                <GraphLabel label={bar.label} core={bar.core} swc={bar.swc} />
               }
               duration={data[bar.key] * 1000}
               longestTime={longestTimeWithPadding}
@@ -93,14 +94,14 @@ const graphBarWrapperVariants = {
 };
 
 function GraphBar({
-  turbo,
+  core,
   duration,
   longestTime,
   inView,
   Label,
   pinTime,
 }: {
-  turbo?: boolean;
+  core?: boolean;
   duration: number;
   longestTime: number;
   Label: JSX.Element;
@@ -191,8 +192,8 @@ function GraphBar({
           <motion.div
             className={cn(
               "h-12 rounded w-0 relative",
-              turbo ? gradients.benchmarkTurbo : gradients.benchmark,
-              { [gradients.barBorder]: !turbo }
+              core ? gradients.benchmarkTurbo : gradients.benchmark,
+              { [gradients.barBorder]: !core }
             )}
             variants={graphBarVariants}
             animate={controls}
@@ -206,7 +207,7 @@ function GraphBar({
           transition={{ duration: 0.1 }}
         >
           <GraphTimer
-            turbo={turbo}
+            core={core}
             timer={pinTime ? duration : timer}
             duration={duration}
           />
@@ -217,17 +218,17 @@ function GraphBar({
 }
 
 const GraphTimer = ({
-  turbo,
+  core,
   timer,
   duration,
 }: {
-  turbo: boolean;
+  core: boolean;
   timer: number;
   duration: number;
 }) => {
   return (
     <div className={`flex flex-row gap-2 w-24 justify-end items-center z-10`}>
-      {turbo && (
+      {core && (
         <div className="relative flex w-6 h-6">
           <Image
             alt="HydroRollTRPG"
@@ -292,13 +293,13 @@ const Time = ({
 
 function GraphLabel({
   label,
-  turbo,
+  core,
   swc,
   mobileOnly,
   esbuild,
 }: {
   label: string;
-  turbo?: boolean;
+  core?: boolean;
   swc?: boolean;
   mobileOnly?: boolean;
   esbuild?: boolean;
@@ -310,7 +311,7 @@ function GraphLabel({
       }`}
     >
       <p>{label}</p>
-      {turbo && (
+      {core && (
         <p
           className={cn(
             "font-space-grotesk m-0",

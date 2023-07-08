@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"; 
 import { FadeIn } from "../home-shared/FadeIn";
 import { SectionHeader, SectionSubtext } from "../home-shared/Headings";
 import { BenchmarksGraph } from "./PackBenchmarksGraph";
@@ -22,7 +22,7 @@ export interface BenchmarkData {
 export interface BenchmarkBar {
   label: string;
   key: keyof BenchmarkData;
-  turbo?: true;
+  core?: true;
   swc?: true;
 }
 
@@ -30,7 +30,7 @@ export const DEFAULT_BARS: BenchmarkBar[] = [
   {
     key: "HydroRoll",
     label: "HydroRoll水系",
-    turbo: true,
+    core: true,
   },
   {
     key: "Shiki",
@@ -50,7 +50,7 @@ export const HMR_BARS: BenchmarkBar[] = [
   {
     key: "HydroRoll",
     label: "HydroRoll水系",
-    turbo: true,
+    core: true,
   },
   {
     key: "Shiki",
