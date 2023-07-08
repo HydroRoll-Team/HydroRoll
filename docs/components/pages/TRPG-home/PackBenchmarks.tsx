@@ -13,10 +13,10 @@ export type BenchmarkCategory =
   | "code_build"
   | "build_from_cache";
 export interface BenchmarkData {
-  HydroRoll水系: number;
-  溯洄Shiki: number;
-  OlivOS青果: number;
-  SealDice海豹: number;
+  HydroRoll: number;
+  Shiki: number;
+  OlivOS: number;
+  SealDice: number;
 }
 
 export interface BenchmarkBar {
@@ -28,42 +28,42 @@ export interface BenchmarkBar {
 
 export const DEFAULT_BARS: BenchmarkBar[] = [
   {
-    key: "HydroRoll水系",
-    label: "HydroRoll水系 CQHTTP",
+    key: "HydroRoll",
+    label: "HydroRoll水系",
     turbo: true,
   },
   {
-    key: "溯洄Shiki",
-    label: "溯洄Shiki GocqLite",
+    key: "Shiki",
+    label: "溯洄Shiki",
   },
   {
-    key: "OlivOS青果",
-    label: "OlivOS青果 onebot",
+    key: "OlivOS",
+    label: "OlivOS青果",
     swc: true,
   },
   {
-    key: "SealDice海豹",
-    label: "SealDice海豹 qq",
+    key: "SealDice",
+    label: "SealDice海豹",
   },
 ];
 export const HMR_BARS: BenchmarkBar[] = [
   {
-    key: "HydroRoll水系",
-    label: "HydroRoll水系 CQHTTP",
+    key: "HydroRoll",
+    label: "HydroRoll水系",
     turbo: true,
   },
   {
-    key: "溯洄Shiki",
-    label: "溯洄Shiki GocqLite",
+    key: "Shiki",
+    label: "溯洄Shiki",
+  },
+  {
+    key: "OlivOS",
+    label: "OlivOS青果",
     swc: true,
   },
   {
-    key: "OlivOS青果",
-    label: "OlivOS青果 onebot",
-  },
-  {
-    key: "SealDice海豹",
-    label: "SealDice海豹 qq",
+    key: "SealDice",
+    label: "SealDice海豹",
   },
 ];
 
@@ -75,7 +75,7 @@ export function PackBenchmarks() {
   return (
     <FadeIn className="relative flex flex-col items-center justify-center w-full gap-10 py-16 font-sans md:py-24 lg:py-32">
       <div className="flex flex-col items-center gap-5 md:gap-6">
-        <SectionHeader>比快更快</SectionHeader>
+        <SectionHeader>快速加载</SectionHeader>
         <SectionSubtext>
           Crafted by the creators of Webpack, Turbopack delivers unparalleled
           performance at scale.
