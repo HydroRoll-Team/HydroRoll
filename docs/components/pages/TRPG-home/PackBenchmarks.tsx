@@ -16,7 +16,7 @@ export interface BenchmarkData {
   HydroRoll: number;
   Shiki: number;
   OlivOS: number;
-  SealDice: number;
+  // SealDice: number;
 }
 
 export interface BenchmarkBar {
@@ -41,10 +41,10 @@ export const DEFAULT_BARS: BenchmarkBar[] = [
     label: "OlivOS青果",
     swc: true,
   },
-  {
-    key: "SealDice",
-    label: "SealDice海豹",
-  },
+  // {
+  //   key: "SealDice",
+  //   label: "SealDice海豹",
+  // },
 ];
 export const HMR_BARS: BenchmarkBar[] = [
   {
@@ -61,10 +61,10 @@ export const HMR_BARS: BenchmarkBar[] = [
     label: "OlivOS青果",
     swc: true,
   },
-  {
-    key: "SealDice",
-    label: "SealDice海豹",
-  },
+  // {
+  //   key: "SealDice",
+  //   label: "SealDice海豹",
+  // },
 ];
 
 export function PackBenchmarks() {

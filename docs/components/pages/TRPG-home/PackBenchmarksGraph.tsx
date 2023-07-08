@@ -317,7 +317,7 @@ function GraphLabel({
             gradients.benchmarkTurboLabel
           )}
         >
-          HydroRollCore
+          水系核心
         </p>
       )}
       {swc && (

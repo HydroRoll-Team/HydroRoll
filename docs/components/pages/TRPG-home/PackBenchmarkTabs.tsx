@@ -12,25 +12,25 @@ const TABS: {
 }[] = [
   {
     id: "cold",
-    title: "Cold Start",
+    title: "冷加载",
     soon: false,
     tooltip: "First run",
   },
   {
     id: "file_change",
-    title: "File Change",
+    title: "热加载",
     soon: false,
     tooltip: "Hot Reload (HMR)",
   },
   {
     id: "code_build",
-    title: "Code Build",
+    title: "核心构建",
     soon: true,
     tooltip: "First Build",
   },
   {
     id: "build_from_cache",
-    title: "Build from Cache",
+    title: "使用缓存构建",
     soon: true,
     tooltip: "Second Build",
   },
