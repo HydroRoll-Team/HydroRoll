@@ -1,12 +1,12 @@
 .benchmarkTurbo {
-  background: linear-gradient(288.43deg, #ff1e56 28.29%, #9c51a1 78.78%);
-  box-shadow: 0px 0px 16px #f02662;
+  background: linear-gradient(288.43deg, #651eff 28.29%, #518ca1 78.78%);
+  box-shadow: 0px 0px 16px #5f26f0;
   :global(.light) & {
     background: linear-gradient(
       268.86deg,
-      #ff1e56 -5.68%,
-      #d67fdc 107.63%,
-      #9c51a1 107.64%
+      #1ebcff -5.68%,
+      #7fdcd4 107.63%,
+      #51a181 107.64%
     );
     box-shadow: none;
   }
@@ -49,17 +49,17 @@
 }
 
 .benchmarkTurboLabel {
-  background: linear-gradient(288.43deg, #ff1e56 28.29%, #9c51a1 78.78%);
+  background: linear-gradient(288.43deg, #651eff 28.29%, #518ca1 78.78%);
   color: transparent;
   background-clip: text;
   :global(.light) & {
     background: linear-gradient(
         268.86deg,
-        #ff1e56 -5.68%,
-        #d67fdc 107.63%,
-        #9c51a1 107.64%
+        #1ebcff -5.68%,
+        #7fdcd4 107.63%,
+        #51a181 107.64%
       ),
-      linear-gradient(288.43deg, #ff1e56 28.29%, #9c51a1 78.78%);
+      linear-gradient(288.43deg, #5f26f0 28.29%, #518ca1 78.78%);
     color: transparent;
     background-clip: text;
   }
@@ -89,7 +89,7 @@
   }
 }
 .translatingGlow {
-  background: linear-gradient(32deg, #2a8af6 0%, #a853ba 50%, #e92a67 100%);
+  background: linear-gradient(32deg, #2a8af6 0%, #a853ba 50%, #518ca1 100%);
   background-size: 200% 200%;
   animation: translateGlow 7s linear infinite;
   will-change: filter;
@@ -177,15 +177,15 @@
 }
 
 .glowPink {
-  background: linear-gradient(180deg, #ff3358 0%, #ff4fd8 100%);
+  background: linear-gradient(180deg, #518ca1 0%, #5f26f0 100%);
 }
 
 .glowConic {
   background: conic-gradient(
     from 180deg at 50% 50%,
-    #2a8af6 0deg,
-    #a853ba 180deg,
-    #e92a67 360deg
+    #1ebcff 0deg,
+    #7fdcd4 180deg,
+    #51a181 360deg
   );
 }
 
@@ -220,12 +220,12 @@
   height: var(--height);
   right: var(--gradient-x-offset);
   top: var(--gradient-y-offset);
-  background: linear-gradient(180deg, #ff3358 0%, #ff4fd8 100%);
+  background: linear-gradient(180deg, #5f26f0 0%, #518ca1 100%);
   border-radius: 100%;
   mix-blend-mode: normal;
   filter: blur(50px);
 }
 
 .gradientSectionBorderDivider {
-  background: linear-gradient(90deg, #288cf9 0%, #e32c6b 100%);
+  background: linear-gradient(90deg, #288cf9 0%, #5f26f0 100%);
 }
