@@ -78,7 +78,7 @@ export function AIHero() {
           />
           <HeroText h1>Artificial Intelligence MODEL</HeroText>
           <SectionSubtext hero>
-            简单易用的人工智能模型，提供了一些基础的人工智能模型，尤其用于各种NLP场景，如文本分类、文本生成、文本匹配、命名实体识别、关系抽取等。
+            简单易用的人工智能模型，尤其用于各种NLP场景，如文本分类、文本生成、文本匹配、命名实体识别、关系抽取等。
           </SectionSubtext>
         </FadeIn>
         <FadeIn
