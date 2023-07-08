@@ -77,9 +77,9 @@ export function PackHero() {
             width="200"
             className="w-[160px] md:w-[200px] fill-black dark:fill-white"
           />
-          <HeroText h1>Tabletop Role-Playing Game（桌面角色扮演游戏）</HeroText>
+          <HeroText h1>Tabletop Role-Playing Game</HeroText>
           <SectionSubtext hero>
-            TRPG 模块是水系的另一个重要组成部分 
+            TRPG 模块是水系的另一个重要组成部分，它提供了一套完整的 TRPG 架构，包括骰子、角色卡、战斗、技能、物品、地图、音乐等等，可以让你在水系中进行 TRPG 游戏。
           </SectionSubtext>
         </FadeIn>
         <FadeIn
