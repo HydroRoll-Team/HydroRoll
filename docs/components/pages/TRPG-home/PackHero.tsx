@@ -77,9 +77,9 @@ export function PackHero() {
             width="200"
             className="w-[160px] md:w-[200px] fill-black dark:fill-white"
           />
-          <HeroText h1>跑团</HeroText>
+          <HeroText h1>Tabletop Role-Playing Game（桌面角色扮演游戏）</HeroText>
           <SectionSubtext hero>
-            TRPG 模块是 水系 的另一个重要组成部分 
+            TRPG 模块是水系的另一个重要组成部分 
           </SectionSubtext>
         </FadeIn>
         <FadeIn
@@ -89,7 +89,7 @@ export function PackHero() {
           <div className="flex flex-col w-full gap-3 md:!flex-row">
             <CTAButton>
               <Link href="/TRPG/docs" className="block py-3">
-                Get Started
+                快速开始
               </Link>
             </CTAButton>
             <CTAButton outline>
@@ -99,11 +99,11 @@ export function PackHero() {
                 href="https://github.com/retrofor/HydroRoll"
                 className="block py-3"
               >
-                GitHub
+                查看源码
               </a>
             </CTAButton>
           </div>
-          <p className="text-sm text-[#666666]">License: MPL-2.0</p>
+          <p className="text-sm text-[#666666]">License: MIT</p>
         </FadeIn>
         <FadeIn delay={0.5} className="relative w-full">
           <div className="absolute bottom-0 w-full dark:from-black from-white to-transparent h-72 bg-gradient-to-t" />

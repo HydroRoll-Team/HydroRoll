@@ -16,7 +16,7 @@ export default function HydroRollTRPGHome() {
           <PackFeatures />
         </GradientSectionBorder>
         <GradientSectionBorder>
-          {/* <PackLetter /> */}
+          <PackLetter />
         </GradientSectionBorder>
       </main>
     </>
