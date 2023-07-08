@@ -16,7 +16,7 @@ export interface BenchmarkData {
   HydroRoll: number;
   Shiki: number;
   OlivOS: number;
-  // SealDice: number;
+  SealDice: number;
 }
 
 export interface BenchmarkBar {
@@ -41,10 +41,10 @@ export const DEFAULT_BARS: BenchmarkBar[] = [
     label: "OlivOS青果",
     swc: true,
   },
-  // {
-  //   key: "SealDice",
-  //   label: "SealDice海豹",
-  // },
+  {
+    key: "SealDice",
+    label: "SealDice海豹",
+  },
 ];
 export const HMR_BARS: BenchmarkBar[] = [
   {
@@ -61,10 +61,10 @@ export const HMR_BARS: BenchmarkBar[] = [
     label: "OlivOS青果",
     swc: true,
   },
-  // {
-  //   key: "SealDice",
-  //   label: "SealDice海豹",
-  // },
+  {
+    key: "SealDice",
+    label: "SealDice海豹",
+  },
 ];
 
 export function PackBenchmarks() {
@@ -75,10 +75,10 @@ export function PackBenchmarks() {
   return (
     <FadeIn className="relative flex flex-col items-center justify-center w-full gap-10 py-16 font-sans md:py-24 lg:py-32">
       <div className="flex flex-col items-center gap-5 md:gap-6">
-        <SectionHeader>快速加载</SectionHeader>
+        <SectionHeader>速度不止于此</SectionHeader>
         <SectionSubtext>
-          Crafted by the creators of Webpack, Turbopack delivers unparalleled
-          performance at scale.
+          快速加载，模块化设计，fastapi、aiohttp、flask等高效率支持库，
+          为核心提速。
         </SectionSubtext>
       </div>
       <div className="flex flex-col items-center w-full">
