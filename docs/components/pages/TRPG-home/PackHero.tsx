@@ -21,14 +21,14 @@ export function PackHero() {
           <div className="absolute min-w-[614px] min-h-[614px]">
             <Image
               alt="HydroRollTRPG"
-              src="/images/docs/TRPG/turbopack-hero-hexagons-dark.svg"
+              src="/images/docs/AI/repo-hero-circles-dark.svg"
               width={614}
               height={614}
               className="hidden dark:block"
             />
             <Image
               alt="HydroRollTRPG"
-              src="/images/docs/TRPG/turbopack-hero-hexagons-light.svg"
+              src="/images/docs/AI/repo-hero-circles-dark.svg"
               width={614}
               height={614}
               className="block dark:hidden"

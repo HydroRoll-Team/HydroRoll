@@ -76,10 +76,9 @@ export function AIHero() {
             width="200"
             className="w-[160px] md:w-[200px] fill-black dark:fill-white"
           />
-          <HeroText h1>The build system that makes ship happen</HeroText>
+          <HeroText h1>Artificial Intelligence MODEL</HeroText>
           <SectionSubtext hero>
-            Turborepo is a high-performance build system for JavaScript and
-            TypeScript codebases.
+            简单易用的人工智能模型，提供了一些基础的人工智能模型，尤其用于各种NLP场景，如文本分类、文本生成、文本匹配、命名实体识别、关系抽取等。
           </SectionSubtext>
         </FadeIn>
         <FadeIn
@@ -89,7 +88,7 @@ export function AIHero() {
           <div className="flex flex-col w-full gap-3 md:!flex-row">
             <CTAButton>
               <Link href="/AI/docs" className="block py-3">
-                Get Started
+                快速开始
               </Link>
             </CTAButton>
             <CTAButton outline>
@@ -99,11 +98,11 @@ export function AIHero() {
                 href="https://github.com/retrofor/HydroRoll"
                 className="block py-3"
               >
-                GitHub
+                查看源码
               </a>
             </CTAButton>
           </div>
-          <p className="text-sm text-[#666666]">License: MPL-2.0</p>
+          <p className="text-sm text-[#666666]">License: GPL-3.0</p>
         </FadeIn>
         <FadeIn delay={0.5} className="relative w-full">
           <div className="absolute bottom-0 w-full dark:from-black from-white to-transparent h-72 bg-gradient-to-t" />
