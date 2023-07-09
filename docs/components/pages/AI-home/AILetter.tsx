@@ -58,14 +58,14 @@ export function AILetter() {
           <div className="w-24 h-24 min-w-[96px] min-h-[96px] rounded-full border dark:border-white/10 border-black/10 flex items-center justify-center ">
             <Image
               alt="Image of Jared Palmer"
-              src="https://github.com/Stardust-minus.png"
+              src="/images/people/Stardust.jpg"
               width={64}
               height={64}
               className="rounded-full grayscale"
             />
           </div>
           <div className="flex flex-col">
-            <Image
+            {/* <Image
               alt="Jared Palmer's hand written signature"
               src="/images/docs/AI/jared-signature-light.svg"
               width={190}
@@ -78,9 +78,9 @@ export function AILetter() {
               width={209}
               height={116}
               className="hidden -mt-2 dark:block"
-            />
+            /> */}
             <div className="flex gap-2 flex-wrap text-sm leading-none text-[#888888] max-w-[156px] md:max-w-xl lg:max-w-xl">
-              <p className="font-bold">星尘(Stardust)</p>
+              <p className="font-bold">Stardust·减(Stardust)</p>
               <p>水系模型训练者之一</p>
             </div>
           </div>
