@@ -12,46 +12,34 @@ export function AILetter() {
     <section className="relative flex flex-col items-center px-6 py-16 font-sans md:py-24 lg:py-32 gap-14">
       <FadeIn>
         <HeroText className="lg:text-[65px]">
-          Scaling your Codebase
+          优化完善你的骰子系统
           <br />
-          shouldn&apos;t be so difficult
+          不再那么死板繁琐
         </HeroText>
       </FadeIn>
       <div className="flex flex-col max-w-xl leading-6 md:text-lg lg:text-lg">
         <FadeIn className="opacity-70">
           <p>
-            The bigger your project grows, the slower it gets. Tasks like
-            linting, testing, and building begin to take enormous amounts of
-            time.
+            当你的骰子系统越来越大，跑的团也越来越多且趋于复杂时，你会发现你的骰子系统越来越难以维护，越来越难以使用。
+            HydroRollAI提供了很多工具，帮助你优化你的骰子系统，比如文本分析，自动化生成，自动化测试等等。
           </p>
           <br />
           <p>
-            If you&apos;re serving multiple applications, you might reach for a
-            monorepo. They&apos;re incredible for productivity, especially on
-            the frontend, but the tooling can be a nightmare. There&apos;s a lot
-            of stuff to do (and things to mess up). Nothing &ldquo;just
-            works.&rdquo; It&apos;s become completely normal to waste entire
-            days or weeks on plumbing—tweaking configs, writing one-off scripts,
-            and stitching stuff together.
+            你可以写一整套完整的自动化流程，也可以只使用其中的一部分，HydroRollAI会按照你的流程自动去测试你的骰子系统，找出其中的问题。
+            同时，HydroRollAI也会帮助你生成文档，让你的骰子系统更加易于使用。
+            整个流程是并行的，你可以在任何时候停止，或者在任何时候加入新的流程。
           </p>
           <br />
-          <p>We need something else.</p>
+          <p>我们还需要点其他的什么东西。</p>
           <br></br>
           <p>
-            A fresh take on the whole setup. Designed to glue everything
-            together. A toolchain that works for you and not against you. With
-            sensible defaults, but even better escape hatches. Built with the
-            same techniques used by the big guys, but in a way that doesn&apos;t
-            require PhD to learn or a staff to maintain.
+            一种新颖的骰子系统，可以让你的骰子系统更加灵活，更加易于使用。
           </p>
           <br />
-          <p>With Turborepo, we&apos;re doing just that.</p>
+          <p>通过HydroRollAI，处理骰子系统就是那么简单处理。</p>
           <br />
           <p>
-            We&apos;re building a build system that can keep up with your team.
-            You&apos;ll see your CI get faster, duplicated work get cut, and
-            your NPM scripts get simpler. You&apos;ll get a world-class
-            development environment, without the maintenance burden.
+            你可以在HydroRollAI的文档中找到更多关于HydroRollAI的信息，或者你可以直接开始使用HydroRollAI。
           </p>
         </FadeIn>
         <FadeIn noVertical viewTriggerOffset className="relative h-2 md:h-12">
@@ -70,7 +58,7 @@ export function AILetter() {
           <div className="w-24 h-24 min-w-[96px] min-h-[96px] rounded-full border dark:border-white/10 border-black/10 flex items-center justify-center ">
             <Image
               alt="Image of Jared Palmer"
-              src="/images/people/jaredpalmer.jpeg"
+              src="https://github.com/Stardust-minus.png"
               width={64}
               height={64}
               className="rounded-full grayscale"
@@ -92,8 +80,8 @@ export function AILetter() {
               className="hidden -mt-2 dark:block"
             />
             <div className="flex gap-2 flex-wrap text-sm leading-none text-[#888888] max-w-[156px] md:max-w-xl lg:max-w-xl">
-              <p className="font-bold">Jared Palmer</p>
-              <p>Founder of Turborepo</p>
+              <p className="font-bold">星尘(Stardust)</p>
+              <p>水系模型训练者之一</p>
             </div>
           </div>
         </FadeIn>
@@ -102,7 +90,7 @@ export function AILetter() {
         <div className="max-w-[180px] w-full">
           <CTAButton>
             <Link href="/AI/docs" className="block py-3 font-sans">
-              Start Building
+              开始训练
             </Link>
           </CTAButton>
         </div>
