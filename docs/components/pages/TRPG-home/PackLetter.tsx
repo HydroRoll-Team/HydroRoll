@@ -79,17 +79,17 @@ export function PackLetter() {
               height={91 + 16}
               className="block -mb-3 -ml-3 dark:hidden"
             />
-            <Image
+            {/* <Image
               alt="Tobias Koppers hand written signature"
               src="/images/docs/TRPG/tobias-signature-dark.svg"
               // 16 px added and offset to account for the glow
               width={173 + 16}
               height={91 + 16}
               className="hidden -mb-3 -ml-3 dark:block"
-            />
+            /> */}
             <div className="flex gap-2 flex-wrap text-sm leading-none text-[#888888] max-w-[156px] md:max-w-xl lg:max-w-xl">
-              <p className="font-bold">Tobias Koppers</p>
-              <p>Creator of Webpack</p>
+              <p className="font-bold">简律纯(HsiangNianian)</p>
+              <p>Creator of HydroRoll</p>
             </div>
           </div>
         </FadeIn>
