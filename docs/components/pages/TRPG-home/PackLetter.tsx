@@ -12,36 +12,26 @@ export function PackLetter() {
     <section className="relative flex flex-col items-center px-6 py-16 font-sans md:py-24 lg:py-32 gap-14">
       <FadeIn>
         <HeroText>
-          Let&apos;s move
+          究竟什么才是真正的
           <br />
-          the web forward
+          水系?
         </HeroText>
       </FadeIn>
       <div className="flex flex-col max-w-xl leading-6 md:text-lg lg:text-lg">
         <FadeIn className="opacity-70">
           <p>
-            It&apos;s time for a new beginning in compiler infrastructure for
-            the entire web ecosystem. Webpack has been downloaded over 3 billion
-            times. It&apos;s become an integral part of building for the web.
-            But just like Babel and Terser, it&apos;s time to go all-in on
-            native. I joined Vercel and assembled a team of world class
-            engineers to build the web&apos;s next generation bundler.
+            当水系公测后，我接触TRPG已经有两年多了，我希望能够在这里分享一些我对TRPG的理解。
+            TRPG，是一种游戏，也是一种文化，它的核心是“故事”。究竟要怎么讲好一个故事呢？我认为，一个好的故事，应该是有趣的，有趣的故事，才能吸引人，才能让人愿意去听，去看，去玩。
           </p>
           <br />
           <p>
-            This team has taken lessons from 10 years of Webpack, combined with
-            the innovations in incremental computation from Turborepo and
-            Google&apos;s Bazel, and invented an architecture ready to withstand
-            the next 10 years.
+            但是，有趣的故事，不是随随便便就能讲好的，它需要有一个好的故事背景，需要有一个好的故事情节，需要有一个好的故事结局。这些，都是一个好的故事所必须具备的。
+            水系其实是站在规则书作者的角度去设计的，它的第一服务对象永远是世界主，再是kp与pl们。所以，水系的设计，是为了让世界主们能够更好的描绘自己所想象的那个世界。
           </p>
           <br />
           <p>
-            With that, we&apos;re excited to introduce Turbopack, our
-            Rust-powered successor to Webpack. It will harness the power of our
-            build system, Turborepo, for massive performance improvements.
-            Turbopack is the new foundation of high-performance bare-metal
-            tooling and is now open source—we&apos;re excited to share it with
-            you.
+            水系是自由的，这主要表现在规则书是以热插拔规则包的形式存在的，世界主们可以根据自己的需要，自由的编写自己想要的规则包，来丰富自己的世界。水系是开放的，这主要表现在规则书的开源，世界主们可以根据自己的需要，自由的修改规则书，来丰富自己的世界。
+            总之，水系是为世界主们服务的，水系的目的，就是让世界主们能够更好的讲好自己的故事，构建好自己的世界。让更多冷门世界观与规则书得到更多人的关注，让更多人能够参与到TRPG的世界中来。
           </p>
         </FadeIn>
         <FadeIn
@@ -64,7 +54,7 @@ export function PackLetter() {
           <div className="w-24 h-24 min-w-[96px] min-h-[96px] rounded-full border dark:border-white/10 border-black/10 flex items-center justify-center ">
             <Image
               alt="Image of Tobias Koopers"
-              src="/images/people/tobiaskoppers.jpg"
+              src="/images/people/HsiangNianian.jpg"
               width={64}
               height={64}
               className="rounded-full"
