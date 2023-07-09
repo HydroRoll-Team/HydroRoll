@@ -49,8 +49,8 @@
   top: calc(50% - 900px / 2 + 151px);
   background-image: linear-gradient(
     180deg,
-    rgba(236, 151, 207, 0.4) 0%,
-    rgba(233, 42, 103, 1) 100%
+    rgba(53, 25, 92, 0.4) 0%,
+    rgb(99, 42, 233) 100%
   );
   filter: blur(125px);
   transform: rotate(15deg);
@@ -76,8 +76,8 @@
 
   background: linear-gradient(
     180deg,
-    rgba(236, 151, 207, 0.4) 0%,
-    rgba(233, 42, 103, 1) 100%
+    rgba(151, 164, 236, 0.4) 0%,
+    rgb(115, 42, 233) 100%
   );
   transform: matrix(-1, 0, 0, 1, 0, 0);
   filter: blur(125px);
@@ -91,7 +91,7 @@
   --padding: 1px;
   --border-bg: conic-gradient(
     from 180deg at 50% 50%,
-    #e92a67 0deg,
+    #2a2ae9 0deg,
     #a853ba 112.5deg,
     #2a8af6 228.75deg,
     rgba(42, 138, 246, 0) 360deg
@@ -176,7 +176,7 @@
   height: 404px;
   left: calc(50% - 387px / 2 + 81px);
   bottom: -32px;
-  background: linear-gradient(180deg, #ff3358 0%, #ff4fd8 100%);
+  background: linear-gradient(180deg, #3333ff 0%, #4fdfff 100%);
   mix-blend-mode: normal;
   opacity: 0.15;
   filter: blur(50px);
