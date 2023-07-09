@@ -20,18 +20,17 @@ export function PackLetter() {
       <div className="flex flex-col max-w-xl leading-6 md:text-lg lg:text-lg">
         <FadeIn className="opacity-70">
           <p>
-            当水系公测后，我接触TRPG已经有两年多了，我希望能够在这里分享一些我对TRPG的理解。
-            TRPG，是一种游戏，也是一种文化，它的核心是“故事”。究竟要怎么讲好一个故事呢？我认为，一个好的故事，应该是有趣的，有趣的故事，才能吸引人，才能让人愿意去听，去看，去玩。
+            Since the public beta of Water System, I have been involved in TRPG for over two years, and I would like to share some of my understanding of TRPG here.
+            TRPG is not only a game but also a culture. Its core is "storytelling." How can we tell a good story? In my opinion, a good story should be interesting. An interesting story can attract people's attention and make them willing to listen, watch, and play.
           </p>
           <br />
           <p>
-            但是，有趣的故事，不是随随便便就能讲好的，它需要有一个好的故事背景，需要有一个好的故事情节，需要有一个好的故事结局。这些，都是一个好的故事所必须具备的。
-            水系其实是站在规则书作者的角度去设计的，它的第一服务对象永远是世界主，再是kp与pl们。所以，水系的设计，是为了让世界主们能够更好的描绘自己所想象的那个世界。
+            However, it is not easy to tell an interesting story. It needs a good story background, a good story plot, and a good story ending. These are all necessary for a good story. Water System is designed from the perspective of rulebook authors. Its primary audience is world masters, followed by game masters and players. Therefore, the design of Water System aims to help world masters better depict the world they imagine.
           </p>
           <br />
           <p>
-            水系是自由的，这主要表现在规则书是以热插拔规则包的形式存在的，世界主们可以根据自己的需要，自由的编写自己想要的规则包，来丰富自己的世界。水系是开放的，这主要表现在规则书的开源，世界主们可以根据自己的需要，自由的修改规则书，来丰富自己的世界。
-            总之，水系是为世界主们服务的，水系的目的，就是让世界主们能够更好的讲好自己的故事，构建好自己的世界。让更多冷门世界观与规则书得到更多人的关注，让更多人能够参与到TRPG的世界中来。
+            Water System is free, mainly manifested in the form of hot-swappable rulebook packages. World masters can freely write their own rulebook packages to enrich their world according to their needs. Water System is open, mainly manifested in the open-source nature of the rulebook. World masters can freely modify the rulebook to enrich their world according to their needs.
+            In short, Water System is here to serve world masters. The purpose of Water System is to help world masters tell their stories better and build their own worlds. It aims to bring more attention to niche world views and rulebooks and allow more people to participate in the world of TRPG.
           </p>
         </FadeIn>
         <FadeIn
