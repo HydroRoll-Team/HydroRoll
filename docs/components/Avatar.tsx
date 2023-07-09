@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { AuthorDetails } from "../content/team";
 
-export const Avatar = ({ name, picture, twitterUsername }: AuthorDetails) => (
+export const Avatar = ({ name, picture, GithubUsername }: AuthorDetails) => (
   <div className="flex items-center flex-shrink-0 md:justify-start">
     <div className="w-[32px] h-[32px]">
       <Image
