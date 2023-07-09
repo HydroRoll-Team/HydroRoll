@@ -4,8 +4,8 @@ import { FeaturesBento } from "../home-shared/FeaturesBento";
 export function PackFeatures() {
   return (
     <FeaturesBento
-      header="Why TRPG?"
-      body="With incremental behavior and adaptable bundling strategies, Turbopack provides a fast and flexible development experience for apps of any size."
+      header="Why HydroRollCore?<br />为什么选择水系核心?"
+      body="水系核心基于规则包运行，可自定义程度高，且运行速率快。"
       features={PACK_HOME_FEATURES}
     />
   );

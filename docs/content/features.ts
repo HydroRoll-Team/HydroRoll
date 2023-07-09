@@ -40,8 +40,8 @@ export type Features = Array<Feature>;
 
 const REPO_FEATURES: Features = [
   {
-    name: "Incremental builds",
-    description: `Building once is painful enough, Turborepo will remember what you've built and skip the stuff that's already been computed.`,
+    name: "逐步增量的设计",
+    description: `只需构建一次工作流——一旦HydroRollAI完成一个任务，它就不会再重新执行。`,
     iconDark: RefreshIconDark,
     iconLight: RefreshIconLight,
     page: "all",
@@ -106,43 +106,43 @@ const REPO_FEATURES: Features = [
 
 const PACK_FEATURES: Features = [
   {
-    name: "Incremental by design",
-    description: `Building once is enough work—once Turbopack performs a task, it never does it again. `,
+    name: "逐步增量设计",
+    description: `只需构建一次工作流——一旦HydroRollCore完成一个任务，它就不会再重新执行。`,
     iconDark: BarsIconDark,
     iconLight: BarsIconLight,
     page: "all",
   },
   {
-    name: "Ecosystem-friendly",
-    description: `Get out-of-the-box support for TypeScript, JSX, CSS, CSS Modules, WebAssembly, and more.`,
+    name: "生态系统友好",
+    description: `可以直接支持Python与TypeScript，也可以通过插件支持其他语言，且官方给出的规则包十分丰富。`,
     iconDark: EcosystemIconDark,
     iconLight: EcosystemIconLight,
     page: "home",
   },
   {
-    name: "Lightning fast HMR",
-    description: `Hot Module Replacement (HMR) stays fast regardless of the size of your app.`,
+    name: "闪电般快速的HMR",
+    description: `无论你写的规则包大小如何，热加载（HMR）始终保持快速的读取和运行速度。`,
     iconDark: LightningIconDark,
     iconLight: LightningIconLight,
     page: "all",
   },
   {
-    name: "React Server Components",
-    description: `Get native support for React Server Components when using Turbopack. `,
+    name: "模型与HydroRoll本体组件",
+    description: `在使用HydroRollCore时，可以获得对AI模型以及水系本体组件的原生支持。`,
     iconDark: ServerComponentsIconDark,
     iconLight: ServerComponentsIconLight,
     page: "all",
   },
   {
-    name: "Simultaneous Multiple Env Targets",
-    description: `Build and optimize for multiple environments together (Browser, Server, Edge, SSR, React Server Components).`,
+    name: "同时多个环境目标",
+    description: `一起构建并优化多个环境（webui、本地静态wiki站点、服务器接口组件）`,
     iconDark: MultiEnvTargetsIconDark,
     iconLight: MultiEnvTargetsIconLight,
     page: "all",
   },
   {
-    name: "Next.js support",
-    description: `Turbopack will also power Next.js production builds, both locally and in the cloud.`,
+    name: "站点支持 Next.js",
+    description: `HydroRollCore将为Next.js的生产构建提供动力，无论是在本地还是在云端。`,
     iconDark: NextJSIconDark,
     iconLight: NextJSIconLight,
     page: "all",
