@@ -1,16 +1,16 @@
-const TURBO_TEAM: Record<string, AuthorDetails> = {
+const HYDROROLL_TEAM: Record<string, AuthorDetails> = {
   HsiangNianian: {
     name: "简律纯",
-    twitterUsername: "HsiangNianian",
+    GithubUsername: "HsiangNianian",
     picture: "/images/people/HsiangNianian.jpg",
   },
 };
 
-export type Author = keyof typeof TURBO_TEAM;
+export type Author = keyof typeof HYDROROLL_TEAM;
 export type AuthorDetails = {
   name: string;
-  twitterUsername?: string;
+  GithubUsername?: string;
   picture: string;
 };
 
-export default TURBO_TEAM;
+export default HYDROROLL_TEAM;

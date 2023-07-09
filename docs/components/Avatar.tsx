@@ -17,17 +17,17 @@ export const Avatar = ({ name, picture, twitterUsername }: AuthorDetails) => (
     <dl className="ml-2 text-sm font-medium leading-4 text-left whitespace-no-wrap">
       <dt className="sr-only">Name</dt>
       <dd className="text-gray-900 dark:text-white">{name}</dd>
-      {twitterUsername && (
+      {GithubUsername && (
         <>
-          <dt className="sr-only">Twitter</dt>
+          <dt className="sr-only">Github</dt>
           <dd>
             <a
-              href={`https://twitter.com/${twitterUsername}`}
+              href={`https://github.com/${GithubUsername}`}
               className="text-xs text-blue-500 no-underline betterhover:hover:text-blue-600 betterhover:hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {`@${twitterUsername}`}
+              {`@${GithubUsername}`}
             </a>
           </dd>
         </>

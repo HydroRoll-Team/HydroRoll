@@ -1,10 +1,10 @@
 import { Avatar } from "./Avatar";
 import cn from "classnames";
-import TURBO_TEAM from "../content/team";
+import HYDROROLL_TEAM from "../content/team";
 import type { Author } from "../content/team";
 
 export function Authors({ authors }: { authors: Array<Author> }) {
-  const validAuthors = authors.filter((author) => TURBO_TEAM[author]);
+  const validAuthors = authors.filter((author) => HYDROROLL_TEAM[author]);
   return (
     <div className="w-full border-b border-gray-400 authors border-opacity-20">
       <div
@@ -14,7 +14,7 @@ export function Authors({ authors }: { authors: Array<Author> }) {
         )}
       >
         {validAuthors.map((username) => (
-          <Avatar key={username} {...TURBO_TEAM[username]} />
+          <Avatar key={username} {...HYDROROLL_TEAM[username]} />
         ))}
       </div>
     </div>
