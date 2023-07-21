@@ -1,0 +1,7 @@
+todo:
+  autoAssign: true
+  keyword: ["@todo","@TODO","TODO","#TODO"]
+  bodyKeyword: ['@body','@BODY','BODY','#BODY']
+  blobLines: 10
+  label: ['todo']
+  
