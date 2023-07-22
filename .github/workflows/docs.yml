@@ -1,30 +1,38 @@
+name: Sync psi docs to HydroRoll
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  download_pages:
+  sync:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout HydroRoll repository
-        uses: actions/checkout@v2
+    - name: Checkout HydroRoll
+      uses: actions/checkout@v2
+      with:
+        path: HydroRoll
 
-      - name: Setup Git credentials
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
+    - name: Clone psi repo
+      run: |
+        git clone https://github.com/HydroRoll-Team/psi.git
 
-      - name: Clone psi repository
-        run: git clone --depth 1 https://github.com/HydroRoll-Team/psi.git
+    - name: Copy psi docs to HydroRoll
+      run: |
+        mkdir -p HydroRoll/docs/pages/psi
+        cp -r psi/docs/pages/* HydroRoll/docs/pages/psi/
 
-      - name: Copy psi/docs/pages to HydroRoll/docs/pages/psi
-        run: cp -r psi/docs/pages HydroRoll/docs/pages/psi
-
-      - name: Commit and push changes
-        run: |
-          cd HydroRoll
-          git add .
-          git commit -m "Update psi/docs/pages"
-          git push origin main
+    - name: Commit and push if it changed
+      run: |
+        cd HydroRoll
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        if git diff --quiet HEAD; then
+          echo "No changes to commit"
+        else
+          git commit -m "Sync psi docs"
+          git push
+        fi
