@@ -17,7 +17,7 @@ jobs:
 
     - name: Clone psi repo
       run: |
-        git clone https://github.com/HydroRoll-Team/psi.git
+        git clone https://x-access-token:${{ secrets.CI_TOKEN }}@github.com/HydroRoll-Team/psi.git
 
     - name: Copy psi docs to HydroRoll
       run: |
