@@ -1,0 +1,30 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  download_pages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout HydroRoll repository
+        uses: actions/checkout@v2
+
+      - name: Setup Git credentials
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+
+      - name: Clone psi repository
+        run: git clone --depth 1 https://github.com/HydroRoll-Team/psi.git
+
+      - name: Copy psi/docs/pages to HydroRoll/docs/pages/psi
+        run: cp -r psi/docs/pages HydroRoll/docs/pages/psi
+
+      - name: Commit and push changes
+        run: |
+          cd HydroRoll
+          git add .
+          git commit -m "Update psi/docs/pages"
+          git push origin main
