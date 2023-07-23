@@ -1,11 +1,10 @@
-<p align="center">
+<p>
   <a href="https://hydroroll.retrofor.space">
-      <img src="https://hydroroll.retrofor.space/background_or_logo.png" height="128">
-    <h1 align="center">HydroRoll'水系</h1>
+    <h1 align="right">HydroRoll'水系</h1> <img align="right" src="https://hydroroll.retrofor.space/background_or_logo.png" height="128">
   </a>
 </p>
 
-<p align="center">
+<p align="right">
   <a aria-label="Vercel Site" href="https://hydroroll.retrofor.space/" target="blank">
     <img src="https://img.shields.io/badge/DOCS%20AND%20BLOGS-000000.svg?logo=Vercel&labelColor=000">
   </a>
@@ -83,9 +82,7 @@ pip install --upgrade hyrdroroll
 
 ## 👨‍🚀 Contributors
 
-<a href="https://github.com/HydroRoll-Team/HydroRoll/graphs/contributors">
-  <img width="150" src="https://contrib.rocks/image?repo=HydroRoll-Team/HydroRoll" />
-</a>
+[![Top contributors](https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/top-contributors/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/7BYLLpLqD6yr5dPQ_eGyqUTTnWNev0EnFhadoN4FiPE_table.svg)](https://github.com/HydroRoll-Team/HydroRoll/graphs/contributors)
 
 
 ## 📄 License
