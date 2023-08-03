@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "eslint": "7.32.0",
-    "gatsby": "^5.7.0",
+    "gatsby": "^5.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ui": "workspace:*"
