@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@types/webpack": "^5.28.0",
-    "webpack": "^5.75.0"
+    "webpack": "^5.76.0"
   },
   "scripts": {
     "lint": "eslint src/**/*.ts"
