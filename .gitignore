@@ -104,3 +104,6 @@ dmypy.json
 
 # Docs
 node_modules/
+
+# tests
+tests/config.toml

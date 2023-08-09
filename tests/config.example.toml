@@ -1,0 +1,18 @@
+[bot]
+plugins = []
+plugin_dirs = ["plugins"]
+adapters = ["iamai.adapter.cqhttp","iamai.adapter.apscheduler"]
+
+[bot.log]
+level = "INFO"
+verbose_exception = true
+
+[adapter.cqhttp]
+adapter_type = "reverse-ws"
+host = "127.0.0.1"
+port = 15800
+url = "/cqhttp/ws"
+show_raw = false
+
+[adapter.apscheduler]
+scheduler_config = { "apscheduler.timezone" = "Asia/Shanghai" }
