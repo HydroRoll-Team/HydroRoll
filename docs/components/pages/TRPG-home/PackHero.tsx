@@ -96,7 +96,7 @@ export function PackHero() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://github.com/retrofor/HydroRoll"
+                href="https://github.com/HydroRoll-Team/HydroRoll"
                 className="block py-3"
               >
                 查看源码

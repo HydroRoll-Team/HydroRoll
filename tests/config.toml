@@ -10,7 +10,7 @@ verbose_exception = true
 [adapter.cqhttp]
 adapter_type = "reverse-ws"
 host = "127.0.0.1"
-port = 8080
+port = 15800
 url = "/cqhttp/ws"
 show_raw = false
 

@@ -1,4 +1,4 @@
-from hydroroll import Bot
+from HydroRoll import Bot
 
 bot = Bot(hot_reload=True)
 
