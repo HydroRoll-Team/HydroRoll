@@ -104,6 +104,7 @@ dmypy.json
 
 # Docs
 node_modules/
+docs/.next/
 
 # tests
 tests/config.toml

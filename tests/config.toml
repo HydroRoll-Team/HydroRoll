@@ -1,11 +1,17 @@
 [bot]
 plugins = []
 plugin_dirs = ["plugins"]
+rules = []
+rule_dirs = ["rules"]
 adapters = ["iamai.adapter.cqhttp","iamai.adapter.apscheduler"]
 
 [bot.log]
 level = "INFO"
 verbose_exception = true
+
+[plugin.HydroRoll.rule]
+rules = []
+rule_dirs = ["rules"]
 
 [adapter.cqhttp]
 adapter_type = "reverse-ws"
