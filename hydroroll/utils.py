@@ -1,7 +1,6 @@
 import re
 from abc import ABC, abstractmethod
 from typing import Type, Union, Generic, TypeVar
-
 from iamai import Plugin
 from iamai.typing import T_State
 from iamai.adapter.cqhttp.event import GroupMessageEvent, PrivateMessageEvent
@@ -11,7 +10,6 @@ from .config import BasePluginConfig, RegexPluginConfig, CommandPluginConfig
 T_Config = TypeVar("T_Config", bound=BasePluginConfig)
 T_RegexPluginConfig = TypeVar("T_RegexPluginConfig", bound=RegexPluginConfig)
 T_CommandPluginConfig = TypeVar("T_CommandPluginConfig", bound=CommandPluginConfig)
-
 
 class BasePlugin(
     Plugin[Union[PrivateMessageEvent, GroupMessageEvent], T_State, T_Config],
@@ -28,7 +26,7 @@ class BasePlugin(
         )
 
     async def rule(self) -> bool:
-        is_bot_off = True
+        is_bot_off = False
         
         if self.event.adapter.name != "cqhttp":
             return False
@@ -38,6 +36,8 @@ class BasePlugin(
         if is_bot_off:
             if self.event.message.startswith(f'[CQ:at,qq={self.event.self_id}]'):
                 match_str = re.sub(fr'^\[CQ:at,qq={self.event.self_id}\]', '', match_str)
+            elif self.event.message.startswith(f'[CQ:at,qq={self.event.self_tiny_id}]'):
+                match_str = re.sub(fr'^\[CQ:at,qq={self.event.self_tiny_id}\]', '', match_str)
             else:
                 return False
         if self.config.handle_all_message:
@@ -52,6 +52,9 @@ class BasePlugin(
                     or self.event.group_id in self.config.accept_group
                 ):
                     return self.str_match(match_str)
+        elif self.config.handle_group_message:
+            if self.event.message_type == "guild":
+                return self.str_match(match_str)
         return False
 
     @abstractmethod
@@ -78,7 +81,7 @@ class CommandPluginBase(RegexPluginBase[T_State, T_CommandPluginConfig], ABC):
     def str_match(self, msg_str: str) -> bool:
         if not hasattr(self, "command_re_pattern"):
             self.command_re_pattern = re.compile(
-                f'[{"".join(self.config.command_prefix)}]'
+                f'({"|".join(self.config.command_prefix)})'
                 f'({"|".join(self.config.command)})'
                 r"\s*(?P<command_args>.*)",
                 flags=re.I if self.config.ignore_case else 0,
@@ -91,3 +94,4 @@ class CommandPluginBase(RegexPluginBase[T_State, T_CommandPluginConfig], ABC):
             self.command_match.group("command_args")
         )
         return bool(self.msg_match)
+    
