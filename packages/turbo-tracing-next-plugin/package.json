@@ -17,7 +17,7 @@
     "next": ">= 12"
   },
   "devDependencies": {
-    "next": "^13.0.6"
+    "next": "^14.0.0"
   },
   "scripts": {
     "lint": "eslint src/**/*.ts"
