@@ -1,4 +1,7 @@
+import difflib
 import re
+import time
+import random
 from abc import ABC, abstractmethod
 from typing import Type, Union, Generic, TypeVar
 from iamai import Plugin
@@ -9,7 +12,9 @@ from .config import BasePluginConfig, RegexPluginConfig, CommandPluginConfig
 
 T_Config = TypeVar("T_Config", bound=BasePluginConfig)
 T_RegexPluginConfig = TypeVar("T_RegexPluginConfig", bound=RegexPluginConfig)
-T_CommandPluginConfig = TypeVar("T_CommandPluginConfig", bound=CommandPluginConfig)
+T_CommandPluginConfig = TypeVar(
+    "T_CommandPluginConfig", bound=CommandPluginConfig)
+
 
 class BasePlugin(
     Plugin[Union[PrivateMessageEvent, GroupMessageEvent], T_State, T_Config],
@@ -27,17 +32,21 @@ class BasePlugin(
 
     async def rule(self) -> bool:
         is_bot_off = False
-        
+
         if self.event.adapter.name != "cqhttp":
             return False
         if self.event.type != "message":
             return False
         match_str = self.event.message.get_plain_text()
         if is_bot_off:
-            if self.event.message.startswith(f'[CQ:at,qq={self.event.self_id}]'):
-                match_str = re.sub(fr'^\[CQ:at,qq={self.event.self_id}\]', '', match_str)
-            elif self.event.message.startswith(f'[CQ:at,qq={self.event.self_tiny_id}]'):
-                match_str = re.sub(fr'^\[CQ:at,qq={self.event.self_tiny_id}\]', '', match_str)
+            if self.event.message.startswith(f"[CQ:at,qq={self.event.self_id}]"):
+                match_str = re.sub(
+                    rf"^\[CQ:at,qq={self.event.self_id}\]", "", match_str
+                )
+            elif self.event.message.startswith(f"[CQ:at,qq={self.event.self_tiny_id}]"):
+                match_str = re.sub(
+                    rf"^\[CQ:at,qq={self.event.self_tiny_id}\]", "", match_str
+                )
             else:
                 return False
         if self.config.handle_all_message:
@@ -94,4 +103,77 @@ class CommandPluginBase(RegexPluginBase[T_State, T_CommandPluginConfig], ABC):
             self.command_match.group("command_args")
         )
         return bool(self.msg_match)
-    
+
+
+class PseudoRandomGenerator:
+    """线性同余法随机数生成器"""
+
+    def __init__(self, seed):
+        self.seed = seed
+
+    def generate(self):
+        while True:
+            self.seed = (self.seed * 1103515245 + 12345) % (2**31)
+            yield self.seed
+
+
+class HydroDice:
+    """水系掷骰组件
+
+    一些 API 相关的工具函数
+
+    """
+
+    def __init__(self, seed):
+        self.generator = PseudoRandomGenerator(seed)
+
+    def roll_dice(
+        self,
+        _counts: int | str,
+        _sides: int | str,
+        is_reversed: bool = False,
+        streamline: bool = False,
+        threshold: int | str = 5,
+    ) -> str:
+        """普通掷骰
+        Args:
+            _counts (int | str): 掷骰个数.
+            _sides (int | str): 每个骰子的面数.
+            is_reversed (bool, optional): 倒序输出. Defaults to False.
+            streamline (bool, optional): 忽略过程. Defaults to False.
+            threshold (int | str, optional): streamline 的阈值. Defaults to 5.
+
+        Returns:
+            str: 表达式结果.
+        """
+        rolls = []
+        for _ in range(int(_counts)):
+            roll = next(self.generator.generate()) % _sides + 1
+            rolls.append(roll)
+        total = sum(rolls)
+
+        if streamline:
+            return str(total)
+        else:
+            if len(rolls) > int(threshold):
+                return str(total)
+            rolls_str = " + ".join(str(r) for r in rolls)
+            result_str = (
+                f"{total} = {rolls_str}" if is_reversed else f"{rolls_str} = {total}"
+            )
+            return result_str
+
+
+def find_max_similarity(input_string, string_list):
+    """寻找最大的相似度"""
+    max_similarity = 0
+    max_string = ""
+
+    for string in string_list:
+        similarity = difflib.SequenceMatcher(
+            None, input_string, string).quick_ratio()
+        if similarity > max_similarity:
+            max_similarity = similarity
+            max_string = string
+
+    return max_string, max_similarity

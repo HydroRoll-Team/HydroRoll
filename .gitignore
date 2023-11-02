@@ -108,3 +108,4 @@ docs/.next/
 
 # tests
 tests/config.toml
+.pdm-python

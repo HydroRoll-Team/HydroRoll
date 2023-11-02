@@ -22,5 +22,12 @@
   },
   "search.exclude": {
     "crates/turbopack-tests/tests/snapshot/**": true
-  }
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "python.formatting.provider": "none",
+  "restructuredtext.preview.docutils.disabled": true,
+  "iis.configDir": ""
 }

@@ -4,7 +4,7 @@ plugin_dirs = ["plugins"]
 adapters = ["iamai.adapter.cqhttp","iamai.adapter.apscheduler"]
 
 [bot.log]
-level = "INFO"
+level = "DEBUG"
 verbose_exception = true
 
 [adapter.cqhttp]

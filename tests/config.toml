@@ -9,16 +9,17 @@ adapters = ["iamai.adapter.cqhttp","iamai.adapter.apscheduler"]
 level = "INFO"
 verbose_exception = true
 
-[plugin.HydroRoll.rule]
-rules = []
-rule_dirs = ["rules"]
-
 [adapter.cqhttp]
 adapter_type = "reverse-ws"
 host = "127.0.0.1"
-port = 15800
+port = 8080
 url = "/cqhttp/ws"
 show_raw = false
 
 [adapter.apscheduler]
 scheduler_config = { "apscheduler.timezone" = "Asia/Shanghai" }
+
+[plugin.HydroRoll]
+uid = ''
+rules = []
+rule_dirs = ["rules"]
