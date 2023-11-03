@@ -1,6 +1,6 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://www.hydroroll.team/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'HydroRoll'
 theme = 'coming-soon'
 
 
