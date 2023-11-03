@@ -1,0 +1,16 @@
+name = "Coming Soon"
+description = "Simple page with name and a countdown to your website's release date & time"
+
+license = "GNU GPLv3"
+licenselink = "https://github.com/mansoorbarri/coming-soon/blob/main/LICENCE"
+
+homepage = "https://github.com/mansoorbarri/coming-soon"
+demosite = "https://comingsoonhugo.pages.dev/"
+
+tags = ["minimal", "dark", "personal", "countdown"]
+
+authors = [
+  {name = "Mansoor Barri", homepage = "https://mansoorbarri.com"},
+]
+
+min_version = "0.111.3"
