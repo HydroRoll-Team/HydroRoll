@@ -1,0 +1,3 @@
+[submodule "HydroRoll/themes/coming-soon"]
+	path = HydroRoll/themes/coming-soon
+	url = https://github.com/mansoorbarri/coming-soon.git
