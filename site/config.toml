@@ -1,48 +1,18 @@
-baseURL = 'http://www.hydroroll.team/'
-languageCode = 'en-us'
+baseURL = 'http://hydroroll.team/'
+languageCode = 'zh-cn'
 title = 'HydroRoll'
-theme = 'graysx-hugo'
+theme = 'coming-soon'
 
-## Site Settings
 [params]
-logo = "assets/img/logo.webp"
-favicon = "assets/favicon.png"
+    logo = "assets/img/logo.webp"
+    favicon = "assets/favicon.png"
+    title = "HydroRoll " 
+    description = "倒数日"
+    message = "距离水系公测还有" # default is "COMING SOON" 
+    release = "Jul 14, 2024" # release date format: Aug 30, 2023 15:00
+    background = "" # default is bg.mp4 in static/
 
-# Info
-address = "123 Arch B1W, GNU/Linux"
-email = "hello@graysx.com"
-phone = "123456"
-
-# Socials
-
-twitter = "#"
-facebook = "#"
-github = "https://github.com/akatiggerx04/graysx-hugo"
-
-# Other
-
-# Startbootstrap Contact Form Token https://startbootstrap.com/solution/contact-forms
-sbtoken = "TOKEN_HERE"
-
-## Menu Items
-[menu]
-  [[menu.main]]
-  name = "About"
-  URL = "#about"
-  weight = 1
-
-  [[menu.main]]
-  name = "Projects"
-  URL = "#projects"
-  weight = 2
-
-  [[menu.main]]
-  name = "Contact"
-  URL = "#signup"
-  weight = 3
-
-
-# Credits
-
-# This theme is forked from: https://github.com/startbootstrap/startbootstrap-grayscale
-# This theme is forked by: https://github.com/akatiggerx04
+socialIcons = [
+    {name = "email", url = "support@hydroroll.team"},   
+    {name = "github", url = "https://github.com/HydroRoll-Team"},    
+] 

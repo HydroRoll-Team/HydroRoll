@@ -1,4 +1,5 @@
 """中间件"""
+import json
 import joblib
 import os
 import shutil
@@ -8,9 +9,11 @@ from iamai import ConfigModel, Plugin
 from iamai.log import logger
 from .config import Directory, GlobalConfig, Models
 from .utils import *
+from .models.Transformer import query
 
 BASE_DIR = dirname(abspath("__file__"))
 HYDRO_DIR = dirname(abspath(__file__))
+APP_DIR = join(BASE_DIR, "HydroRoll")
 
 # logger.info(GlobalConfig._copyright)
 
@@ -46,9 +49,49 @@ class HydroRoll(Plugin):
 
         if self.event.message.get_plain_text() == ".core":
             await self.event.reply("HydroRollCore is running.")
+        if self.event.message.startswith(".set"):
+            arg_list: list = self.event.message.get_plain_text().split()
+            sub_cmd: str = arg_list[1]
+            if sub_cmd == ("censor"):
+                operator: str = arg_list[2]
+                censor_list: list = arg_list[3:]
+                pattern = re.compile(r"[+-](\d?=?)(.*)")
+
+                try:
+                    with open(
+                        join(APP_DIR, "data", "censor.json"), "r+", encoding="utf8"
+                    ) as f:
+                        censor_content = json.load(f)
+                except (FileNotFoundError, json.JSONDecodeError):
+                    censor_content = {}
+
+                censor_list = list(filter(lambda x: pattern.match(x), censor_list))
+
+                with open(
+                    join(APP_DIR, "data", "censor.json"), "w+", encoding="utf8"
+                ) as f:
+                    if operator in ["add", "+"]:
+                        for item in censor_list:
+                            match = pattern.match(item)
+                            censor_content[match.group(2)] = int(
+                                match.group(1).replace("=", "")
+                            )
+                    elif operator in ["remove", "rmv", "-"]:
+                        for item in censor_list:
+                            match = pattern.match(item)
+                            keyword = match.group(2)
+                            if keyword in censor_content:
+                                del censor_content[keyword]
+                    elif operator in ["list", "map"]:
+                        pass  # do something else
+
+                    json.dump(censor_content, f, ensure_ascii=False, indent=4)
+        elif self.event.message.startswith(".get"):
+            ...
+
         elif self.event.message.startswith(".test"):
             try:
-                result = literal_eval(self.event.message.get_plain_text()[5:])
+                result = eval(self.event.message.get_plain_text()[5:]) #literal_eval(self.event.message.get_plain_text()[5:])
                 await self.event.reply(str(result))
             except Exception as error:
                 await self.event.reply(f"{error!r}")
@@ -107,3 +150,5 @@ class HydroRoll(Plugin):
 
     def load_models(self):
         self.models = self._load_models(self.model_path_list, self.model_dict)
+
+
