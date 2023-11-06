@@ -116,7 +116,7 @@ class HydroRoll(Plugin):
             if max_similarity > 0.51:
                 self.init_directory()
                 self.bot.global_state["HydroRoll"]["hola"] = True
-                await self.event.reply(f"验证成功√ 正在初始化水系目录...")
+                await self.event.reply("验证成功√ 正在初始化水系目录...")
                 logger.info(GlobalConfig._copyright)
         return self.event.adapter.name in ["cqhttp", "kook", "console", "mirai"]
 
