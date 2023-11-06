@@ -12,8 +12,7 @@ from .config import BasePluginConfig, RegexPluginConfig, CommandPluginConfig
 
 T_Config = TypeVar("T_Config", bound=BasePluginConfig)
 T_RegexPluginConfig = TypeVar("T_RegexPluginConfig", bound=RegexPluginConfig)
-T_CommandPluginConfig = TypeVar(
-    "T_CommandPluginConfig", bound=CommandPluginConfig)
+T_CommandPluginConfig = TypeVar("T_CommandPluginConfig", bound=CommandPluginConfig)
 
 
 class BasePlugin(
@@ -170,10 +169,16 @@ def find_max_similarity(input_string, string_list):
     max_string = ""
 
     for string in string_list:
-        similarity = difflib.SequenceMatcher(
-            None, input_string, string).quick_ratio()
+        similarity = difflib.SequenceMatcher(None, input_string, string).quick_ratio()
         if similarity > max_similarity:
             max_similarity = similarity
             max_string = string
 
     return max_string, max_similarity
+
+
+def check_file(filename: str) -> bool:
+    """根据给定参数校验文件夹内文件完整性"""
+    
+    
+    return False

@@ -2,6 +2,7 @@ from randomgen import AESCounter
 from numpy.random import Generator
 import argparse
 import sys
+from os.path import dirname, dirname, join, abspath
 import platform
 from importlib.metadata import version
 import os
@@ -57,6 +58,8 @@ class GlobalConfig(CommandPluginConfig):
     _iamai_version = version("iamai")
     _python_ver = sys.version
     _python_ver_raw = ".".join(map(str, platform.python_version_tuple()[:3]))
+    _base_dir = dirname(abspath("__file__"))
+    _hydro_dir = dirname(abspath(__file__))
     _copyright = f"""\033[36m
                   _             __       _ _ 
   /\  /\_   _  __| |_ __ ___   /__\ ___ | | |
@@ -130,7 +133,8 @@ class FileManager(object):
 
     def get_file_list(self, _dir: str):
         return {
-            'web;frontend': 'index.html'
+            'web;frontend': 'index.html',
+            'data': 'censor.json',
         }
 
 
