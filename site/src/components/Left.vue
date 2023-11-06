@@ -1,17 +1,43 @@
-<script setup lang="ts">
-import {computed} from "vue";
-
-defineProps({
-  msg: {
-    type: String,
-    required: true
+<script lang="ts">
+export default {
+  data(){
+    return{
+      day:0,
+      hour:0,
+      min:0,
+      sec:0,
+      timer:0
+    }
+  },
+  props:{
+    msg:{
+      type:String,
+      require:true
+    },
+    date:{
+      type:Date,
+      default:'2024-05-10T12:00:00Z'
+    }
+  },
+  methods:{
+    getTime(){
+      this.timer=window.setTimeout(()=>{
+        const date1 = new Date();
+        const date2 = new Date(this.date);
+        const timeDiff = Math.abs(date2.getTime() - date1.getTime());
+        this.day = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        this.hour = Math.floor(timeDiff / (1000 * 60 * 60)%24);
+        this.min = Math.floor((timeDiff / (1000 * 60)) % 60);
+        this.sec = Math.floor((timeDiff / 1000) % 60);
+        this.getTime()
+      },1000)
+    }
+  },
+  beforeMount() {
+    this.getTime()
   }
-})
 
-const day=100
-const hour=18
-const min=50
-const sec=50
+}
 </script>
 
 <template>
