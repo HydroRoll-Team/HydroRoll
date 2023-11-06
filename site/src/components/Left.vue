@@ -16,7 +16,7 @@ export default {
     },
     date:{
       type:Date,
-      default:'2024-05-10T12:00:00Z'
+      default:new Date('2024-05-10T12:00:00Z')
     }
   },
   methods:{
@@ -47,7 +47,7 @@ export default {
       距离水系公测还有
     </h3>
     <h2>
-      {{ day }}d {{ hour }}h {{ min }}m {{ sec }}s
+      {{ day }} 天 {{ hour }} 时 {{ min }} 分 {{ sec }} 秒
     </h2>
   </div>
 </template>
