@@ -16,7 +16,7 @@ export default {
     },
     date:{
       type:Date,
-      default:new Date('2024-05-10T12:00:00Z')
+      default:new Date('2024-07-14T12:00:00Z')
     }
   },
   methods:{
