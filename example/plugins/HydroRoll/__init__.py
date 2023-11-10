@@ -55,13 +55,13 @@ class HydroRoll(Plugin):
         except GetEventTimeout:
             return
         else:
-            if self.event.message.get_plain_text() == ".core":
+            if args[0] == ".core":
                 ...
-            if self.event.message.startswith(".set"):
+            if args[0].startswith(".set"):
                 ...
-            elif self.event.message.startswith(".get"):
+            elif args[0].startswith(".get"):
                 ...
-            elif self.event.message.startswith(".test"):
+            elif args[0].startswith(".test"):
                 try:
                     result = eval(
                         self.event.message.get_plain_text()[5:]
