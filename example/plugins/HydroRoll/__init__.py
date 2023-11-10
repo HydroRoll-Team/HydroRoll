@@ -50,7 +50,10 @@ class HydroRoll(Plugin):
         args = self.event.get_plain_text().split(" ")
         try:
             event = await self.event.adapter.get(
-                lambda x: x.type == "message", timeout=10
+                lambda x: x.type == "message",
+                lambda x: x.group_id == self.event.group_id,
+                lambda x: x.user_id == self.event.user_id,
+                timeout=10,
             )
         except GetEventTimeout:
             return
