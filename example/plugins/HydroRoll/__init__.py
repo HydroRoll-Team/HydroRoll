@@ -66,9 +66,7 @@ class HydroRoll(Plugin):
                 ...
             elif args[0].startswith(".test"):
                 try:
-                    result = eval(
-                        self.event.message.get_plain_text()[5:]
-                    )  # literal_eval(self.event.message.get_plain_text()[5:])
+                    result = eval(self.event.message.get_plain_text()[5:])
                     await self.event.reply(str(result))
                 except Exception as error:
                     await self.event.reply(f"{error!r}")
