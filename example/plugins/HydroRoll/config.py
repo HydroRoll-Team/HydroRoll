@@ -41,7 +41,7 @@ class RegexPluginConfig(BasePluginConfig):
 
 
 class CommandPluginConfig(RegexPluginConfig):
-    command_prefix: Set[str] = {":", "你妈", "👅", "约瑟夫妥斯妥耶夫斯基戴安那只鸡🐔"}
+    command_prefix: Set[str] = {":"}
     """命令前缀。"""
     command: Set[str] = {}
     """命令文本。"""
@@ -146,3 +146,4 @@ class Models:
 
     def get_models_dict(self) -> dict:
         return self.builtin_models
+
