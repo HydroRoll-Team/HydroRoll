@@ -10,6 +10,7 @@ from iamai.log import logger
 from .config import Directory, GlobalConfig, Models
 from .utils import *
 from .models.Transformer import query
+from .command import Set, Get
 from iamai.exceptions import GetEventTimeout
 
 BASE_DIR = dirname(abspath("__file__"))
