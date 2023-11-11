@@ -64,7 +64,7 @@ class HydroRoll(Plugin):
                             if cmd.startswith(current_cmd):
                                 if current_cmd != cmd:
                                     flag = True
-                                elif current_cmd == cmd:
+                                else:
                                     await self.event.reply(f"{cmd}")
                                     flag = False
                     except GetEventTimeout:
