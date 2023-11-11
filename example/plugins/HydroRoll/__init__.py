@@ -49,6 +49,10 @@ class HydroRoll(Plugin):
         @BODY: HydroRollCore actives the rule-packages.
         """
         args = self.event.get_plain_text().split(" ")
+        if args[0] in ['.root', '.roots']:
+            import requests
+            data = requests.get("https://vercel-hitokoto.vercel.app/api/roots").json()
+            await self.event.reply(data['line'])
         try:
             event = await self.event.adapter.get(
                 lambda x: x.type == "message"
