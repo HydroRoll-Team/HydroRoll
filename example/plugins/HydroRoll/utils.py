@@ -20,7 +20,7 @@ class BasePlugin(
     ABC,
     Generic[T_State, T_Config],
 ):
-    Config: Type[T_Config] = BasePluginConfig
+    Config: Type[T_Config] = BasePluginConfig # type: ignore
 
     def format_str(self, format_str: str, message_str: str = "") -> str:
         return format_str.format(

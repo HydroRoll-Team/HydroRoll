@@ -49,32 +49,46 @@ class HydroRoll(Plugin):
         @BODY: HydroRollCore actives the rule-packages.
         """
         args = self.event.get_plain_text().split(" ")
-        if args[0] in ['.root', '.roots']:
-            import requests
-            data = requests.get("https://vercel-hitokoto.vercel.app/api/roots").json()
-            await self.event.reply(data['line'])
-        try:
-            event = await self.event.adapter.get(
-                lambda x: x.type == "message"
-                and x.group_id == self.event.group_id
-                and x.user_id == self.event.user_id,
-                timeout=10,
-            )
-        except GetEventTimeout:
-            return
-        else:
-            if args[0] == ".core":
-                ...
-            if args[0].startswith(".set"):
-                resolve = Set(args[1:]) # TODO: handle multiple sets
-            elif args[0].startswith(".get"):
-                resolve = Get(args[1:]) # TODO: handle multiple gets
-            elif args[0].startswith(".test"):
-                try:
-                    result = eval(self.event.message.get_plain_text()[5:])
-                    await self.event.reply(str(result))
-                except Exception as error:
-                    await self.event.reply(f"{error!r}")
+        command_list = [".root", ".roots", ".core", ".set", ".get", ".test"]
+        for cmd in command_list:
+            if cmd.startswith(args[0]):
+                logger.info(cmd)
+                if args[0] != cmd:
+                    try:
+                        flag = True
+                        current_cmd = args[0]
+                        while flag:
+                            flag = False
+                            event = await self.ask(ask_text=None, timeout=3)
+                            current_cmd = current_cmd + event.get_plain_text()
+                            if cmd.startswith(current_cmd):
+                                if current_cmd != cmd:
+                                    flag = True
+                                elif current_cmd == cmd:
+                                    await self.event.reply(f"{cmd}")
+                                    flag = False
+                    except GetEventTimeout:
+                        continue
+                else:
+                    await self.event.reply(cmd)
+        # if args[0] in [".root", ".roots"]:
+        #     import requests
+
+        #     data = requests.get("https://vercel-hitokoto.vercel.app/api/roots").json()
+        #     await self.event.reply(data["line"])
+        # else:
+        #     if args[0] == ".core":
+        #         ...
+        #     if args[0].startswith(".set"):
+        #         resolve = Set(args[1:])  # TODO: handle multiple sets
+        #     elif args[0].startswith(".get"):
+        #         resolve = Get(args[1:])  # TODO: handle multiple gets
+        #     elif args[0].startswith(".test"):
+        #         try:
+        #             result = eval(self.event.message.get_plain_text()[5:])
+        #             await self.event.reply(str(result))
+        #         except Exception as error:
+        #             await self.event.reply(f"{error!r}")
 
     async def rule(self) -> bool:
         """
@@ -130,3 +144,17 @@ class HydroRoll(Plugin):
 
     def load_models(self):
         self.models = self._load_models(self.model_path_list, self.model_dict)
+
+    async def ask(self, ask_text: str | None, timeout: int = 10) -> None:
+        if ask_text:
+            await self.event.reply(ask_text)
+        try:
+            event = await self.event.adapter.get(
+                lambda x: x.type == "message"
+                and x.group_id == self.event.group_id
+                and x.user_id == self.event.user_id,
+                timeout=timeout,
+            )
+            return event
+        except GetEventTimeout as e:
+            raise GetEventTimeout from e
