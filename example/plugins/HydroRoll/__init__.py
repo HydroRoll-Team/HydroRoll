@@ -62,9 +62,9 @@ class HydroRoll(Plugin):
             if args[0] == ".core":
                 ...
             if args[0].startswith(".set"):
-                ...
+                resolve = Set(args[1:]) # TODO: handle multiple sets
             elif args[0].startswith(".get"):
-                ...
+                resolve = Get(args[1:]) # TODO: handle multiple gets
             elif args[0].startswith(".test"):
                 try:
                     result = eval(self.event.message.get_plain_text()[5:])
