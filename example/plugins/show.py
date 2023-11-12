@@ -1,5 +1,9 @@
 from iamai import Plugin
 from numpy.random import Generator
+from iamai.adapter.cqhttp.message import CQHTTPMessage, CQHTTPMessageSegment
+
+ms = CQHTTPMessageSegment
+
 
 
 
@@ -21,7 +25,8 @@ class Exec(Plugin):
                                 "data": {
                                     "text": f"{eval(self.event.message.get_plain_text()[6:])}"
                                 }
-                            }
+                            },
+                            # eval(self.event.message.get_plain_text()[6:])
                         ]
                     }
                 }

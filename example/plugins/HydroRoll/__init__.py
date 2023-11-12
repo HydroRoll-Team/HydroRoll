@@ -12,6 +12,7 @@ from .utils import *
 from .models.Transformer import query
 from .command import Set, Get
 from iamai.exceptions import GetEventTimeout
+from iamai.adapter.cqhttp.event import GroupMessageEvent, PrivateMessageEvent
 
 BASE_DIR = dirname(abspath("__file__"))
 HYDRO_DIR = dirname(abspath(__file__))
@@ -48,29 +49,33 @@ class HydroRoll(Plugin):
         @TODO: HydroRollCore should be able to handle all signals and tokens from Psi.
         @BODY: HydroRollCore actives the rule-packages.
         """
+        global flag
+
         args = self.event.get_plain_text().split(" ")
         command_list = [".root", ".roots", ".core", ".set", ".get", ".test"]
-        for cmd in command_list:
-            if cmd.startswith(args[0]):
-                logger.info(cmd)
-                if args[0] != cmd:
-                    try:
-                        flag = True
-                        current_cmd = args[0]
-                        while flag:
-                            flag = False
-                            event = await self.ask(ask_text=None, timeout=3)
-                            current_cmd = current_cmd + event.get_plain_text()
-                            if cmd.startswith(current_cmd):
-                                if current_cmd != cmd:
-                                    flag = True
-                                else:
-                                    await self.event.reply(f"{cmd}")
-                                    flag = False
-                    except GetEventTimeout:
-                        continue
+        current_cmd = args[0]
+        flag = True in [cmd.startswith(current_cmd) for cmd in command_list]
+        logger.info(f"Command {current_cmd} not found with flag {flag}")
+        try:
+            while flag:
+                flag = False
+                if current_cmd not in command_list:
+                    event = await self.ask(ask_text="", timeout=3)
+                if event.get_plain_text() not in command_list:
+                    await self.event.reply(f"{event.get_plain_text()}")
+                    flag = False
+                    break
+                current_cmd = current_cmd + event.get_plain_text()
+                if current_cmd not in command_list:
+                    flag = True
                 else:
-                    await self.event.reply(cmd)
+                    await self.event.reply(f"{current_cmd}")
+                    flag = False
+                    break
+        except GetEventTimeout:
+            return
+        else:
+            await self.event.reply(current_cmd)
         # if args[0] in [".root", ".roots"]:
         #     import requests
 
@@ -101,6 +106,7 @@ class HydroRoll(Plugin):
             and self.event.type == "message"
             and self.event.message_type == "private"
             and not os.path.exists(join(BASE_DIR, "HydroRoll"))
+            and self.event.adapter.name in ["cqhttp", "kook", "console", "mirai"]
         ):
             # hola = self.models["hola"]
             # _, max_similarity = find_max_similarity(
@@ -112,7 +118,7 @@ class HydroRoll(Plugin):
                 self.bot.global_state["HydroRoll"]["hola"] = True
                 await self.event.reply("验证成功√ 正在初始化水系目录...")
                 logger.info(GlobalConfig._copyright)
-        return self.event.adapter.name in ["cqhttp", "kook", "console", "mirai"]
+        return issubclass(PrivateMessageEvent, self.event.__class__) # or issubclass(GroupMessageEvent, self.event.__class__)
 
     def _init_directory(self, _prefix: str = ""):
         """初始化水系目录"""
