@@ -12,7 +12,7 @@ from .utils import *
 from .models.Transformer import query
 from .command import Set, Get
 from iamai.exceptions import GetEventTimeout
-from iamai.adapter.cqhttp.event import GroupMessageEvent, PrivateMessageEvent
+from iamai.event import MessageEvent
 
 BASE_DIR = dirname(abspath("__file__"))
 HYDRO_DIR = dirname(abspath(__file__))
@@ -56,42 +56,23 @@ class HydroRoll(Plugin):
         current_cmd = args[0]
         flag = True in [cmd.startswith(current_cmd) for cmd in command_list]
         logger.info(f"Command {current_cmd} not found with flag {flag}")
-        try:
-            while flag:
-                flag = False
-                if current_cmd not in command_list:
-                    event = await self.ask(ask_text="", timeout=3)
-                if event.get_plain_text() not in command_list:
-                    await self.event.reply(f"{event.get_plain_text()}")
-                    flag = False
-                    break
-                current_cmd = current_cmd + event.get_plain_text()
-                if current_cmd not in command_list:
-                    flag = True
-                else:
-                    await self.event.reply(f"{current_cmd}")
-                    flag = False
-                    break
-        except GetEventTimeout:
-            return
-        # if args[0] in [".root", ".roots"]:
-        #     import requests
-
-        #     data = requests.get("https://vercel-hitokoto.vercel.app/api/roots").json()
-        #     await self.event.reply(data["line"])
-        # else:
-        #     if args[0] == ".core":
-        #         ...
-        #     if args[0].startswith(".set"):
-        #         resolve = Set(args[1:])  # TODO: handle multiple sets
-        #     elif args[0].startswith(".get"):
-        #         resolve = Get(args[1:])  # TODO: handle multiple gets
-        #     elif args[0].startswith(".test"):
-        #         try:
-        #             result = eval(self.event.message.get_plain_text()[5:])
-        #             await self.event.reply(str(result))
-        #         except Exception as error:
-        #             await self.event.reply(f"{error!r}")
+        if args[0] in [".root", ".roots"]:
+            import requests
+            data = requests.get("https://vercel-hitokoto.vercel.app/api/roots").json()
+            await self.event.reply(data["line"])
+        else:
+            if args[0] == ".core":
+                ...
+            # if args[0].startswith(".set"):
+            #     resolve = Set(args[1:])  # TODO: handle multiple sets
+            # elif args[0].startswith(".get"):
+            #     resolve = Get(args[1:])  # TODO: handle multiple gets
+            elif args[0].startswith(".test"):
+                try:
+                    result = eval(self.event.message.get_plain_text()[5:])
+                    await self.event.reply(str(result))
+                except Exception as error:
+                    await self.event.reply(f"{error!r}")
 
     async def rule(self) -> bool:
         """
@@ -116,7 +97,7 @@ class HydroRoll(Plugin):
                 self.bot.global_state["HydroRoll"]["hola"] = True
                 await self.event.reply("验证成功√ 正在初始化水系目录...")
                 logger.info(GlobalConfig._copyright)
-        return issubclass(PrivateMessageEvent, self.event.__class__) # or issubclass(GroupMessageEvent, self.event.__class__)
+        return isinstance(self.event, MessageEvent)
 
     def _init_directory(self, _prefix: str = ""):
         """初始化水系目录"""
@@ -149,16 +130,16 @@ class HydroRoll(Plugin):
     def load_models(self):
         self.models = self._load_models(self.model_path_list, self.model_dict)
 
-    async def ask(self, ask_text: str | None, timeout: int = 10) -> None:
-        if ask_text:
-            await self.event.reply(ask_text)
-        try:
-            event = await self.event.adapter.get(
-                lambda x: x.type == "message"
-                and x.group_id == self.event.group_id
-                and x.user_id == self.event.user_id,
-                timeout=timeout,
-            )
-            return event
-        except GetEventTimeout as e:
-            raise GetEventTimeout from e
+    # async def ask(self, ask_text: str | None, timeout: int = 10) -> None:
+    #     if ask_text:
+    #         await self.event.reply(ask_text)
+    #     try:
+    #         event = await self.event.adapter.get(
+    #             lambda x: x.type == "message"
+    #             and x.group_id == self.event.group_id
+    #             and x.user_id == self.event.user_id,
+    #             timeout=timeout,
+    #         )
+    #         return event
+    #     except GetEventTimeout as e:
+    #         raise GetEventTimeout from e
