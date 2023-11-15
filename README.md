@@ -68,7 +68,7 @@ pdm run main.py
 
 ## 🙋‍ Community
 
-HydroRoll 水系 的论坛在 [GitHub Discussions](https://github.com/HydroRoll-Team/HydroRoll/discussions), 你可以在这里提出任何问题, 分享任何想法。
+HydroRoll 水系 的论坛在 [GitHub Discussions](https://github.com/orgs/HydroRoll-Team/discussions), 你可以在这里提出任何问题, 分享任何想法。
 
 目前你可以加入 [![](https://img.shields.io/badge/-QQ群126211793-002FA7?style=flat-square&logo=TencentQQ&logoColor=white)]() 和社区里的其它用户交流, 同时也能在里面体验到最新开发的水系骰子(krypton)。
 
