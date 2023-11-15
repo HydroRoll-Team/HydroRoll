@@ -90,4 +90,4 @@ pdm update hyrdroroll
 
 ## 📄 License
 
-[GPL 3.0](https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE) © 2023-PRESENT [简律纯](https://github.com/HsiangNianian)
+[MIT](https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE) © 2023-PRESENT [简律纯](https://github.com/HsiangNianian)
