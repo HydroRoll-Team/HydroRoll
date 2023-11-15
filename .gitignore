@@ -106,6 +106,6 @@ dmypy.json
 node_modules/
 docs/.next/
 
-# tests
-tests/config.toml
+# example
+example/config.toml
 .pdm-python

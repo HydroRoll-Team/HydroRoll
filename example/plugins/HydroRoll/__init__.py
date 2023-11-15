@@ -82,10 +82,7 @@ class HydroRoll(Plugin):
         logger.info("loading psi...")
         if (
             not self.bot.global_state["HydroRoll"].get("hola")
-            and self.event.type == "message"
-            and self.event.message_type == "private"
             and not os.path.exists(join(BASE_DIR, "HydroRoll"))
-            and self.event.adapter.name in ["cqhttp", "kook", "console", "mirai"]
         ):
             # hola = self.models["hola"]
             # _, max_similarity = find_max_similarity(
