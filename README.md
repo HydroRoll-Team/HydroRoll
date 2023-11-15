@@ -35,7 +35,7 @@
 推荐局部安装，使用 `pdm` 创建一个虚拟环境后在命令行输入。
 
 ``` shell
-pdm add HydroRoll
+pdm add hydroroll[all]
 ```
 
 2. 创建机器人实例
