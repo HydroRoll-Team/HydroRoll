@@ -32,10 +32,10 @@
 
 1. 安装库
 
-在命令行输入。
+推荐局部安装，使用 `pdm` 创建一个虚拟环境后在命令行输入。
 
 ``` shell
-pip install HydroRoll
+pdm add HydroRoll
 ```
 
 2. 创建机器人实例
@@ -58,6 +58,10 @@ if __name__ == "__main__":
 
 3. 使用合适的适配器, 合理修改你的 `config.toml` 配置文件, 等待连接!
 
+```python
+pdm run main.py
+```
+
 ## 💕 Contributing
 
 欢迎阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)
@@ -70,18 +74,18 @@ HydroRoll 水系 的论坛在 [GitHub Discussions](https://github.com/HydroRoll-
 
 我们的 [行为准则(Code of Conduct)](https://github.com/HydroRoll-Team/HydroRoll/blob/main/CODE_OF_CONDUCT.md) 适用于 HydroRoll'水系 社区内的所有交流渠道。
 
-## ✨ Updates
+## ✨ Update
 
-1. 使用 `pip` 更新
+1. 使用 `pdm` 局部更新
 
 ``` shell
-pip install --upgrade hyrdroroll
+pdm upgrade hyrdroroll
 ```
 
 
-## 👨‍🚀 Contributors
+## 🔺Structure
 
-[![Top contributors](https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/top-contributors/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/7BYLLpLqD6yr5dPQ_eGyqUTTnWNev0EnFhadoN4FiPE_table.svg)](https://github.com/HydroRoll-Team/HydroRoll/graphs/contributors)
+[![Structure](https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/-8GQ3jezs4jjRVX5ZbACiuiSwmPbkzEdEQAyP2ednF0_table.svg)](https://github.com/HydroRoll-Team/HydroRoll)
 
 
 ## 📄 License
