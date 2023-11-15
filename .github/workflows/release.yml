@@ -9,25 +9,22 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+      PDM_PUBLISH_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      PDM_PUBLISH_USERNAME: ${{ secrets.PYPI_USERNAME }}
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install poetry
-        run: pipx install poetry
+      - name: Install pdm
+        run: pipx install pdm
         shell: bash
       - uses: actions/setup-python@v4
         with:
           python-version: "3.9"
           architecture: "x64"
-          cache: "poetry"
-      - run: poetry install
+          cache: true
+      - run: pdm install
         shell: bash
 
-      - run: poetry config pypi-token.pypi "$PYPI_TOKEN"
-        shell: bash
-        env:
-          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
-
-      - run: poetry publish --build
+      - run: pdm publish
         shell: bash
