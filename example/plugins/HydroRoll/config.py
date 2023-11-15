@@ -25,6 +25,7 @@ class RegexPluginConfig(BasePluginConfig):
 
 
 class CommandPluginConfig(RegexPluginConfig):
+    __config_name__ = "HydroRoll"
     command_prefix: Set[str] = Field(default_factory=lambda: {".", "。"})
     """命令前缀。"""
     command: Set[str] = Field(default_factory=set)

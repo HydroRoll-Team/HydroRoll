@@ -1,18 +1,37 @@
 """中间件"""
+import re
 import json
 import joblib
 import os
 import shutil
-from ast import literal_eval
-from os.path import dirname, join, abspath
+
 from iamai import ConfigModel, Plugin
 from iamai.log import logger
+from iamai.exceptions import GetEventTimeout
+from iamai.event import MessageEvent, Event
+from iamai.typing import StateT
+
 from .config import Directory, GlobalConfig, Models
 from .utils import *
 from .models.Transformer import query
 from .command import Set, Get
-from iamai.exceptions import GetEventTimeout
-from iamai.event import MessageEvent
+from .config import (
+    BasePluginConfig,
+    CommandPluginConfig,
+    RegexPluginConfig,
+    GlobalConfig,
+)
+
+from ast import literal_eval
+from os.path import dirname, join, abspath
+from abc import ABC, abstractmethod
+from typing import Any, Generic, TypeVar
+from typing_extensions import Annotated
+
+ConfigT = TypeVar("ConfigT", bound=BasePluginConfig)
+RegexPluginConfigT = TypeVar("RegexPluginConfigT", bound=RegexPluginConfig)
+CommandPluginConfigT = TypeVar("CommandPluginConfigT", bound=CommandPluginConfig)
+
 
 BASE_DIR = dirname(abspath("__file__"))
 HYDRO_DIR = dirname(abspath(__file__))
@@ -21,11 +40,8 @@ APP_DIR = join(BASE_DIR, "HydroRoll")
 # logger.info(GlobalConfig._copyright)
 
 
-class HydroRoll(Plugin):
+class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
     """中间件"""
-
-    class Config(ConfigModel):
-        __config_name__ = "HydroRoll"
 
     priority = 0
 
