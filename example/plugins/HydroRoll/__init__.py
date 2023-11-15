@@ -74,8 +74,6 @@ class HydroRoll(Plugin):
                     break
         except GetEventTimeout:
             return
-        else:
-            await self.event.reply(current_cmd)
         # if args[0] in [".root", ".roots"]:
         #     import requests
 
