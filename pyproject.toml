@@ -16,6 +16,7 @@ dependencies = [
     "iamai-adapter-onebot11>=3.2.9",
     "iamai-adapter-kook>=3.2.9",
     "iamai-adapter-dingtalk>=3.2.9",
+    "iamai-adapter-apscheduler>=3.2.9",
 ]
 requires-python = ">=3.8"
 readme = "README.md"

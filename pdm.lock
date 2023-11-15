@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform"]
 lock_version = "4.4"
-content_hash = "sha256:cf1f499440501af0c6be1c997c5ae20ad5892827d98a042868ca218f7d7b6b15"
+content_hash = "sha256:1131495d892a34c27aa6d53a94d7c70007d8a97e1c1ed37e1d2b8f9741758473"
 
 [[package]]
 name = "aiohttp"
@@ -357,6 +357,19 @@ dependencies = [
 files = [
     {file = "iamai-3.2.9-py3-none-any.whl", hash = "sha256:74c92380786e4ca82f405dd3458398641dd413efb4d7e36550c92e13521aa628"},
     {file = "iamai-3.2.9.tar.gz", hash = "sha256:d277eefd1f573d015a852ce082e9af0ff99bc452be5fc45f41c3893570ce1705"},
+]
+
+[[package]]
+name = "iamai-adapter-apscheduler"
+version = "3.2.9"
+requires_python = ">=3.8"
+summary = "apscheduler adapter for iamai."
+dependencies = [
+    "iamai>=3.2",
+]
+files = [
+    {file = "iamai_adapter_apscheduler-3.2.9-py3-none-any.whl", hash = "sha256:39313b3c88ae69c528f56baba58ecaca03f7f8a7465d5b9a51d4510f42cb8a38"},
+    {file = "iamai_adapter_apscheduler-3.2.9.tar.gz", hash = "sha256:635fc447467c3513acf034b445fedc58aa90ddde15af4a7cfd970a14e4fa94ea"},
 ]
 
 [[package]]
