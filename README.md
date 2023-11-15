@@ -1,6 +1,6 @@
 <p>
   <a href="https://hydroroll.retrofor.space">
-    <h1 align="right">HydroRoll'水系</h1> <img align="right" src="https://hydroroll.team/assets/imgae/logo.png" height="128">
+    <h1 align="right">HydroRoll'水系</h1> <img align="right" src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/HydroRoll-Team/HydroRoll/main/site/src/assets/image/logo.png" height="128">
   </a>
 </p>
 <p align="right">
