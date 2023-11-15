@@ -5,100 +5,94 @@ import random
 from abc import ABC, abstractmethod
 from typing import Type, Union, Generic, TypeVar
 from iamai import Plugin
-from iamai.typing import T_State
-from iamai.adapter.cqhttp.event import GroupMessageEvent, PrivateMessageEvent
 
-from .config import BasePluginConfig, RegexPluginConfig, CommandPluginConfig
+import re
+from abc import ABC, abstractmethod
+from typing import Any, Generic, TypeVar
 
-T_Config = TypeVar("T_Config", bound=BasePluginConfig)
-T_RegexPluginConfig = TypeVar("T_RegexPluginConfig", bound=RegexPluginConfig)
-T_CommandPluginConfig = TypeVar("T_CommandPluginConfig", bound=CommandPluginConfig)
+from iamai import MessageEvent, Plugin
+from iamai.typing import StateT
+
+from .config import BasePluginConfig, CommandPluginConfig, RegexPluginConfig
+
+ConfigT = TypeVar("ConfigT", bound=BasePluginConfig)
+RegexPluginConfigT = TypeVar("RegexPluginConfigT", bound=RegexPluginConfig)
+CommandPluginConfigT = TypeVar("CommandPluginConfigT", bound=CommandPluginConfig)
 
 
 class BasePlugin(
-    Plugin[Union[PrivateMessageEvent, GroupMessageEvent], T_State, T_Config],
+    Plugin[MessageEvent[Any], StateT, ConfigT],
     ABC,
-    Generic[T_State, T_Config],
+    Generic[StateT, ConfigT],
 ):
-    Config: Type[T_Config] = BasePluginConfig # type: ignore
-
     def format_str(self, format_str: str, message_str: str = "") -> str:
         return format_str.format(
             message=message_str,
-            user_name=self.event.sender.nickname,
-            user_id=self.event.sender.user_id,
+            user_name=self.get_event_sender_name(),
+            user_id=self.get_event_sender_id(),
         )
 
-    async def rule(self) -> bool:
-        is_bot_off = False
+    def get_event_sender_name(self) -> str:
+        from iamai.adapter.onebot11.event import MessageEvent as OneBotMessageEvent
 
-        if self.event.adapter.name != "cqhttp":
-            return False
-        if self.event.type != "message":
-            return False
-        match_str = self.event.message.get_plain_text()
-        if is_bot_off:
-            if self.event.message.startswith(f"[CQ:at,qq={self.event.self_id}]"):
-                match_str = re.sub(
-                    rf"^\[CQ:at,qq={self.event.self_id}\]", "", match_str
-                )
-            elif self.event.message.startswith(f"[CQ:at,qq={self.event.self_tiny_id}]"):
-                match_str = re.sub(
-                    rf"^\[CQ:at,qq={self.event.self_tiny_id}\]", "", match_str
-                )
-            else:
-                return False
-        if self.config.handle_all_message:
-            return self.str_match(match_str)
-        elif self.config.handle_friend_message:
-            if self.event.message_type == "private":
-                return self.str_match(match_str)
-        elif self.config.handle_group_message:
-            if self.event.message_type == "group":
-                if (
-                    self.config.accept_group is None
-                    or self.event.group_id in self.config.accept_group
-                ):
-                    return self.str_match(match_str)
-        return False
+        if isinstance(self.event, OneBotMessageEvent):
+            return self.event.sender.nickname or ""
+        return ""
+
+    def get_event_sender_id(self) -> str:
+        from iamai.adapter.onebot11.event import MessageEvent as OneBotMessageEvent
+
+        if isinstance(self.event, OneBotMessageEvent):
+            if self.event.sender.user_id is not None:
+                return str(self.event.sender.user_id)
+            return ""
+        return ""
+
+    async def rule(self) -> bool:
+        return isinstance(self.event, MessageEvent) and self.str_match(
+            self.event.get_plain_text()
+        )
 
     @abstractmethod
     def str_match(self, msg_str: str) -> bool:
-        raise NotImplemented
+        raise NotImplementedError
 
 
-class RegexPluginBase(BasePlugin[T_State, T_RegexPluginConfig], ABC):
-    msg_match: re.Match
-    re_pattern: re.Pattern
-    Config: Type[T_RegexPluginConfig] = RegexPluginConfig
+class RegexPluginBase(BasePlugin[StateT, RegexPluginConfigT], ABC):
+    msg_match: re.Match[str]
+    re_pattern: re.Pattern[str]
 
     def str_match(self, msg_str: str) -> bool:
         msg_str = msg_str.strip()
-        self.msg_match = self.re_pattern.fullmatch(msg_str)
+        msg_match = self.re_pattern.fullmatch(msg_str)
+        if msg_match is None:
+            return False
+        self.msg_match = msg_match
         return bool(self.msg_match)
 
 
-class CommandPluginBase(RegexPluginBase[T_State, T_CommandPluginConfig], ABC):
-    command_match: re.Match
-    command_re_pattern: re.Pattern
-    Config: Type[T_CommandPluginConfig] = CommandPluginConfig
+class CommandPluginBase(RegexPluginBase[StateT, CommandPluginConfigT], ABC):
+    command_match: re.Match[str]
+    command_re_pattern: re.Pattern[str]
 
     def str_match(self, msg_str: str) -> bool:
-        if not hasattr(self, "command_re_pattern"):
-            self.command_re_pattern = re.compile(
-                f'({"|".join(self.config.command_prefix)})'
+        if not hasattr(self, "re_pattern"):
+            self.re_pattern = re.compile(
+                f'[{"".join(self.config.command_prefix)}]'
                 f'({"|".join(self.config.command)})'
                 r"\s*(?P<command_args>.*)",
                 flags=re.I if self.config.ignore_case else 0,
             )
         msg_str = msg_str.strip()
-        self.command_match = self.command_re_pattern.fullmatch(msg_str)
-        if not self.command_match:
+        msg_match = self.re_pattern.fullmatch(msg_str)
+        if not msg_match:
             return False
-        self.msg_match = self.re_pattern.fullmatch(
-            self.command_match.group("command_args")
-        )
-        return bool(self.msg_match)
+        self.msg_match = msg_match
+        command_match = self.re_pattern.fullmatch(self.msg_match.group("command_args"))
+        if not command_match:
+            return False
+        self.command_match = command_match
+        return True
 
 
 class PseudoRandomGenerator:
@@ -153,9 +147,7 @@ class HydroDice:
         if len(rolls) > int(threshold):
             return str(total)
         rolls_str = " + ".join(str(r) for r in rolls)
-        return (
-            f"{total} = {rolls_str}" if is_reversed else f"{rolls_str} = {total}"
-        )
+        return f"{total} = {rolls_str}" if is_reversed else f"{rolls_str} = {total}"
 
 
 def find_max_similarity(input_string, string_list):
@@ -174,6 +166,5 @@ def find_max_similarity(input_string, string_list):
 
 def check_file(filename: str) -> bool:
     """根据给定参数校验文件夹内文件完整性"""
-    
-    
+
     return False

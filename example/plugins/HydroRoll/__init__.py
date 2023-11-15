@@ -58,6 +58,7 @@ class HydroRoll(Plugin):
         logger.info(f"Command {current_cmd} not found with flag {flag}")
         if args[0] in [".root", ".roots"]:
             import requests
+
             data = requests.get("https://vercel-hitokoto.vercel.app/api/roots").json()
             await self.event.reply(data["line"])
         else:
@@ -80,9 +81,8 @@ class HydroRoll(Plugin):
         @BODY: lexer module will return a list of tokens, parser module will parse the tokens into a tree, and executor module will execute the tokens with a stack with a bool return value.
         """
         logger.info("loading psi...")
-        if (
-            not self.bot.global_state["HydroRoll"].get("hola")
-            and not os.path.exists(join(BASE_DIR, "HydroRoll"))
+        if not self.bot.global_state["HydroRoll"].get("hola") and not os.path.exists(
+            join(BASE_DIR, "HydroRoll")
         ):
             # hola = self.models["hola"]
             # _, max_similarity = find_max_similarity(
@@ -126,17 +126,3 @@ class HydroRoll(Plugin):
 
     def load_models(self):
         self.models = self._load_models(self.model_path_list, self.model_dict)
-
-    # async def ask(self, ask_text: str | None, timeout: int = 10) -> None:
-    #     if ask_text:
-    #         await self.event.reply(ask_text)
-    #     try:
-    #         event = await self.event.adapter.get(
-    #             lambda x: x.type == "message"
-    #             and x.group_id == self.event.group_id
-    #             and x.user_id == self.event.user_id,
-    #             timeout=timeout,
-    #         )
-    #         return event
-    #     except GetEventTimeout as e:
-    #         raise GetEventTimeout from e

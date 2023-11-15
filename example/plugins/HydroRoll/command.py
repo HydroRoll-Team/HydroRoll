@@ -1,9 +1,7 @@
-from .utils import CommandPluginBase
-
-class Get(CommandPluginBase):
+class Get:
     ...
 
 
 
-class Set(CommandPluginBase):
+class Set:
     ...

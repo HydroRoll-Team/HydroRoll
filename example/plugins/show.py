@@ -1,6 +1,6 @@
 from iamai import Plugin
 from numpy.random import Generator
-from iamai.adapter.cqhttp.message import CQHTTPMessage, CQHTTPMessageSegment
+from iamai.adapter.onebot11.message import CQHTTPMessage, CQHTTPMessageSegment
 
 ms = CQHTTPMessageSegment
 
