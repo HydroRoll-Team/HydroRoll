@@ -81,19 +81,6 @@ class HydroRoll(Plugin):
         @BODY: lexer module will return a list of tokens, parser module will parse the tokens into a tree, and executor module will execute the tokens with a stack with a bool return value.
         """
         logger.info("loading psi...")
-        if not self.bot.global_state["HydroRoll"].get("hola") and not os.path.exists(
-            join(BASE_DIR, "HydroRoll")
-        ):
-            # hola = self.models["hola"]
-            # _, max_similarity = find_max_similarity(
-            #     self.event.message.get_plain_text(), hola
-            # )
-            max_similarity = 1
-            if max_similarity > 0.51:
-                self.init_directory()
-                self.bot.global_state["HydroRoll"]["hola"] = True
-                await self.event.reply("验证成功√ 正在初始化水系目录...")
-                logger.info(GlobalConfig._copyright)
         return isinstance(self.event, MessageEvent)
 
     def _init_directory(self, _prefix: str = ""):

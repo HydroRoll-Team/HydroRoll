@@ -79,7 +79,7 @@ HydroRoll 水系 的论坛在 [GitHub Discussions](https://github.com/HydroRoll-
 1. 使用 `pdm` 局部更新
 
 ``` shell
-pdm upgrade hyrdroroll
+pdm update hyrdroroll
 ```
 
 
