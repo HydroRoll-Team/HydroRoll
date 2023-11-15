@@ -72,7 +72,7 @@ HydroRoll 水系 的论坛在 [GitHub Discussions](https://github.com/orgs/Hydro
 
 目前你可以加入 [![](https://img.shields.io/badge/-QQ群126211793-002FA7?style=flat-square&logo=TencentQQ&logoColor=white)]() 和社区里的其它用户交流, 同时也能在里面体验到最新开发的水系骰子(krypton)。
 
-我们的 [行为准则(Code of Conduct)](https://github.com/HydroRoll-Team/HydroRoll/blob/main/CODE_OF_CONDUCT.md) 适用于 HydroRoll'水系 社区内的所有交流渠道。
+我们的 [行为准则(Code of Conduct)](./CODE_OF_CONDUCT.md) 适用于 HydroRoll'水系 社区内的所有交流渠道。
 
 ## ✨ Update
 
