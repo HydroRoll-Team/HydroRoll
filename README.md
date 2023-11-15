@@ -1,5 +1,5 @@
 <p>
-  <a href="https://hydroroll.retrofor.space">
+  <a href="https://hydroroll.team">
     <h1 align="right">HydroRoll'水系</h1> <img align="right" src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/HydroRoll-Team/HydroRoll/main/site/src/assets/image/logo.png" height="128">
   </a>
 </p>
