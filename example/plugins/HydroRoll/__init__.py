@@ -79,7 +79,7 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
             await self.event.reply(data["line"])
         else:
             if args[0] == ".core":
-                ...
+                await self.event.reply(f"{self.state}")
             # if args[0].startswith(".set"):
             #     resolve = Set(args[1:])  # TODO: handle multiple sets
             # elif args[0].startswith(".get"):
