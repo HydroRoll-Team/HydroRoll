@@ -73,23 +73,27 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
         flag = True in [cmd.startswith(current_cmd) for cmd in command_list]
         logger.info(f"Command {current_cmd} not found with flag {flag}")
         if args[0] in [".root", ".roots"]:
-            import requests
+            try:
+                import aiohttp
 
-            data = requests.get("https://vercel-hitokoto.vercel.app/api/roots").json()
-            await self.event.reply(data["line"])
-        else:
-            if args[0] == ".core":
-                await self.event.reply(f"{self.state}")
+                async with aiohttp.ClientSession() as session:
+                    async with session.get("https://api.hydroroll.team/api/roots") as response:
+                        data = await response.json()
+                        await self.event.reply(data["line"])
+            except Exception as e:
+                await self.event.reply(f"{e!r}")
+        elif args[0] == ".core":
+            await self.event.reply(f"{self.state}")
             # if args[0].startswith(".set"):
             #     resolve = Set(args[1:])  # TODO: handle multiple sets
             # elif args[0].startswith(".get"):
             #     resolve = Get(args[1:])  # TODO: handle multiple gets
-            elif args[0].startswith(".test"):
-                try:
-                    result = eval(self.event.message.get_plain_text()[5:])
-                    await self.event.reply(str(result))
-                except Exception as error:
-                    await self.event.reply(f"{error!r}")
+        elif args[0].startswith(".test"):
+            try:
+                result = eval(self.event.message.get_plain_text()[5:])
+                await self.event.reply(str(result))
+            except Exception as error:
+                await self.event.reply(f"{error!r}")
 
     async def rule(self) -> bool:
         """
@@ -128,4 +132,5 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
         return models
 
     def load_models(self):
+        """我想睡觉, 但我失眠了。"""
         self.models = self._load_models(self.model_path_list, self.model_dict)
