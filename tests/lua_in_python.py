@@ -16,20 +16,22 @@ print(
 from lupa import LuaRuntime
 
 lua = LuaRuntime(unpack_returned_tuples=True)
-import asyncio
+import os
 
-async def get_Dice_Dir():
-    import os
-    await asyncio.sleep(1)
+def get_Dice_Dir():
     return os.path.dirname(os.path.abspath(__file__))
 
 
 lua.globals().getDiceDir = get_Dice_Dir
-
-print(
-    lua.eval(
+lua.globals().package.path = lua.globals().package.path + ';' + os.path.join(get_Dice_Dir(), '?.lua')
+try:
+    lua.execute(
         """\
-    getDiceDir()
-               """
+    print(getDiceDir())
+    print(package.path)
+    js = require('json')
+    print(js)
+            """
     )
-)
+except Exception as e:
+    print(f'{e!r}')
