@@ -80,7 +80,9 @@ class Directory(object):
                 ["config"],
                 ["data"],
                 ["rules"],
-                ["scripts"],
+                ["scripts", "lua"],
+                ["scripts", "js"],
+                ["scripts", "psi"],
                 ["web", "frontend"],
                 ["web", "backend"],
             ]
