@@ -31,7 +31,7 @@ try:
     print(package.path)
     js = require('json')
     print(js)
-            """
+            """ 
     )
 except Exception as e:
     print(f'{e!r}')
