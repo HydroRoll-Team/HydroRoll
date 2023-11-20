@@ -1,7 +1,0 @@
-class Get:
-    ...
-
-
-
-class Set:
-    ...

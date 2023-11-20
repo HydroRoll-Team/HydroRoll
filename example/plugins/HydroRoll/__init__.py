@@ -14,7 +14,7 @@ from iamai.typing import StateT
 from .config import Directory, GlobalConfig, Models
 from .utils import *
 from .models.Transformer import query
-from .command import Set, Get
+
 from .config import (
     BasePluginConfig,
     CommandPluginConfig,
