@@ -18,6 +18,7 @@ dependencies = [
     "iamai-adapter-dingtalk>=3.2.9",
     "iamai-adapter-apscheduler>=3.2.9",
     "apscheduler>=3.10.4",
+    "lupa>=2.0",
 ]
 requires-python = ">=3.8"
 readme = "README.md"
