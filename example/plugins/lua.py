@@ -51,7 +51,7 @@ class Lua(Plugin):
                 await self.event.reply(result)
         except Exception as e:
             await self.event.reply(f"ERROR！{e!r}")
-            logger.info("ERROR with message: {}".format(e))
+            logger.info(f"ERROR with message: {e}")
 
     async def rule(self) -> bool:
         return (
