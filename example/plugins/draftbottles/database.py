@@ -1,0 +1,9 @@
+class Database:
+    def __init__(self) -> None:
+        ...
+
+    def connect(self):
+        ...
+
+    def close(self):
+        ...
