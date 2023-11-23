@@ -35,6 +35,14 @@ class Lua(Plugin):
                     coro = self.event.reply(message)
                     asyncio.run_coroutine_threadsafe(coro, loop)
 
+                def ask(self, message=None, timeout=10):
+                    if not message:
+                        return self.__str__
+
+                    loop = asyncio.get_event_loop()
+                    coro = self.event.ask(message, timeout=timeout)
+                    asyncio.run_coroutine_threadsafe(coro, loop)
+
 
             lua.globals().msg = msg
             lua.globals().event = self.event
