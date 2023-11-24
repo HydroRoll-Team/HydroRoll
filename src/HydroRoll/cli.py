@@ -3,7 +3,10 @@ import os
 import aiohttp
 import asyncio
 import json
+from typing import TYPE_CHECKING
 
+if TYPE_CHECKING:
+    from .typing import *
 
 class Cli(object):
     parser = argparse.ArgumentParser(description="水系终端脚手架")
