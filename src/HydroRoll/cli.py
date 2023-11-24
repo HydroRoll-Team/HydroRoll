@@ -1,6 +1,7 @@
 import argparse
 import os
 import requests
+import json
 
 class Cli(object):
     parser = argparse.ArgumentParser(description="水系终端脚手架")
@@ -14,6 +15,9 @@ class Cli(object):
         )
         self.parser.add_argument(
             "-S", "--search", dest="command", help="在指定镜像源查找规则包、插件与模型", action="store_const", const="search_package"
+        )
+        self.parser.add_argument(
+            "-c", "--config", dest="command", help="配置管理", action="store_const", const="config"
         )
         self.args = self.parser.parse_args()
 
@@ -29,12 +33,11 @@ class Cli(object):
         response = requests.get(url)
 
         if response.status_code == 200:
-            self._extracted_from_install_packages_7(response, package_name)
+            self._extract_package(response, package_name)
         else:
             print(f"找不到包：{package_name}")
 
-    # TODO Rename this here and in `install_packages`
-    def _extracted_from_install_packages_7(self, response, package_name):
+    def _extract_package(self, response, package_name):
         data = response.json()
         latest_version = data["info"]["version"]
         download_url = data["releases"][latest_version][0]["url"]
@@ -83,4 +86,64 @@ class Cli(object):
                     print(f"包名：{name}")
         else:
             print(f"搜索失败")
+    
+    def config(self):
+        config_dir = os.path.expanduser("~/.hydroroll")
+        if not os.path.exists(config_dir):
+            os.makedirs(config_dir)
+        
+        config_file = os.path.join(config_dir, "config.json")
+        
+        subcommand = input("请输入子命令（add/delete）：")
+        
+        if subcommand == "add":
+            key = input("请输入要添加的键名：")
+            value = input("请输入要添加的键值：")
+            
+            with open(config_file, "r+") as file:
+                try:
+                    config_data = json.load(file)
+                except json.JSONDecodeError:
+                    config_data = {}
+                
+                config_data[key] = value
+                file.seek(0)
+                json.dump(config_data, file, indent=4)
+                file.truncate()
+                
+            print(f"成功添加配置项：{key}={value}")
+        
+        elif subcommand == "delete":
+            key = input("请输入要删除的键名：")
+            
+            with open(config_file, "r+") as file:
+                try:
+                    config_data = json.load(file)
+                except json.JSONDecodeError:
+                    config_data = {}
+                
+                if key in config_data:
+                    del config_data[key]
+                    file.seek(0)
+                    json.dump(config_data, file, indent=4)
+                    file.truncate()
+                    print(f"成功删除配置项：{key}")
+                else:
+                    print(f"配置项不存在：{key}")
+        
+        else:
+            print("无效的子命令选择")
 
+
+cli = Cli()
+
+if cli.get_args().command == "install_package":
+    cli.install_packages()
+elif cli.get_args().command == "build_template":
+    cli.build_template()
+elif cli.get_args().command == "search_package":
+    cli.search_package()
+elif cli.get_args().command == "config":
+    cli.config()
+else:
+    print(cli.get_help())
