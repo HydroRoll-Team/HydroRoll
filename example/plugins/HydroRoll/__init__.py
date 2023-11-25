@@ -57,7 +57,7 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
         self.model_path_list.append(join(BASE_DIR, "models"))
         self.model_path_list.append(join(HYDRO_DIR, "models"))
         self.model_path_list.append(join(BASE_DIR, "HydroRoll", "models"))
-
+ 
         self.load_models()
 
     async def handle(self) -> None:
@@ -134,3 +134,4 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
     def load_models(self):
         """我想睡觉, 但我失眠了。"""
         self.models = self._load_models(self.model_path_list, self.model_dict)
+ 
