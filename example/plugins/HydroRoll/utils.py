@@ -33,14 +33,14 @@ class BasePlugin(
         )
 
     def get_event_sender_name(self) -> str:
-        from iamai.adapter.onebot11.event import MessageEvent as OneBotMessageEvent
+        from iamai.adapter.gensokyo.event import MessageEvent as OneBotMessageEvent
 
         if isinstance(self.event, OneBotMessageEvent):
             return self.event.sender.nickname or ""
         return ""
 
     def get_event_sender_id(self) -> str:
-        from iamai.adapter.onebot11.event import MessageEvent as OneBotMessageEvent
+        from iamai.adapter.gensokyo.event import MessageEvent as OneBotMessageEvent
 
         if isinstance(self.event, OneBotMessageEvent):
             if self.event.sender.user_id is not None:

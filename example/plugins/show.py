@@ -1,8 +1,8 @@
 from iamai import Plugin
 from numpy.random import Generator
-from iamai.adapter.onebot11.message import CQHTTPMessage, CQHTTPMessageSegment
+from iamai.adapter.gensokyo.message import GSKMessage, GSKMessageSegment
 
-ms = CQHTTPMessageSegment
+ms = GSKMessageSegment
 
 
 

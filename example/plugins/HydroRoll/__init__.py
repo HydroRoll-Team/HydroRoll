@@ -57,7 +57,7 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
         self.model_path_list.append(join(BASE_DIR, "models"))
         self.model_path_list.append(join(HYDRO_DIR, "models"))
         self.model_path_list.append(join(BASE_DIR, "HydroRoll", "models"))
-
+ 
         self.load_models()
 
     async def handle(self) -> None:
@@ -68,11 +68,11 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
         global flag
 
         args = self.event.get_plain_text().split(" ")
-        command_list = [".root", ".roots", ".core", ".set", ".get", ".test"]
+        command_list = ["/root", "/roots", ".core", ".set", ".get", ".test"]
         current_cmd = args[0]
         flag = True in [cmd.startswith(current_cmd) for cmd in command_list]
         logger.info(f"Command {current_cmd} not found with flag {flag}")
-        if args[0] in [".root", ".roots"]:
+        if args[0] in ["/root", "/roots"]:
             try:
                 import aiohttp
 
@@ -134,3 +134,4 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
     def load_models(self):
         """我想睡觉, 但我失眠了。"""
         self.models = self._load_models(self.model_path_list, self.model_dict)
+ 
