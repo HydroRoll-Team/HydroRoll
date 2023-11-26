@@ -1,13 +1,13 @@
 from iamai import Plugin
 from numpy.random import Generator
-from iamai.adapter.onebot11.message import CQHTTPMessage, CQHTTPMessageSegment
+from iamai.adapter.gensokyo.message import GSKMessage, GSKMessageSegment
 from iamai.log import logger
 from lupa import LuaRuntime
 from iamai.utils import sync_func_wrapper
 import asyncio
 
 lua = LuaRuntime(unpack_returned_tuples=True)
-ms = CQHTTPMessageSegment
+ms = GSKMessageSegment
 
 
 class Lua(Plugin):

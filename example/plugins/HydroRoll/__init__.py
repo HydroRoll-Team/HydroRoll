@@ -68,11 +68,11 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
         global flag
 
         args = self.event.get_plain_text().split(" ")
-        command_list = [".root", ".roots", ".core", ".set", ".get", ".test"]
+        command_list = ["/root", "/roots", ".core", ".set", ".get", ".test"]
         current_cmd = args[0]
         flag = True in [cmd.startswith(current_cmd) for cmd in command_list]
         logger.info(f"Command {current_cmd} not found with flag {flag}")
-        if args[0] in [".root", ".roots"]:
+        if args[0] in ["/root", "/roots"]:
             try:
                 import aiohttp
 

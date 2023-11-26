@@ -3,8 +3,7 @@ from .database import Database
 from .permission import Permission
 from .workroutes import WorkRoutes
 from iamai.exceptions import GetEventTimeout
-from iamai.adapter.onebot11.message import CQHTTPMessageSegment as ms
-
+from iamai.adapter.gensokyo.message import GSKMessageSegment as ms
 
 class Inspector:
     event: Event = Depends()
@@ -15,6 +14,7 @@ class Inspector:
 
     async def test(self, *args):
         suffix = list(args)[0]
+        a = "1"
         try:
             return f"{eval(suffix)}"
         except Exception as e:

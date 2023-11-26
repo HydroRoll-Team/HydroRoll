@@ -12,18 +12,18 @@ dependencies = [
     "jieba>=0.42.1",
     "scikit-learn>=1.3.1",
     "requests>=2.31.0",
-    "iamai>=3.2.9",
-    "iamai-adapter-onebot11>=3.2.9",
-    "iamai-adapter-kook>=3.2.9",
-    "iamai-adapter-dingtalk>=3.2.9",
-    "iamai-adapter-apscheduler>=3.2.9",
+    "iamai-adapter-kook>=3.3.0",
+    "iamai-adapter-dingtalk>=3.3.0",
+    "iamai-adapter-apscheduler>=3.3.0",
     "apscheduler>=3.10.4",
     "lupa>=2.0",
+    "iamai-adapter-gensokyo>=3.3.0",
+    "iamai>=3.3.0",
 ]
 requires-python = ">=3.8"
 readme = "README.md"
 license = {text = "MIT"}
-keywords = ["bot", "qq", "qqbot", "mirai", "coolq"]
+keywords = ["bot", "qq", "qqbot", "mirai", "coolq", "gensokyo", "dice", "hydroroll"]
 classifiers = ["Development Status :: 5 - Production/Stable", "Framework :: Robot Framework", "Framework :: Robot Framework :: Library", "Operating System :: OS Independent", "Programming Language :: Python :: 3"]
 
 [project.urls]
