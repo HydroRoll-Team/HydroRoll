@@ -17,6 +17,7 @@ dependencies = [
     "iamai-adapter-apscheduler>=3.3.0",
     "apscheduler>=3.10.4",
     "lupa>=2.0",
+    "windows-curses>=2.3.2",
     "iamai-adapter-gensokyo>=3.3.0",
     "iamai>=3.3.0",
 ]
