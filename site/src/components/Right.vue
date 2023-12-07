@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ChangeLog from './ChangeLog.vue'
-
+import DocumentationIcon from './icons/IconDocumentation.vue'
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import ChangeLog from './ChangeLog.vue'
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>ChangeLog</template>
+    <template>ChangeLog</template>
   </ChangeLog>
 
 
