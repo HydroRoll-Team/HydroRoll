@@ -1,6 +1,5 @@
 <script lang="ts">
-import axios from 'axios'
-
+import axios from 'axios';
 export default {
   data() {
     return {
@@ -20,7 +19,7 @@ export default {
   },
   methods: {
     getChangeLog() {
-      axios.get('https://api.github.com/repos/HydroRoll-Team/HydroRoll/releases/latest\n').then(res => {
+      axios.get('https://api.github.com/repos/HydroRoll-Team/HydroRoll/releases/latest').then(res => {
         this.ChangeLogTagName=res.data['tag_name'];
         this.ChangeLogMessage=res.data['body'];
         console.log(res.data);
@@ -44,7 +43,8 @@ export default {
       <h3>
         {{ ChangeLogTagName }}
       </h3>
-      {{ ChangeLogMessage }}
+      <v-md-preview :text="ChangeLogMessage"></v-md-preview>
+
     </div>
   </div>
 
