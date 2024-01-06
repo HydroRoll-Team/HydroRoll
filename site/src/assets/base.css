@@ -1,6 +1,8 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #ffffff;
+  /*背景色*/
+  /*--vt-c-white: #ffffff;*/
+  --vt-c-white: #001F3A;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
@@ -8,13 +10,18 @@
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
 
-  --vt-c-indigo: #2c3e50;
+  /*文字色*/
+  /*--vt-c-indigo: #2c3e50;*/
+  --vt-c-indigo: rgba(255,255,255,0.5);
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  /*边框色*/
+  /*--vt-c-divider-light-2: rgba(60, 60, 60, 0.12);*/
+  --vt-c-divider-light-2: rgba(255, 255, 255, 0.12);
   --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
   --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
 
+  /*小标题色*/
   --vt-c-text-light-1: var(--vt-c-indigo);
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
