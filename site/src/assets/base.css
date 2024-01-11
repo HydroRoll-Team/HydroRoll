@@ -43,6 +43,8 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
+
+  --icon-highlight: linear-gradient(to right, #00F8F3, #00BDEF);
 }
 
 @media (prefers-color-scheme: dark) {
