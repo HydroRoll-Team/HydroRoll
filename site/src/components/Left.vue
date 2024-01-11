@@ -65,12 +65,18 @@ h3 {
 }
 
 .greetings h1,
+.greetings h2 {
+  text-align: center;
+}
 .greetings h3 {
   text-align: center;
 }
 
 @media (min-width: 1024px) {
   .greetings h1,
+  .greetings h2 {
+    text-align: left;
+  }
   .greetings h3 {
     text-align: left;
   }
