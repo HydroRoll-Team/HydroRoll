@@ -20,13 +20,13 @@
     </a>
 </p>
 
-水系是一个基于深度学习框架iamai的跨平台骰系，尽管只是作为iamai的插件示例，但它仍然有自己的创新之处与标准遵循:
+水系是一个基于深度学习框架iamai的跨平台骰系，尽管只是作为iamai的插件示例，但它作为一个骰系，相比于其他常用骰系而言仍然有自己的创新之处与新的标准遵循:
 
 - **语法高度严谨且自由**: 命令语法贴切实际，输入灵活方便。
 
-- **概念继承但焕然一新**: 因为开发者混迹的骰系群以及使用过的骰系很多，因此继承学习了相当一部分各个骰系做的比较好的地方，同时也引入了诸多类似(规则模块、世界主、模型模块)等概念。
+- **概念继承但焕然一新**: 因为开发者混迹的骰系群以及使用过的骰系很多，因此继承学习了相当一部分各个骰系做的比较好的地方，同时也引入了诸多例如规则模块、世界主、模型模块等较新的概念。
 
-## 🎁 Getting
+## Getting
 
 1. 安装库
 
@@ -60,11 +60,11 @@ if __name__ == "__main__":
 pdm run main.py
 ```
 
-## 💕 Contributing
+## Contributing
 
 欢迎阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)
 
-## 🙋‍ Community
+## Community
 
 HydroRoll 水系 的论坛在 [GitHub Discussions](https://github.com/orgs/HydroRoll-Team/discussions), 你可以在这里提出任何问题, 分享任何想法。
 
@@ -72,7 +72,7 @@ HydroRoll 水系 的论坛在 [GitHub Discussions](https://github.com/orgs/Hydro
 
 我们的 [行为准则(Code of Conduct)](./CODE_OF_CONDUCT.md) 适用于 HydroRoll'水系 社区内的所有交流渠道。
 
-## ✨ Update
+## Update
 
 1. 使用 `pdm` 局部更新
 
@@ -81,11 +81,11 @@ pdm update hyrdroroll
 ```
 
 
-## 🔺Structure
+## Structure
 
 [![Structure](https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/-8GQ3jezs4jjRVX5ZbACiuiSwmPbkzEdEQAyP2ednF0_table.svg)](https://github.com/HydroRoll-Team/HydroRoll)
 
 
-## 📄 License
+## License
 
 [MIT](https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE) © 2023-PRESENT [简律纯](https://github.com/HsiangNianian)
