@@ -1,4 +1,4 @@
-|ruff| |python_v| |community| |docs| |qq_group|
+|ruff| |python_v| |community| |docs| |q_group|
 
 水系是一个基于机器学习框架iamai的跨平台骰系，尽管只是作为iamai的插件示例，但它仍然有自己的创新之处与标准遵循:
 
@@ -91,7 +91,7 @@ License
 `MIT <https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE>`__
 © 2023-PRESENT `简律纯 <https://github.com/HsiangNianian>`__
 
-.. |qq_group| image:: https://img.shields.io/badge/-QQ群126211793-002FA7?style=flat-square&logo=TencentQQ&logoColor=white
+.. |q_group| image:: https://img.shields.io/badge/-QQ群126211793-002FA7?style=flat-square&logo=TencentQQ&logoColor=white
    :target: 
 .. |Structure| image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/-8GQ3jezs4jjRVX5ZbACiuiSwmPbkzEdEQAyP2ednF0_table.svg
    :target: https://github.com/HydroRoll-Team/HydroRoll
