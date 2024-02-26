@@ -1,6 +1,10 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
 [project]
 name = "HydroRoll"
-version = "0.1.4"
+dynamic = ["version"]
 description = "HydroRoll System."
 authors = [
     {name = "简律纯", email = "i@jyunko.cn"},
@@ -20,15 +24,24 @@ dependencies = [
     "iamai[onebot11]>=0.0.2",
 ]
 requires-python = ">=3.8"
-readme = "README.md"
+readme = "README.rst"
 license = {text = "MIT"}
 keywords = ["bot", "qq", "qqbot", "mirai", "coolq", "gensokyo", "dice", "hydroroll"]
-classifiers = ["Development Status :: 5 - Production/Stable", "Framework :: Robot Framework", "Framework :: Robot Framework :: Library", "Operating System :: OS Independent", "Programming Language :: Python :: 3"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable", 
+    "Framework :: Robot Framework", 
+    "Framework :: Robot Framework :: Library", 
+    "Operating System :: OS Independent", 
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
 
 [project.urls]
-homepage = "https://hydroroll.retrofor.space/"
-repository = "https://github.com/HydroRoll-Team/hydroroll"
-documentation = "https://hydroroll.retrofor.space/"
-[build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
+homepage = "https://hydroroll.team/"
+repository = "https://github.com/HydroRoll-Team/HydroRoll"
+documentation = "https://docs.hydroroll.team/"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
