@@ -109,3 +109,4 @@ docs/.next/
 # example
 example/config.toml
 .pdm-python
+bottles.db
