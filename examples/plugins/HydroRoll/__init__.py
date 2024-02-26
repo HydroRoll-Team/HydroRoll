@@ -5,6 +5,7 @@ import joblib
 import os
 import shutil
 
+import oneroll
 from iamai import ConfigModel, Plugin
 from iamai.log import logger
 from iamai.exceptions import GetEventTimeout
@@ -45,8 +46,8 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
 
     priority = 0
 
-    # TODO: HydroRollCore should be able to handle all signals and tokens from Psi.
-    logger.info("Loading HydroRollCore...")
+    # TODO: infini should be able to handle all signals and tokens from Psi.
+    logger.info("Loading infini...")
 
     def __post_init__(self):
         self.state = {}
@@ -57,27 +58,41 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
         self.model_path_list.append(join(BASE_DIR, "models"))
         self.model_path_list.append(join(HYDRO_DIR, "models"))
         self.model_path_list.append(join(BASE_DIR, "HydroRoll", "models"))
- 
+
         self.load_models()
 
     async def handle(self) -> None:
         """
-        @TODO: HydroRollCore should be able to handle all signals and tokens from Psi.
-        @BODY: HydroRollCore actives the rule-packages.
+        @TODO: infini should be able to handle all signals and tokens from Psi.
+        @BODY: infini actives the rule-packages.
         """
         global flag
 
         args = self.event.get_plain_text().split(" ")
-        command_list = ["/root", "/roots", ".core", ".set", ".get", ".test"]
+        command_list = ["/r", ".root", ".roots", ".core", ".set", ".get", ".test"]
         current_cmd = args[0]
+        text = (
+            self.event.get_plain_text()[2:]
+            if len(self.event.get_plain_text()) >= 2
+            else None
+        )
         flag = True in [cmd.startswith(current_cmd) for cmd in command_list]
-        logger.info(f"Command {current_cmd} not found with flag {flag}")
-        if args[0] in ["/root", "/roots"]:
+        # logger.info(f"Command {current_cmd} not found with flag {flag}")
+        logger.info(f"text: {text}")
+        if text and self.event.get_plain_text().startswith("/r"):
+            logger.info(text)
+            try:
+                await self.event.reply(f"{oneroll.roll(text)}")
+            except Exception as e:
+                await self.event.reply(f"{e!r}")
+        if args[0] in [".root", ".roots"]:
             try:
                 import aiohttp
 
                 async with aiohttp.ClientSession() as session:
-                    async with session.get("https://api.hydroroll.team/api/roots") as response:
+                    async with session.get(
+                        "https://api.hydroroll.team/api/roots"
+                    ) as response:
                         data = await response.json()
                         await self.event.reply(data["line"])
             except Exception as e:
@@ -134,4 +149,3 @@ class Dice(Plugin[MessageEvent, Annotated[dict, {}], RegexPluginConfig]):
     def load_models(self):
         """我想睡觉, 但我失眠了。"""
         self.models = self._load_models(self.model_path_list, self.model_dict)
- 

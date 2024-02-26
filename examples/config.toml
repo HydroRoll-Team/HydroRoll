@@ -1,0 +1,45 @@
+[bot]
+plugins = []
+plugin_dirs = ["plugins"]
+rules = []
+rule_dirs = ["rules"]
+adapters = [
+    "iamai.adapter.onebot11",
+    # "iamai.adapter.gensokyo",
+    # "iamai.adapter.apscheduler",
+    # "iamai.adapter.dingtalk"        
+]
+
+[bot.log]
+level = "INFO"
+verbose_exception = true
+
+[adapter.onebot11]
+adapter_type = "reverse-ws"
+host = "127.0.0.1"
+port = 8080
+url = "/cqhttp/ws"
+show_raw = true
+
+[adapter.gensokyo]
+adapter_type = "reverse-ws"
+host = "127.0.0.1"
+port = 8081
+url = "/gsk/ws"
+show_raw = true
+
+[adapter.dingtalk]
+adapter_type = "stream"
+host = "127.0.0.1"
+port = 15700
+url = "/dingtalk"
+app_secret = "FnQU_a88xRpmcs3oPNXSgoQgm4TidGduVqKhLHR7_NgF6MLBUUbwYdE6MkOFWZFb"
+app_key = "dingo7xu5djthkxpoick"
+
+[adapter.apscheduler]
+scheduler_config = { "apscheduler.timezone" = "Asia/Shanghai" }
+
+[plugin.HydroRoll]
+uid = ''
+rules = []
+rule_dirs = ["rules"]

@@ -12,6 +12,7 @@
 # there is no more input left for lexical analysis
 from iamai import Plugin
 from HydroRoll.utils import HydroDice
+
 INTEGER, PLUS, MINUS, MUL, DIV, LPAREN, RPAREN, EOF = (
     "INTEGER",
     "PLUS",

@@ -42,17 +42,17 @@ class HydroRoll(Plugin):
 
     priority = 0
 
-    # TODO: HydroRollCore should be able to handle all signals and tokens from Psi.
-    logger.info("Loading HydroRollCore...")
+    # TODO: infini should be able to handle all signals and tokens from Psi.
+    logger.info("Loading infini...")
 
     async def handle(self) -> None:
         """
-        @TODO: HydroRollCore should be able to handle all signals and tokens from Psi.
-        @BODY: HydroRollCore actives the rule-packages.
+        @TODO: infini should be able to handle all signals and tokens from Psi.
+        @BODY: infini actives the rule-packages.
         """
 
         if self.event.message.get_plain_text() == ".core":
-            await self.event.reply("HydroRollCore is running.")
+            await self.event.reply("infini is running.")
         elif self.event.message.startswith(".test"):
             try:
                 result = literal_eval(self.event.message.get_plain_text()[5:])

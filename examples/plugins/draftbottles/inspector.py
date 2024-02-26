@@ -2,8 +2,10 @@ from iamai import Event, Depends, Bot
 from .database import Database
 from .permission import Permission
 from .workroutes import WorkRoutes
+from .config import Config
 from iamai.exceptions import GetEventTimeout
-from iamai.adapter.gensokyo.message import GSKMessageSegment as ms
+from iamai.adapter.onebot11.message import CQHTTPMessageSegment as ms
+import oneroll
 
 class Inspector:
     event: Event = Depends()

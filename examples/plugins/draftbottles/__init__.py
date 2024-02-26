@@ -29,9 +29,6 @@ class Bottles(Plugin, config=Config):
             ),
             "",
         )
-        logger.debug(
-            f"Prefix: {self.prefix}, suffix: {self.suffix}, namespace: {self.namespace}"
-        )
         if method := getattr(self.inspector, self.namespace, None):
             result = await method(self.suffix, self.config)
             if result:
@@ -39,6 +36,8 @@ class Bottles(Plugin, config=Config):
 
     async def rule(self) -> bool:
         if not isinstance(self.event, MessageEvent):
+            return False
+        if not self.permission.is_admin():
             return False
         self.text = self.event.get_plain_text()
         for prefix in list(self.config.command_list.values()):

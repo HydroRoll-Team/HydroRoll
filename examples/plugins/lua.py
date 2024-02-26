@@ -1,13 +1,14 @@
 from iamai import Plugin
+from iamai.exceptions import GetEventTimeout
 from numpy.random import Generator
-from iamai.adapter.gensokyo.message import GSKMessage, GSKMessageSegment
+from iamai.adapter.onebot11.message import CQHTTPMessage, CQHTTPMessageSegment
 from iamai.log import logger
 from lupa import LuaRuntime
 from iamai.utils import sync_func_wrapper
 import asyncio
 
 lua = LuaRuntime(unpack_returned_tuples=True)
-ms = GSKMessageSegment
+ms = CQHTTPMessageSegment
 
 
 class Lua(Plugin):
@@ -17,8 +18,6 @@ class Lua(Plugin):
     async def handle(self) -> None:
         try:
             self.suffix = self.event.message.get_plain_text()[len(self.prefix) + 1 :]
-
-
 
             class msg:
                 priority = self.priority
@@ -35,15 +34,20 @@ class Lua(Plugin):
                     coro = self.event.reply(message)
                     asyncio.run_coroutine_threadsafe(coro, loop)
 
-                def ask(self, message=None, timeout=10):
+                def ask(self, message=None, timeout=10, **kwargs):
                     if not message:
                         return self.__str__
 
                     loop = asyncio.get_event_loop()
-                    coro = self.event.ask(message, timeout=timeout)
-                    asyncio.run_coroutine_threadsafe(coro, loop)
-
-
+                    try:
+                        coro = self.event.ask(message, timeout=timeout)
+                        asyncio.run_coroutine_threadsafe(coro, loop)
+                    except GetEventTimeout:
+                        return self.__str__
+                    else:
+                        coro = self.event.reply(**kwargs)
+                        asyncio.run_coroutine_threadsafe(coro, loop)
+                        
             lua.globals().msg = msg
             lua.globals().event = self.event
             # logger.info(lua.eval(self.suffix))

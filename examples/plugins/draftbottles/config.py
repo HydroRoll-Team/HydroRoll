@@ -45,8 +45,8 @@ class Config(ConfigModel):
     }
 
     white_list: dict = {
-        'groups': [],
-        'users': [],
-        }
+        "groups": [],
+        "users": [],
+    }
 
     max_content_length: int = 1024
