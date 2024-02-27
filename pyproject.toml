@@ -3,7 +3,7 @@ requires = ["maturin>=1.4,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "HydroRoll"
+name = "hydro_roll"
 dynamic = ["version"]
 description = "HydroRoll System."
 authors = [
