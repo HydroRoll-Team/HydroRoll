@@ -103,7 +103,6 @@ jobs:
 
   release:
     name: Release
-    environment: release
     runs-on: ubuntu-latest
     if: "startsWith(github.ref, 'refs/tags/')"
     needs: [linux, windows, macos, sdist]
@@ -113,6 +112,8 @@ jobs:
           name: wheels
       - name: Publish to PyPI
         uses: PyO3/maturin-action@v1
+        env:
+          MATURIN_PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         with:
           command: upload
-          args: --skip-existing *
+          args: --non-interactive --skip-existing *
