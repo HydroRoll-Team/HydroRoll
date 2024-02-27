@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.1.8-alpha.2] - 2024-02-27
+### Bug Fixes
+- [`0013c4f`](https://github.com/HydroRoll-Team/HydroRoll/commit/0013c4ffe35ecd1c65fdf0d77bb741696a2ae1a2) - **workflow**: update release step, add pypi_api_token *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`48bea2a`](https://github.com/HydroRoll-Team/HydroRoll/commit/48bea2a9641ad49f3425b16a14fd1451de1e0203) - **project**: change version to 0.1.8-alpha.2 *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+
 ## [v0.1.8-alpha.1] - 2024-02-27
 ### Bug Fixes
 - [`e4612c2`](https://github.com/HydroRoll-Team/HydroRoll/commit/e4612c2bdf0e501bc51f99d51eb73a0ee47a6ce0) - **project**: change version to 0.1.8-alpha.1 *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
@@ -79,3 +85,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.1.7]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.4...v0.1.7
 [v0.1.8a1]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.7...v0.1.8a1
 [v0.1.8-alpha.1]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.7...v0.1.8-alpha.1
+[v0.1.8-alpha.2]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.8-alpha.1...v0.1.8-alpha.2
