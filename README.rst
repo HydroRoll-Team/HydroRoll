@@ -4,7 +4,7 @@
 HydroRoll'水系
 ============
 
-|ruff| |python_v| |crates_v| |community| |docs| 
+|ruff| |python_v| |crates_v| |community| |docs| |release_img|
 
 .. _getting:
 
@@ -111,3 +111,5 @@ License
    :alt: Join The Community
 .. |crates_v| image:: https://img.shields.io/crates/v/hydro_roll?logo=rust
    :target: https://crates.io/crates/hydro_roll)
+.. |release_img| image:: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/release.yml/badge.svg
+   :target: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/release.yml
