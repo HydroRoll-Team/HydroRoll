@@ -57,14 +57,14 @@ HydroRoll'水系
 .. _contributing:
 
 Contributing
----------------
+------------
 
 欢迎阅读 `CONTRIBUTING.md <./CONTRIBUTING.md>`__ 对水系的各个模块与标准做出贡献。
 
 .. _community:
 
 Community
-----------
+---------
 
 HydroRoll'水系 的论坛在 `GitHub
 Discussions <https://github.com/orgs/HydroRoll-Team/discussions>`__,
@@ -76,7 +76,7 @@ HydroRoll'水系 社区内的所有交流渠道。
 .. _license:
 
 License
-----------
+-------
 
 `MIT`_ © 2023-PRESENT `简律纯`_ & `HydroRoll-Team`_.
 
