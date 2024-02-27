@@ -42,9 +42,11 @@
 
 .. code:: shell
 
-  hydroroll new "HydroRollBot"
+  hydroroll new -b coc_example "HydroRollBot"
   cd HydroRollBot
   hydroroll run
+
+更多详细的使用方法请参考 `官方文档`_。
 
 开发示例
 ----
