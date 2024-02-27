@@ -1,6 +1,6 @@
 [package]
 name = "hydro_roll"
-version = "0.1.8-alpha.1"
+version = "0.1.8-alpha.2"
 edition = "2021"
 description = "A simple rust library for HydroRoll."
 license = "MIT"
