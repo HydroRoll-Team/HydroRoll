@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.1.8-alpha.1] - 2024-02-27
+### Bug Fixes
+- [`e4612c2`](https://github.com/HydroRoll-Team/HydroRoll/commit/e4612c2bdf0e501bc51f99d51eb73a0ee47a6ce0) - **project**: change version to 0.1.8-alpha.1 *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+### Chores
+- [`17dc291`](https://github.com/HydroRoll-Team/HydroRoll/commit/17dc2911204fa9e3d247f97c67666e2cf3e27061) - **readme**: update uri *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`f106d69`](https://github.com/HydroRoll-Team/HydroRoll/commit/f106d69a8a04a13dd20635039089758a24045186) - **readme**: add logo for python_v *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`48ad461`](https://github.com/HydroRoll-Team/HydroRoll/commit/48ad461ca568212f7972f7de3195803aa01da28a) - **project**: bump version from 0.1.7 to 0.1.8a1 *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+
 ## [v0.1.8a1] - 2024-02-27
 ### Chores
 - [`17dc291`](https://github.com/HydroRoll-Team/HydroRoll/commit/17dc2911204fa9e3d247f97c67666e2cf3e27061) - **readme**: update uri *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
@@ -68,3 +78,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [v0.1.7]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.4...v0.1.7
 [v0.1.8a1]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.7...v0.1.8a1
+[v0.1.8-alpha.1]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.7...v0.1.8-alpha.1
