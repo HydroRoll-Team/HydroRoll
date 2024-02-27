@@ -24,8 +24,8 @@ dependencies = [
     "iamai[onebot11]>=0.0.2",
 ]
 requires-python = ">=3.8"
-# long_description = "See our `official site <https://hydroroll.team>`_"
-# long_description_content_type = "text/x-rst"
+readme.content-type = "text/x-rst"
+readme.text = """See the `documentation <https://docs.hydroroll.team/>`_."""
 license = {text = "MIT"}
 keywords = ["bot", "qq", "qqbot", "mirai", "coolq", "gensokyo", "dice", "hydroroll"]
 classifiers = [
