@@ -11,10 +11,10 @@ export default {
       page2Display: "none",
       page3Display: "none",
       page4Display: "none",
-      icon1Back:"var(--icon-highlight)",
-      icon2Back:"",
-      icon3Back:"",
-      icon4Back:"",
+      icon1Back: "var(--icon-highlight)",
+      icon2Back: "",
+      icon3Back: "",
+      icon4Back: "",
     }
   },
   components: {
@@ -42,37 +42,37 @@ export default {
         this.page2Display = "none";
         this.page3Display = "none";
         this.page4Display = "none";
-        this.icon1Back="var(--icon-highlight)";
-        this.icon2Back="";
-        this.icon3Back="";
-        this.icon4Back="";
+        this.icon1Back = "var(--icon-highlight)";
+        this.icon2Back = "var(--color-border)";
+        this.icon3Back = "var(--color-border-hover)";
+        this.icon4Back = "var(--color-border-hover)";
       } else if (n == 2) {
         this.changelogDisplay = "none";
         this.page2Display = "";
         this.page3Display = "none";
         this.page4Display = "none";
-        this.icon1Back="";
-        this.icon2Back="var(--icon-highlight)";
-        this.icon3Back="";
-        this.icon4Back="";
+        this.icon1Back = "var(--color-border)";
+        this.icon2Back = "var(--icon-highlight)";
+        this.icon3Back = "var(--color-border-hover)";
+        this.icon4Back = "var(--color-border-hover)";
       } else if (n == 3) {
         this.changelogDisplay = "none";
         this.page2Display = "none";
         this.page3Display = "";
         this.page4Display = "none";
-        this.icon1Back="";
-        this.icon2Back="";
-        this.icon3Back="var(--icon-highlight)";
-        this.icon4Back="";
+        this.icon1Back = "var(--color-border)";
+        this.icon2Back = "var(--color-border)";
+        this.icon3Back = "var(--color-border-hover)";
+        this.icon4Back = "var(--color-border-hover)";
       } else if (n == 4) {
         this.changelogDisplay = "none";
         this.page2Display = "none";
         this.page3Display = "none";
         this.page4Display = "";
-        this.icon1Back="";
-        this.icon2Back="";
-        this.icon3Back="";
-        this.icon4Back="var(--icon-highlight)";
+        this.icon1Back = "var(--color-border)";
+        this.icon2Back = "var(--color-border)";
+        this.icon3Back = "var(--color-border-hover)";
+        this.icon4Back = "var(--color-border-hover)";
       }
 
     }
@@ -83,18 +83,30 @@ export default {
 
 <template>
   <div class="item">
-    <i :style="{background:icon1Back}" @mouseover="control_page('over',1)" @click="control_page('click',1)" @mouseout="control_page('out',1)">
-      <DocumentationIcon/>
-    </i>
-    <i :style="{background:icon2Back}" @mouseover="control_page('over',2)" @click="control_page('click',2)" @mouseout="control_page('out',2)">
-      <DocumentationIcon/>
-    </i>
-    <i :style="{background:icon3Back}" @mouseover="control_page('over',3)" @click="control_page('click',3)" @mouseout="control_page('out',3)">
-      <DocumentationIcon/>
-    </i>
-    <i :style="{background:icon4Back}" @mouseover="control_page('over',4)" @click="control_page('click',4)" @mouseout="control_page('out',4)">
-      <DocumentationIcon/>
-    </i>
+    <el-tooltip content="ChangeLog" placement="left">
+      <i :style="{background:icon1Back}" @mouseover="control_page('over',1)" @click="control_page('click',1)"
+         @mouseout="control_page('out',1)">
+        <DocumentationIcon/>
+      </i>
+    </el-tooltip>
+    <el-tooltip content="Page2" placement="left">
+      <i :style="{background:icon2Back}" @mouseover="control_page('over',2)" @click="control_page('click',2)"
+         @mouseout="control_page('out',2)">
+        <DocumentationIcon/>
+      </i>
+    </el-tooltip>
+    <el-tooltip content="敬请期待" placement="left">
+      <i :style="{background:icon3Back}" @mouseover="control_page('over',3)" @click="control_page('click',3)"
+         @mouseout="control_page('out',3)">
+        <DocumentationIcon/>
+      </i>
+    </el-tooltip>
+    <el-tooltip content="敬请期待" placement="left">
+      <i :style="{background:icon4Back}" @mouseover="control_page('over',4)" @click="control_page('click',4)"
+         @mouseout="control_page('out',4)">
+        <DocumentationIcon/>
+      </i>
+    </el-tooltip>
     <div>
       <ChangeLog :style="{display:changelogDisplay}"/>
       <RightPage1 title="Test Page 2" :style="{display:page2Display}"/>
@@ -138,7 +150,7 @@ h3 {
     padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
   }
 
-  i{
+  i {
     left: -26px;
     position: absolute;
     border-radius: 8px;
