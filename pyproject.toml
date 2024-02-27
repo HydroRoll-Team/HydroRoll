@@ -25,7 +25,7 @@ dependencies = [
 ]
 requires-python = ">=3.8"
 long_description_content_type = "text/x-rst; charset=UTF-8"
-readme = "README.rst"
+readme.file = "README.rst"
 license = {text = "MIT"}
 keywords = ["bot", "qq", "qqbot", "mirai", "coolq", "gensokyo", "dice", "hydroroll"]
 classifiers = [
