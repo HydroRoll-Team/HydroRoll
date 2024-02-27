@@ -10,7 +10,7 @@ from .models.utils import *
 import joblib
 
 try:
-    from .HydroRoll import sum_as_string
+    from .hydro_roll import sum_as_string
 except ImportError:
     ...
 
