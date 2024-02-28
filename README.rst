@@ -23,9 +23,9 @@
 - 🔌 可选的拓展模块，兼容 *shiki* 的 *lua* 模块、兼容青果 *onedice* 标准的骰子表达式解析模块等...
 - 👍 跨平台，对接 *onebot* 协议、 *kook* 平台、 *dingtalk* 软件、 *telegram*、 *discord*、 *minecraft*...与自研 *IM* 平台。
 - 🧩 兼容的插件设计，可编写 *lua*、 *python*、 *javascript* 脚本，为附加功能赋能， *Blockly* 傻瓜式在线可视化编写水系脚本插件。
-- 🎲 Meta 级别的掷骰表达式解析库，可自定义任何解析规则，或可用于一条指令执行多个操作~>学习 `oneroll <https://github.com/HydroRoll-Team/DiceParser>`_。
-- 🤖 内嵌 AI 工具——水系模型工作流，webui 管理各个单一任务模型的输入输出与嵌套关系，低成本实现媲美大模型的多任务功能。
-- 🎢 渐进式学习框架，从编写简单的 *nivis* *reply*脚本，到编写满足小需求的 *lua*、 *python*脚本，再到成为世界主编写自己的规则包模块，甚至训练水系模型，层层递进，轻松学习。
+- 🎲 *Meta* 级别的掷骰表达式解析库，可自定义任何解析规则，或可用于一条指令执行多个操作~>学习 `oneroll <https://github.com/HydroRoll-Team/DiceParser>`_。
+- 🤖 内嵌 *AI* 工具——水系模型工作流，*webui* 管理各个单一任务模型的输入输出与嵌套关系，低成本实现媲美大模型的多任务功能。
+- 🎢 渐进式学习框架，从编写简单的 *nivis reply*脚本，到编写满足小需求的 *lua*、 *python*脚本，再到成为世界主编写自己的规则包模块，甚至训练水系模型，层层递进，轻松学习。
 - 🔓 更多特性等你发掘！
 
 .. end-index
