@@ -1,0 +1,3 @@
+[submodule "hydro_roll_core"]
+	path = hydro_roll_core
+	url = https://github.com/HydroRoll-Team/HydroRollCore
