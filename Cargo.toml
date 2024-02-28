@@ -7,7 +7,7 @@ license = "MIT"
 documentation = "https://docs.hydroroll.team/"
 homepage = "https://hydroroll.team/"
 repository = "https://github.com/HydroRoll-Team/HydroRoll"
-authors = ["HsiangNianian <i@jyunko.c"]
+authors = ["HsiangNianian <i@jyunko.cn>"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
