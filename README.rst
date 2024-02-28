@@ -1,4 +1,4 @@
-|official site| |community| |ruff| |python_v| |crates_v| |release_img|
+|official site| |community| |ruff| |python_v| |crates_v| |release_img| |dos_status|
 
 .. image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/P3iLPoavAOE9FSLe1r5_jJObx8LljYhDBCDfkumyDY0_table.svg
    :alt: Structure
@@ -118,6 +118,9 @@
 .. _HydroRoll-Team: https://github.com/HydroRoll-Team
 
 .. image list above:
+.. |docs_status| image:: https://readthedocs.org/projects/hydro-roll-docs/badge/?version=latest
+    :target: https://docs.hydroroll.team/zh-cn/latest/?badge=latest
+    :alt: Documentation Status
 .. |Structure| image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/-8GQ3jezs4jjRVX5ZbACiuiSwmPbkzEdEQAyP2ednF0_table.svg
    :target: https://github.com/HydroRoll-Team/HydroRoll
    :alt: Structure
