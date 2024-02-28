@@ -1,4 +1,4 @@
-|official site| |community| |ruff| |python_v| |crates_v| |release_img| |dos_status|
+|official site| |community| |ruff| |python_v| |crates_v| |release_img| |docs_status|
 
 .. image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/P3iLPoavAOE9FSLe1r5_jJObx8LljYhDBCDfkumyDY0_table.svg
    :alt: Structure
