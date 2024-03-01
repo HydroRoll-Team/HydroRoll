@@ -5,7 +5,7 @@ build-backend = "maturin"
 [project]
 name = "hydro_roll"
 dynamic = ["version"]
-description = "HydroRoll System."
+description = "跨平台、多模态、高度自定义的骰系开发框架。"
 authors = [
     {name = "简律纯", email = "i@jyunko.cn"},
 ]
@@ -25,7 +25,7 @@ dependencies = [
 ]
 requires-python = ">=3.9"
 readme.content-type = "text/x-rst"
-readme.text = """See the `documentation <https://docs.hydroroll.team/>`_."""
+readme.text = """请查看 `文档 <https://docs.hydroroll.team/>`_."""
 license = {text = "MIT"}
 keywords = ["bot", "qq", "qqbot", "mirai", "coolq", "gensokyo", "dice", "hydroroll"]
 classifiers = [
@@ -45,7 +45,7 @@ repository = "https://github.com/HydroRoll-Team/HydroRoll"
 documentation = "https://docs.hydroroll.team/"
 
 [project.scripts]
-atien = "hydro_roll.cli:Cli"
+atien = "hydro_roll.cli:Atien"
 
 [tool.maturin]
 features = ["pyo3/extension-module"]

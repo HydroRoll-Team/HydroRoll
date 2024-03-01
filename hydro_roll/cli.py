@@ -8,7 +8,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from .typing import *
 
-class Cli(object):
+class Atien(object):
     parser = argparse.ArgumentParser(description="水系终端脚手架")
 
     def __init__(self):
