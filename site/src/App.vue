@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Left from './components/Left.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import TheWelcome from './components/Right.vue'
 </script>
 
 <template>
