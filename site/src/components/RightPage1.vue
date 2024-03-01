@@ -1,13 +1,18 @@
 <script lang="ts">
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   data() {
     return {
+      ChangeLogTagName: "beta",
       ChangeLogMessage: 'testChangeLogMessage',
     }
   },
   props: {
+    title: {
+      type: String,
+      default: "1",
+    },
     msg: {
       type: String,
       require: true
@@ -20,8 +25,8 @@ export default {
   methods: {
     getChangeLog() {
       axios.get('https://api.github.com/repos/HydroRoll-Team/HydroRoll/releases/latest').then(res => {
-
-        this.ChangeLogMessage ="## "+ res.data['tag_name']+"\n"+res.data['body'];
+        this.ChangeLogTagName = res.data['tag_name'];
+        this.ChangeLogMessage = res.data['body'];
         console.log(res.data);
       })
     }
@@ -29,7 +34,6 @@ export default {
   beforeMount() {
     this.getChangeLog()
   }
-
 }
 </script>
 
@@ -37,7 +41,7 @@ export default {
 <template>
   <div class="details" style="overflow-y:scroll;overflow-x:hidden;height:100%">
     <h3>
-      ChangeLog
+      {{ title }}
     </h3>
     <v-md-preview :text="ChangeLogMessage"></v-md-preview>
   </div>
