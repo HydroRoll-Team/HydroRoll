@@ -44,6 +44,9 @@ homepage = "https://hydroroll.team/"
 repository = "https://github.com/HydroRoll-Team/HydroRoll"
 documentation = "https://docs.hydroroll.team/"
 
+[project.scripts]
+atien = "hydro_roll.cli:Cli"
+
 [tool.maturin]
 features = ["pyo3/extension-module"]
 
@@ -51,3 +54,5 @@ features = ["pyo3/extension-module"]
 dev = [
     "pip>=24.0",
 ]
+
+
