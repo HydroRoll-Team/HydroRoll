@@ -42,13 +42,13 @@
   # pip install hydro_roll[basemodel] 安装基础模型
   # pip install hydro_roll[dev] 安装开发包
 
-接着使用 ``hydroroll`` 命令搭建机器人模板并运行。
+接着使用 ``atien`` 命令搭建机器人模板并运行。
 
 .. code:: shell
 
-  hydroroll new -b coc_example "HydroRollBot"
+  atien new -b coc_example "HydroRollBot"
   cd HydroRollBot
-  hydroroll run
+  atien run
 
 更多详细的使用方法请参考 `官方文档`_。
 
