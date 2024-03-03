@@ -1,0 +1,6 @@
+[submodule "hydro_roll_core"]
+	path = hydro_roll_core
+	url = https://github.com/HydroRoll-Team/HydroRollCore
+[submodule "nivis_python"]
+	path = nivis_python
+	url = https://github.com/HydroRoll-Team/nivis-python
