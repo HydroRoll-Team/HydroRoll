@@ -7,15 +7,10 @@
 
 .. toctree::
     :hidden:
-    :caption: 关于
+    .. :caption: 关于
 
-    前言 <about/introduction.rst>
-    基本特性 <about/list_of_features.rst>
-    系统要求 <about/system_requirements.rst>
-    常见问题 <about/faq.rst>
-    遵循许可证 <about/complying_with_licenses.rst>
-    水系发布策略 <about/release_policy.rst>
-    变更日志 <about/changelog.rst>
+    关于 <about/index.rst>
+
 
 .. .. toctree::
     :hidden:
