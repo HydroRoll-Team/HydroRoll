@@ -46,7 +46,7 @@
     性能比较与建议 <tutorials/performance/index.rst>
     平台相关 <tutorials/platform/index.rst>
     脚本插件 <tutorials/scripts/index.rst>
-    跑团记录着色器 <tutorials/logshader/index.rst>
+    跑团日志记录着色器 <tutorials/logshader/index.rst>
 
 
 .. toctree::
