@@ -1,5 +1,5 @@
 .. toctree::
-    :hidden:
+    :maxdepth: 4
     
     前言 <introduction.rst>
     基本特性 <list_of_features.rst>

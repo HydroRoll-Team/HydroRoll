@@ -12,7 +12,7 @@
     关于 <about/index.rst>
 
 
-.. .. toctree::
+.. toctree::
     :hidden:
     :caption: 入门
 
