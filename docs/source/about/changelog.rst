@@ -1,1 +1,3 @@
-ECHO 处于打开状态。
+.. maxdepth: 1
+
+.. include:: ../../../CHANGELOG.md
