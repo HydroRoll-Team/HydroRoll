@@ -29,5 +29,6 @@
   },
   "python.formatting.provider": "none",
   "restructuredtext.preview.docutils.disabled": true,
-  "iis.configDir": ""
+  "iis.configDir": "",
+  "restructuredtext.preview.name": "sphinx"
 }
