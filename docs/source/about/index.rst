@@ -2,6 +2,7 @@
 ====
 
 .. toctree::
+    :hidden:
     
     introduction
     list_of_features
