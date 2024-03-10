@@ -3,17 +3,17 @@
 
 .. toctree::
 
-    best_practices
+    best_practices/index
     troubleshooting
     use_cli
-    migrating
+    migrating/index
     all_in_configuration
-    webui
-    nivis_grammar
-    oneroll_grammar
-    nature_language_processing
-    ast_and_tts
-    performance
-    platform
-    scripts
-    logshader
+    webui/index
+    nivis_grammar/index
+    oneroll_grammar/index
+    nature_language_processing/index
+    ast_and_tts/index
+    performance/index
+    platform/index
+    scripts/index
+    logshader/index

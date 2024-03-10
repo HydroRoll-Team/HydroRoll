@@ -5,5 +5,5 @@
 
     ways_to_contribute
     workflow
-    development
-    documentation
+    development/index
+    documentation/index

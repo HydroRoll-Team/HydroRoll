@@ -3,6 +3,6 @@
 
 .. toctree::
 
-    asset_library
+    asset_library/index
     channels
     tutorials
