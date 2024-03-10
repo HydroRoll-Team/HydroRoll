@@ -8,7 +8,7 @@
 .. toctree::
     :hidden:
 
-    about
+    about/index
 
 
 .. toctree::
