@@ -14,25 +14,25 @@
 .. toctree::
     :hidden:
 
-    getting_started
+    getting_started/index
 
 
 .. toctree::
     :hidden:
 
-    tutorials
+    tutorials/index
     
 
 .. toctree::
     :hidden:
 
-    contributing
+    contributing/index
 
 
 .. toctree::
     :hidden:
 
-    community
+    community/index
 
 
 .. toctree::
