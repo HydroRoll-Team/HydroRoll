@@ -1,14 +1,9 @@
 |official site| |community| |ruff| |python_v| |crates_v| |release_img| |docs_status|
 
-.. image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/P3iLPoavAOE9FSLe1r5_jJObx8LljYhDBCDfkumyDY0_table.svg
-   :alt: Structure
-   :target: https://github.com/HydroRoll-Team/HydroRoll
-   :width: 60
-   :align: right
 
 .. start-index
 
-跨平台、多模态、高度自定义的骰系开发框架
+跨平台、多模态、高度自定义的骰系开发框架 |Structure_2|
 ==================================
 
 欢迎来到 *HydroRoll* [水系]，一个依据科学架构并由多模态模型赋能，使用 *Rust* 与 *Python* 编写的高性能、跨平台骰系开发框架。
@@ -131,6 +126,12 @@
 .. |Structure| image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/-8GQ3jezs4jjRVX5ZbACiuiSwmPbkzEdEQAyP2ednF0_table.svg
    :target: https://github.com/HydroRoll-Team/HydroRoll
    :alt: Structure
+   :align: right
+.. |Structure_2| image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/P3iLPoavAOE9FSLe1r5_jJObx8LljYhDBCDfkumyDY0_table.svg
+   :alt: Structure
+   :target: https://github.com/HydroRoll-Team/HydroRoll
+   :width: 60
+   :align: right
 .. |ruff| image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
    :target: https://github.com/astral-sh/ruff
    :alt: Ruff
