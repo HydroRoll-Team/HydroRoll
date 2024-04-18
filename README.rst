@@ -1,4 +1,4 @@
-|official site| |community| |ruff| |python_v| |crates_v| |release_img| |docs_status|
+|official site| |community| |ruff| |python_v| |crates_v| |release_img| |docs_status| |CodeQL|
 
 
 .. start-index
@@ -158,3 +158,5 @@
    :target: https://app.fossa.com/projects/git%2Bgithub.com%2FHydroRoll-Team%2FHydroRoll?ref=badge_shield&issueType=license
 .. |FOSSA Status| image:: https://app.fossa.com/api/projects/git%2Bgithub.com%2FHydroRoll-Team%2FHydroRoll.svg?type=large&issueType=license
    :target: https://app.fossa.com/projects/git%2Bgithub.com%2FHydroRoll-Team%2FHydroRoll?ref=badge_large&issueType=license
+.. |CodeQL| image:: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/github-code-scanning/codeql/badge.svg
+   :target: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/github-code-scanning/codeql
