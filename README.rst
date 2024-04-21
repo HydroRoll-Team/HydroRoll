@@ -1,10 +1,10 @@
 |official site| |community| |ruff| |python_v| |crates_v| |release_img| |docs_status| |CodeQL|
 
 
-.. start-index
-
 跨平台、多模态、高度自定义的骰系开发框架 |Structure_2|
 ==================================
+
+.. start-index
 
 欢迎来到 *HydroRoll* [水系]，一个依据科学架构并由多模态模型赋能，使用 *Rust* 与 *Python* 编写的高性能、跨平台骰系开发框架。
 
