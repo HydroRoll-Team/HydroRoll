@@ -1,5 +1,8 @@
 .. hide-toc: true
 
+跨平台、多模态、高度自定义的骰系开发框架
+=======================================
+
 .. include:: ../../README.rst
     :start-after: start-index
     :end-before: end-index
