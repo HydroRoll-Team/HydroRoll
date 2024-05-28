@@ -32,16 +32,16 @@
 
 .. code:: shell
 
-  pip install hydro_roll
-  # pip install hydro_roll[all] 安装所有组件
-  # pip install hydro_roll[basemodel] 安装基础模型
-  # pip install hydro_roll[dev] 安装开发包
+  pip install hydro-roll
+  # pip install hydro-roll[all] 安装所有组件
+  # pip install hydro-roll[basemodel] 安装基础模型
+  # pip install hydro-roll[dev] 安装开发包
 
 接着使用 ``atien`` 命令搭建机器人模板并运行。
 
 .. code:: shell
 
-  atien new -b coc_example "HydroRollBot"
+  atien new -b coc-example "HydroRollBot"
   cd HydroRollBot
   atien run
 
@@ -57,11 +57,11 @@
   pip install iamai
   iamai new "HydroRollDevBot"
 
-  iamai install hydro_roll --dist HydroRollDevBot
+  iamai install hydro-roll --dist HydroRollDevBot
   # cd HydroRollDevBot
-  # iamai install hydro_roll
+  # iamai install hydro-roll
 
-接着你需要自行修改 *config.toml* 中的相关适配器与 *hydro_roll* 插件的配置。
+接着你需要自行修改 *config.toml* 中的相关适配器与 *hydro-roll* 插件的配置。
 
 最后你可能需要一个启动锚点—— ``main.py``。
 
