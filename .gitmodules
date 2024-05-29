@@ -2,7 +2,7 @@
 	path = hydro_roll_core
 	url = https://github.com/HydroRoll-Team/HydroRollCore
 	branch = main
-[submodule "nivis_python"]
-	path = nivis_python
-	url = https://github.com/HydroRoll-Team/nivis-python
+[submodule "TRPGNivis"]
+	path = TRPGNivisSDK
+	url = https://github.com/HydroRoll-Team/TRPGNivis
 	branch = main
