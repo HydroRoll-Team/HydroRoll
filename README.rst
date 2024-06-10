@@ -1,7 +1,6 @@
-|official site| |community| |ruff| |python_v| |crates_v| |release_img| |docs_status| |CodeQL|
+|official site| |community| |ruff| |python_v| |crates_v| |release_img| |docs_status| |CodeQL| 
 
-
-跨平台、多模态、高度自定义的骰系开发框架 |Structure_2|
+跨平台、多模态、高度自定义的骰系开发框架 |Structure2|
 ==================================
 
 .. start-index
@@ -127,11 +126,8 @@
    :target: https://github.com/HydroRoll-Team/HydroRoll
    :alt: Structure
    :align: right
-.. |Structure_2| image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/P3iLPoavAOE9FSLe1r5_jJObx8LljYhDBCDfkumyDY0_table.svg
-   :alt: Structure
-   :target: https://github.com/HydroRoll-Team/HydroRoll
+.. |Structure2| image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/P3iLPoavAOE9FSLe1r5_jJObx8LljYhDBCDfkumyDY0_table.svg
    :width: 60
-   :align: right
 .. |ruff| image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
    :target: https://github.com/astral-sh/ruff
    :alt: Ruff
