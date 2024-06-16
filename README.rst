@@ -1,15 +1,9 @@
-|official site| |community| |ruff| |python_v| |crates_v| |release_img| |docs_status|
+|official site| |community| |ruff| |python_v| |crates_v| |release_img| |docs_status| |CodeQL| 
 
-.. image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/P3iLPoavAOE9FSLe1r5_jJObx8LljYhDBCDfkumyDY0_table.svg
-   :alt: Structure
-   :target: https://github.com/HydroRoll-Team/HydroRoll
-   :width: 60
-   :align: right
+跨平台、多模态、高度自定义的骰系开发框架 |Structure2|
+==================================
 
 .. start-index
-
-跨平台、多模态、高度自定义的骰系开发框架
-========================================
 
 欢迎来到 *HydroRoll* [水系]，一个依据科学架构并由多模态模型赋能，使用 *Rust* 与 *Python* 编写的高性能、跨平台骰系开发框架。
 
@@ -24,7 +18,7 @@
 - 👍 跨平台，对接 *onebot* 协议、 *kook* 平台、 *dingtalk* 软件、 *telegram*、 *discord*、 *minecraft*...与自研 *IM* 平台。
 - 🧩 兼容的插件设计，可编写 *lua*、 *python*、 *javascript* 脚本，为附加功能赋能， *Blockly* 傻瓜式在线可视化编写水系脚本插件。
 - 🎲 *Meta* 级别的掷骰表达式解析库，可自定义任何解析规则，或可用于一条指令执行多个操作~>学习 `oneroll <https://github.com/HydroRoll-Team/DiceParser>`_。
-- 🤖 内嵌 *AI* 工具——水系模型工作流，*webui* 管理各个单一任务模型的输入输出与嵌套关系，低成本实现媲美大模型的多任务功能。
+- 🤖 内嵌 *AI* 工具——水系模型工作流， *webui* 管理各个单一任务模型的输入输出与嵌套关系，低成本实现媲美大模型的多任务功能。
 - 🎢 渐进式学习框架，从编写简单的 *nivis reply* 脚本，到编写满足小需求的 *lua*、 *python* 脚本，再到成为世界主编写自己的规则包模块，甚至训练水系模型，层层递进，轻松学习。
 - 🔓 更多特性等你发掘！
 
@@ -37,16 +31,16 @@
 
 .. code:: shell
 
-  pip install hydro_roll
-  # pip install hydro_roll[all] 安装所有组件
-  # pip install hydro_roll[basemodel] 安装基础模型
-  # pip install hydro_roll[dev] 安装开发包
+  pip install hydro-roll
+  # pip install hydro-roll[all] 安装所有组件
+  # pip install hydro-roll[basemodel] 安装基础模型
+  # pip install hydro-roll[dev] 安装开发包
 
 接着使用 ``atien`` 命令搭建机器人模板并运行。
 
 .. code:: shell
 
-  atien new -b coc_example "HydroRollBot"
+  atien new -b coc-example "HydroRollBot"
   cd HydroRollBot
   atien run
 
@@ -62,11 +56,11 @@
   pip install iamai
   iamai new "HydroRollDevBot"
 
-  iamai install hydro_roll --dist HydroRollDevBot
+  iamai install hydro-roll --dist HydroRollDevBot
   # cd HydroRollDevBot
-  # iamai install hydro_roll
+  # iamai install hydro-roll
 
-接着你需要自行修改 *config.toml* 中的相关适配器与 *hydro_roll* 插件的配置。
+接着你需要自行修改 *config.toml* 中的相关适配器与 *hydro-roll* 插件的配置。
 
 最后你可能需要一个启动锚点—— ``main.py``。
 
@@ -132,6 +126,9 @@
 .. |Structure| image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/-8GQ3jezs4jjRVX5ZbACiuiSwmPbkzEdEQAyP2ednF0_table.svg
    :target: https://github.com/HydroRoll-Team/HydroRoll
    :alt: Structure
+   :align: right
+.. |Structure2| image:: https://images.repography.com/39938419/HydroRoll-Team/HydroRoll/structure/ZbjPFFiNYq0UR3cTqEwQHLzqWSn3SeO30n9Nk3SwmVU/P3iLPoavAOE9FSLe1r5_jJObx8LljYhDBCDfkumyDY0_table.svg
+   :width: 60
 .. |ruff| image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
    :target: https://github.com/astral-sh/ruff
    :alt: Ruff
@@ -158,3 +155,5 @@
    :target: https://app.fossa.com/projects/git%2Bgithub.com%2FHydroRoll-Team%2FHydroRoll?ref=badge_shield&issueType=license
 .. |FOSSA Status| image:: https://app.fossa.com/api/projects/git%2Bgithub.com%2FHydroRoll-Team%2FHydroRoll.svg?type=large&issueType=license
    :target: https://app.fossa.com/projects/git%2Bgithub.com%2FHydroRoll-Team%2FHydroRoll?ref=badge_large&issueType=license
+.. |CodeQL| image:: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/github-code-scanning/codeql/badge.svg
+   :target: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/github-code-scanning/codeql
