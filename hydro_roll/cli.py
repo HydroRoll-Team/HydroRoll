@@ -8,6 +8,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from .typing import *
 
+
 class Atien(object):
     parser = argparse.ArgumentParser(description="水系终端脚手架")
 
@@ -85,7 +86,12 @@ class Atien(object):
                     print(f"下载包时出错：{package_name}")
 
     def build_template(self):
-        template = input("请选择应用模板（输入数字）:\n" "1. 创建轻量应用\n" "2. 创建标准应用\n" "3. 创建开发应用\n")
+        template = input(
+            "请选择应用模板（输入数字）:\n"
+            "1. 创建轻量应用\n"
+            "2. 创建标准应用\n"
+            "3. 创建开发应用\n"
+        )
 
         if template == "1":
             print("选择了轻量应用模板")
