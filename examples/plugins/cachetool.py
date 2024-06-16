@@ -29,5 +29,5 @@ class CachedPlugin(Plugin):
     async def rule(self) -> bool:
         return (
             isinstance(self.event, MessageEvent)
-            and self.event.get_plain_text() == ".cachetools"
+            and self.event.get_plain_text() == "/cachetools"
         )

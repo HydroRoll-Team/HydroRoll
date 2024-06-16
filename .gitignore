@@ -182,3 +182,9 @@ docs/_build/
 
 # Pyenv
 .python-version
+
+# examples
+examples/config.toml
+examples/HydroRoll/**
+examples/plugins/**/*.py
+examples/logs/**/*.log

@@ -9,7 +9,7 @@
 .. start-index
 
 跨平台、多模态、高度自定义的骰系开发框架
-==================================
+========================================
 
 欢迎来到 *HydroRoll* [水系]，一个依据科学架构并由多模态模型赋能，使用 *Rust* 与 *Python* 编写的高性能、跨平台骰系开发框架。
 
@@ -31,7 +31,7 @@
 .. end-index
 
 安装与使用
------
+----------
 
 在安装 **3.9+** 版本的 *Python* 之后，请先全局安装 *pdm* 依赖，接着全局安装 *hydro_roll* 包。
 
@@ -53,7 +53,7 @@
 更多详细的使用方法请参考 `官方文档`_。
 
 开发示例
-----
+--------
 
 你可以选择从框架端开始开发水系骰子。
 
@@ -84,27 +84,28 @@
   python main.py
 
 知识问答
-----
+--------
 
 “谁适合水系？”
+~~~~~~~~~~~~~~~~~
 
-  - 世界主——规则书作者。水系基于通用规则包（规则书的 *Python* 实现）标准架构，可以为你一键生成规则书
-    的 *pdf* 版本与一个在线规则书浏览站点，同时允许你在规则包内自定义高优先级的骰系内建指令。一个规则
-    包，便是一个骰系。
-  - 插件爱好者——下游插件开发者。水系插件可用 *lua*、 *python*、 *javascript* 编写，同时，支持在线将其他骰
-    系的插件文件（如 *shiki* 的 *lua* 脚本，青果的 *python* 插件，海豹的 *js* 插件等）转换为水系对应语言的插
-    件脚本实现，另有使用 *Blockly* 搭建的可视化编程站点，轻松编写插件脚本。
-  - 机器学习爱好者。水系继承自多模态机器学习框架 *iamai*，能够同时训练与推理多个模型，试想你的骰子拥有
-    自己的独特人格...
-
-  - 渴望游玩冷门规则的 *kp* 与 *pl*。
+- 世界主——规则书作者。水系基于通用规则包（规则书的 *Python* 实现）标准架构，可以为你一键生成规则书
+  的 *pdf* 版本与一个在线规则书浏览站点，同时允许你在规则包内自定义高优先级的骰系内建指令。一个规则
+  包，便是一个骰系。
+- 插件爱好者——下游插件开发者。水系插件可用 *lua*、 *python*、 *javascript* 编写，同时，支持在线将其他骰
+  系的插件文件（如 *shiki* 的 *lua* 脚本，青果的 *python* 插件，海豹的 *js* 插件等）转换为水系对应语言的插
+  件脚本实现，另有使用 *Blockly* 搭建的可视化编程站点，轻松编写插件脚本。
+- 机器学习爱好者。水系继承自多模态机器学习框架 *iamai*，能够同时训练与推理多个模型，试想你的骰子拥有
+  自己的独特人格...
+- 渴望游玩冷门规则的 *kp* 与 *pl*。
 
 “水系是什么？水系不是什么？”
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  水系是一个骰系开发框架，允许你方便快捷的开发自己的骰系。抛开人工智能模块的水系的第一用户是世界主。
+水系是一个骰系开发框架，允许你方便快捷的开发自己的骰系。抛开人工智能模块的水系的第一用户是世界主。
 
-  水系不是一个具体的骰系，但是水系有一个官方的规则书实现。在水系社区，骰系概念是被弱化的，一个加载了
-  独特的规则包的骰子，便是一个骰系（针对此规则包所对应的规则书而言）。
+水系不是一个具体的骰系，但是水系有一个官方的规则书实现。在水系社区，骰系概念是被弱化的，一个加载了
+独特的规则包的骰子，便是一个骰系（针对此规则包所对应的规则书而言）。
 
 ----
 
@@ -136,7 +137,7 @@
    :alt: Ruff
 .. |logo_icon| image:: https://cdn.jsdelivr.net/gh/HydroRoll-Team/HydroRoll@main/site/src/assets/image/logo.png
    :target: https://hydroroll.team/
-   :align: right
+   :align: bottom
    :alt: HydroRoll Logo
    :height: 128
 .. |docs| image:: https://img.shields.io/badge/DOCS%20AND%20BLOGS-000000.svg?logo=Vercel&labelColor=000&style=flat-square
@@ -150,7 +151,7 @@
 .. |official site| image:: https://img.shields.io/badge/官网-2255aa.svg?logo=data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8CAgL/CgoK/woKCv8GBgb/BgYG/woKCv8KCgr/AgIC/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/BgYG/0ZGRv9MTEz/JiYm/ygoKP9MTEz/RkZG/wYGBv8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP9ycnL/Li4u/1xcXP9eXl7/Li4u/3Jycv8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP88PDz/cnJy/05OTv9OTk7/UFBQ/05OTv9wcHD/Pj4+/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/Kioq/3Jycv9cXFz/TExM/05OTv9aWlr/cHBw/yoqKv8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/Pj4+/zg4OP+AgID/Pj4+/2ZmZv9oaGj/PDw8/4CAgP86Ojr/Pj4+/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/ywsLP9iYmL/enp6/zIyMv90dHT/dHR0/zAwMP98fHz/YmJi/ywsLP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP9SUlL/PDw8/3Jycv9CQkL/UlJS/1RUVP9CQkL/cnJy/zw8PP9SUlL/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/VFRU/yIiIv9aWlr/PDw8/zw8PP8+Pj7/PDw8/1hYWP8iIiL/VFRU/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/zQ0NP9CQkL/ZmZm/yIiIv9WVlb/WFhY/yIiIv9mZmb/QkJC/zY2Nv8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP9QUFD/BgYG/0RERP9KSkr/JCQk/yYmJv9KSkr/RERE/wgICP9QUFD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/CgoK/wICAv8KCgr/CgoK/wYGBv8GBgb/CgoK/woKCv8CAgL/CgoK/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==&labelColor=gray&logoWidth=20&logoColor=white&style=flat-square
    :target: https://hydroroll.team/
 .. |crates_v| image:: https://img.shields.io/crates/v/hydro_roll?logo=rust&color=red
-   :target: https://crates.io/crates/hydro_roll)
+   :target: https://crates.io/crates/hydro_roll
 .. |release_img| image:: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/release.yml/badge.svg
    :target: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/release.yml
 .. |license icon| image:: https://app.fossa.com/api/projects/git%2Bgithub.com%2FHydroRoll-Team%2FHydroRoll.svg?type=shield&issueType=license

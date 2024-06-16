@@ -6,20 +6,20 @@ rule_dirs = ["rules"]
 adapters = [
     "iamai.adapter.onebot11",
     # "iamai.adapter.gensokyo",
-    # "iamai.adapter.apscheduler",
+    "iamai.adapter.apscheduler",
     # "iamai.adapter.dingtalk"        
-]
+]   
 
 [bot.log]
 level = "INFO"
 verbose_exception = true
 
 [adapter.onebot11]
-adapter_type = "reverse-ws"
+adapter_type = "ws"
 host = "127.0.0.1"
-port = 8080
-url = "/cqhttp/ws"
-show_raw = true
+port = 3002
+# url = "/onebot"
+# show_raw = true
 
 [adapter.gensokyo]
 adapter_type = "reverse-ws"

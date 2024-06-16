@@ -30,5 +30,9 @@
   "python.formatting.provider": "none",
   "restructuredtext.preview.docutils.disabled": true,
   "iis.configDir": "",
-  "restructuredtext.preview.name": "docutils"
+  "restructuredtext.preview.name": "docutils",
+  "Lua.diagnostics.globals": [
+    "setGroupConf",
+    "getGroupConf"
+  ]
 }
