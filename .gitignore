@@ -98,10 +98,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Project
-.idea
-.vscode
-
 # Docs
 node_modules/
 
@@ -173,12 +169,6 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
-
-# PyCharm
-.idea/
-
-# VSCode
-.vscode/
 
 # Pyenv
 .python-version
