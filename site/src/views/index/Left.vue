@@ -44,7 +44,7 @@ export default {
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      距离水系公测还有
+      距离水系公测计划：
     </h3>
     <h2>
       {{ day }} 天 {{ hour }} 时 {{ min }} 分 {{ sec }} 秒
@@ -72,7 +72,7 @@ h3 {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media screen and (orientation:landscape) {
   .greetings h1,
   .greetings h2 {
     text-align: left;
