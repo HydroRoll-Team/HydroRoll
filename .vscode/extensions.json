@@ -5,6 +5,7 @@
         "dbaeumer.vscode-eslint",
         "golang.go",
         "sumneko.lua",
-        "lextudio.iis"
+        "lextudio.iis",
+        "vue.volar"
     ]
 }
