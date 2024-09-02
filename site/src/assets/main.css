@@ -1,7 +1,7 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  max-width: 90dvi;
   margin: 0 auto;
   padding: 2rem;
 
@@ -25,7 +25,7 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (orientation:landscape) {
   body {
     display: flex;
     place-items: center;

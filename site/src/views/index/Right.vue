@@ -141,7 +141,7 @@ i {
   // 画白线
   .messageBar:after {
     content: ' ';
-    border-left: 1px solid var(--vt-c-divider-light-2);
+    border-left: 1px solid var(--vt-c-divider-dark-2);
     position: absolute;
     left: 0;
     top: calc(15%);
