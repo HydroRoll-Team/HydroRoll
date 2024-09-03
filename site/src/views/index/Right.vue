@@ -2,7 +2,7 @@
 import Notepad from './Notepad/index.vue'
 import DocumentationIcon from '@/components/icons/IconDocumentation.vue'
 import { getChangeLog } from './Notepad/changelog'
-
+import { computed } from 'vue'
 
 export default {
   data() {
@@ -47,12 +47,16 @@ export default {
     }
   },
   beforeCreate() {
-    getChangeLog().then(res => {
+    changeLogMessage.value.then((res) => {
       this.changeLogMessage = res;
       this.change_page(this.mainPage);
-    })
+    });
   },
 }
+
+const changeLogMessage = computed(() => {
+    return getChangeLog();
+})
 
 </script>
 
