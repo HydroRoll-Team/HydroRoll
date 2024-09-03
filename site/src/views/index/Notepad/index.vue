@@ -40,6 +40,14 @@ h3 {
 
 .details {
   flex: 1;
-  width: 30dvw;
+  width: 60dvw;
+  float: right;
+}
+
+@media screen and (orientation:landscape) {
+  .details {
+    flex: 1;
+    width: 30dvw;
+  }
 }
 </style>

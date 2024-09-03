@@ -2,7 +2,7 @@
 import Notepad from './Notepad/index.vue'
 import DocumentationIcon from '@/components/icons/IconDocumentation.vue'
 import { getChangeLog } from './Notepad/changelog'
-import { computed } from 'vue'
+
 
 export default {
   data() {
@@ -47,16 +47,12 @@ export default {
     }
   },
   beforeCreate() {
-    changeLogMessage.value.then((res) => {
+    getChangeLog().then(res => {
       this.changeLogMessage = res;
       this.change_page(this.mainPage);
-    });
+    })
   },
 }
-
-const changeLogMessage = computed(() => {
-    return getChangeLog();
-})
 
 </script>
 
@@ -81,7 +77,7 @@ const changeLogMessage = computed(() => {
 
 .messageBar {
   display: flex;
-  height: 600px;
+  height: 500px;
   margin-top: 2rem;
   position: relative;
   flex-direction: row;
@@ -113,8 +109,8 @@ i {
   justify-content: center;
   font-size: 1.2rem;
   color: var(--color-text);
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
   border-radius: 8px;
 }
 
@@ -125,11 +121,11 @@ i {
   }
 
   i {
-    left: -26px;
+    left: -21px;
     position: absolute;
     border-radius: 8px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   // 黑线
