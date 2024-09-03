@@ -24,3 +24,7 @@ help:
 # update translation command
 translate:
 	@$(SPHINXINTL) update -p ./build/gettext -l $(lang) $(O)
+
+# build for debug
+dev:
+	sphinx-autobuild source _build/html
