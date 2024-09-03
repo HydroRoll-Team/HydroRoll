@@ -13,6 +13,7 @@ import Right from './Right.vue'
   </header>
 
   <main class="main">
+    <video src="@/assets/video/bg.mp4" loop=true autoplay=true></video>
     <Right />
   </main>
 </template>
@@ -43,5 +44,17 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
+}
+
+video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto; 
+  z-index: -100;
+  filter: grayscale(20%);
 }
 </style>
