@@ -3,9 +3,27 @@ import Left from './Left.vue'
 import Right from './Right.vue'
 </script>
 
+<script lang="ts">
+export default {
+  data() {
+    return {
+      isplay: false
+    }
+  },
+  methods: {
+    PlayOn() {
+      this.isplay = true
+    }
+  }
+}
+</script>
+
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/Hydroroll-small.svg" width="125" height="125" />
+    <img src="@/assets/Hydroroll-small.svg" 
+      alt="Vue logo" 
+      class="logo" 
+      width="125" height="125" />
 
     <div class="wrapper">
       <Left msg="饼在画了！" />
@@ -13,7 +31,9 @@ import Right from './Right.vue'
   </header>
 
   <main class="main">
-    <video src="@/assets/video/bg.mp4" loop=true autoplay=true></video>
+    <video loop=true preload="auto" muted="true" autoplay @canplay="PlayOn" v-show="isplay" >
+      <source src="@/assets/video/bg.mp4" type="video/mp4" />
+    </video>
     <Right />
   </main>
 </template>
