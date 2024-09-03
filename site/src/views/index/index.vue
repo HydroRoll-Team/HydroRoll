@@ -26,7 +26,7 @@ export default {
       width="125" height="125" />
 
     <div class="wrapper">
-      <Left msg="饼在画了！" />
+      <Left msg="饼在画了!" />
     </div>
   </header>
 
@@ -41,6 +41,7 @@ export default {
 <style scoped>
 header {
   display: flex;
+  flex-flow: column;
   line-height: 1.5;
 }
 
@@ -52,6 +53,7 @@ header {
 @media screen and (orientation:landscape) {
   header {
     place-items: center;
+    flex-flow: row;
     padding-right: calc(var(--section-gap) / 2);
   }
 
