@@ -4,6 +4,100 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.1.9-alpha.1] - 2024-09-07
+### BREAKING CHANGES
+- due to [`e2c9fe7`](https://github.com/HydroRoll-Team/HydroRoll/commit/e2c9fe71fd6133f9c97943cd6c7d664a73e94ab0) - setup docs toc tree *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*:
+
+  setup docs toc tree
+
+- due to [`4e4c53e`](https://github.com/HydroRoll-Team/HydroRoll/commit/4e4c53ed9377f573a59b930407b903f8918959b6) - add cc 1.0 and mit license *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*:
+
+  add cc 1.0 and mit license
+
+- due to [`b5aba5f`](https://github.com/HydroRoll-Team/HydroRoll/commit/b5aba5f4bd40d88f10ce0ccd298f6eec61bc98e5) - bump time and num_threads crates ([#104](https://github.com/HydroRoll-Team/HydroRoll/pull/104)) *(PR [#105](https://github.com/HydroRoll-Team/HydroRoll/pull/105) by [@HsiangNianian](https://github.com/HsiangNianian))*:
+
+  bump time and num_threads crates (#104) (#105)
+
+
+### New Features
+- [`357db22`](https://github.com/HydroRoll-Team/HydroRoll/commit/357db22d9cac9e40d7364f0a9b6606b130382210) - **bones**: add submodule hydro_roll_core *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`67a4e90`](https://github.com/HydroRoll-Team/HydroRoll/commit/67a4e90568903200102ca369e3522d9093877277) - **docs**: enable docs preview *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`b07b7ec`](https://github.com/HydroRoll-Team/HydroRoll/commit/b07b7ec21285536d7f6f21a9752ca11bcf330d44) - **bones**: add nivis-python submodule *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`2bc0635`](https://github.com/HydroRoll-Team/HydroRoll/commit/2bc0635742cfbad16e16388a42e3a6c97e5153d5) - **project**: add scripts interface named "atien" *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`a5f1a55`](https://github.com/HydroRoll-Team/HydroRoll/commit/a5f1a55920ad7ddaaac0104dc10b3bc985bb0ae2) - **workflows**: build api triggered *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`e30752e`](https://github.com/HydroRoll-Team/HydroRoll/commit/e30752e59013997351399420412785973e56fd2f) - **docs**: add script for run dev server with Makefile *(commit by [@NtskwK](https://github.com/NtskwK))*
+- [`1605bd6`](https://github.com/HydroRoll-Team/HydroRoll/commit/1605bd66ab97a206e4698954d47b10d87b09ec2d) - add router-guards for site *(commit by [@NtskwK](https://github.com/NtskwK))*
+- [`d77828d`](https://github.com/HydroRoll-Team/HydroRoll/commit/d77828d97ee98792e50a034f905cd3894807d5ff) - add Vue code snippets for faster development *(commit by [@NtskwK](https://github.com/NtskwK))*
+- [`731d318`](https://github.com/HydroRoll-Team/HydroRoll/commit/731d318b4d5f279ea58f0688353a011a41532f42) - add video background to index page *(commit by [@NtskwK](https://github.com/NtskwK))*
+- [`e3ddb39`](https://github.com/HydroRoll-Team/HydroRoll/commit/e3ddb391b9a6b047af37eb1633e114edb598e91b) - update favicon path in index.html *(commit by [@NtskwK](https://github.com/NtskwK))*
+- [`65c8f78`](https://github.com/HydroRoll-Team/HydroRoll/commit/65c8f781eff477f65183a480a9f63255a2f8f77f) - force play bg video *(commit by [@NtskwK](https://github.com/NtskwK))*
+- [`5656f85`](https://github.com/HydroRoll-Team/HydroRoll/commit/5656f85eab324e13a5c66a49b0994a96f1acffec) - adjust UI components for better portrait view *(commit by [@NtskwK](https://github.com/NtskwK))*
+
+### Bug Fixes
+- [`9a8beed`](https://github.com/HydroRoll-Team/HydroRoll/commit/9a8beed071512f013a3c0afe50ab7e84a37e6024) - **docs**: remove infini import *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`a0c9308`](https://github.com/HydroRoll-Team/HydroRoll/commit/a0c93083eba37761b266a0bfefd1d76ea2120dab) - **readme**: correct pronounce *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`93d2670`](https://github.com/HydroRoll-Team/HydroRoll/commit/93d2670039f7d68546a68eb0a917209b393b6527) - **gitmodules**: add branch for sub modules *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`4e4c53e`](https://github.com/HydroRoll-Team/HydroRoll/commit/4e4c53ed9377f573a59b930407b903f8918959b6) - **license**: add cc 1.0 and mit license *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`d39faa0`](https://github.com/HydroRoll-Team/HydroRoll/commit/d39faa0fba9cdedbcfdddb6728ea6f9dd72ecdc8) - **docs**: depth limit for chapter I *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`ac0a560`](https://github.com/HydroRoll-Team/HydroRoll/commit/ac0a56074bfe3b87b762b17ee7b7f1ee89eac502) - **docs**: toc tree repair *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`990236b`](https://github.com/HydroRoll-Team/HydroRoll/commit/990236b37073f6858a16b2e2056d3ed9bf6ae3aa) - **docs**: toc tree repair *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`31de219`](https://github.com/HydroRoll-Team/HydroRoll/commit/31de219af4430121ebc0d26e8dd0b7c57e3ec399) - **docs**: toc tree repair *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`a4c6355`](https://github.com/HydroRoll-Team/HydroRoll/commit/a4c6355d994d26a5413bc350f3e7a57f344296f2) - **docs**: changelog.rst -> changelog.md *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`455ca3e`](https://github.com/HydroRoll-Team/HydroRoll/commit/455ca3e3db84f36ae9464468de54f7aa693a3dd2) - **docs**: toc tree repair *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`1257f4b`](https://github.com/HydroRoll-Team/HydroRoll/commit/1257f4b85f15872b6f73facaccddea9094751063) - **docs**: toc tree repair *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`99a2823`](https://github.com/HydroRoll-Team/HydroRoll/commit/99a2823e6477f52cb2f16366a3a37f3cb05b289f) - **docs**: toc tree repair *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`5597a8a`](https://github.com/HydroRoll-Team/HydroRoll/commit/5597a8af382e256951d3813aad1cedf41fcde9ac) - **docs**: toc tree repair *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`571611a`](https://github.com/HydroRoll-Team/HydroRoll/commit/571611a0958382b0d8c69e283879b52856a47090) - **readme**: fix **webui** render shape *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`b5aba5f`](https://github.com/HydroRoll-Team/HydroRoll/commit/b5aba5f4bd40d88f10ce0ccd298f6eec61bc98e5) - **deps**: bump time and num_threads crates ([#104](https://github.com/HydroRoll-Team/HydroRoll/pull/104)) *(PR [#105](https://github.com/HydroRoll-Team/HydroRoll/pull/105) by [@HsiangNianian](https://github.com/HsiangNianian))*
+  - :arrow_lower_right: *fixes issue [#104](https://github.com/HydroRoll-Team/HydroRoll/issues/104) opened by [@HsiangNianian](https://github.com/HsiangNianian)*
+
+### Refactors
+- [`679ca51`](https://github.com/HydroRoll-Team/HydroRoll/commit/679ca51b78cda9044dc8d8eb3fa246fd76cb227e) - **cli**: rename class Cli as "Atien" *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`ac0dbc5`](https://github.com/HydroRoll-Team/HydroRoll/commit/ac0dbc5b1c9b48079e3a450794030b3e0bc6096a) - **site**: rewrite with vuejs *(PR [#93](https://github.com/HydroRoll-Team/HydroRoll/pull/93) by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`e2c9fe7`](https://github.com/HydroRoll-Team/HydroRoll/commit/e2c9fe71fd6133f9c97943cd6c7d664a73e94ab0) - **docs**: setup docs toc tree *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`525de52`](https://github.com/HydroRoll-Team/HydroRoll/commit/525de52d687b44fb14be7da2c46c548eb8a32fbd) - **examples**: update file tree *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`a1a20e5`](https://github.com/HydroRoll-Team/HydroRoll/commit/a1a20e51d6c9efea406cf18facf707ea50e3d18c) - Optimize the structure of the code *(commit by [@NtskwK](https://github.com/NtskwK))*
+- [`b336845`](https://github.com/HydroRoll-Team/HydroRoll/commit/b336845dac0567bfce09dc0d4ffd6e27b1bc3d66) - Optimize the cache of changelog *(commit by [@NtskwK](https://github.com/NtskwK))*
+- [`72a79bd`](https://github.com/HydroRoll-Team/HydroRoll/commit/72a79bd525e72f80c6b46b4514f0e6bb4c3cc07a) - **site**: move site to HydroRoll-site repo *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+### Chores
+- [`93f23ba`](https://github.com/HydroRoll-Team/HydroRoll/commit/93f23ba52b24d352891d3b39dac1e97612b732cf) - **readme**: update profile *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`ac876a4`](https://github.com/HydroRoll-Team/HydroRoll/commit/ac876a4519a6987df95d5cac9ce7f4968e5f4809) - **readme**: update profile *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`0415601`](https://github.com/HydroRoll-Team/HydroRoll/commit/04156018dcf7e7813d18083eaa2b88c006629fa7) - **readme**: update profile *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`6fd080e`](https://github.com/HydroRoll-Team/HydroRoll/commit/6fd080e9a7130682a5e53c8c81b199eac1726029) - **docs**: uncomment code *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`c6bd76e`](https://github.com/HydroRoll-Team/HydroRoll/commit/c6bd76ebec81e22898bfb9054b1eda2b1c24342c) - **readme**: add docs status *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`ca49233`](https://github.com/HydroRoll-Team/HydroRoll/commit/ca492339aaf149231b3106dd9109d244aa142875) - **readme**: update profile *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`9e568c4`](https://github.com/HydroRoll-Team/HydroRoll/commit/9e568c4b886f361e97c2f03a28880b06398c7d2c) - **readme**: update profile *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`ec57636`](https://github.com/HydroRoll-Team/HydroRoll/commit/ec576369137a3b22b5eb7178777cf4f54976e2d7) - **project**: fix authors *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`13aecc2`](https://github.com/HydroRoll-Team/HydroRoll/commit/13aecc2ac55d703145a95779719710ca0b3ef4bf) - **submodule**: sync nivis_python *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`1ac8738`](https://github.com/HydroRoll-Team/HydroRoll/commit/1ac87386f9295f9e57ac7055f3ddc5a7d2458736) - **readme**: update readme *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`2c400c2`](https://github.com/HydroRoll-Team/HydroRoll/commit/2c400c23db91b4fe33f38fb988991a5c4a259c55) - **deps**: bump follow-redirects from 1.15.3 to 1.15.5 in /site *(PR [#94](https://github.com/HydroRoll-Team/HydroRoll/pull/94) by [@dependabot[bot]](https://github.com/apps/dependabot))*
+- [`ce65463`](https://github.com/HydroRoll-Team/HydroRoll/commit/ce65463177512c8fb385e8ab2c3c31a6596ce9bd) - **gitmodules**: fmt pages *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`38ca529`](https://github.com/HydroRoll-Team/HydroRoll/commit/38ca529bd3e937416a2b3ffd5814aaef5911f26c) - **gitmodule**: delete modules *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`ab670c2`](https://github.com/HydroRoll-Team/HydroRoll/commit/ab670c2993bd3943b0fa743afc4a89622181fc2e) - **submodule**: add core and nivis *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`c4d13f3`](https://github.com/HydroRoll-Team/HydroRoll/commit/c4d13f375a4f8ac8942f24cbfe63ded420f1e04e) - delete .husky *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`861ec02`](https://github.com/HydroRoll-Team/HydroRoll/commit/861ec02a05c1bcd22d878d2f29b615dc553c3a69) - **project**: add printpdf deps for rust *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`1dec684`](https://github.com/HydroRoll-Team/HydroRoll/commit/1dec684f34ee7d52737cd33fa0a37a0de011894e) - **project**: sync cargo and pyproject *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`2a43b45`](https://github.com/HydroRoll-Team/HydroRoll/commit/2a43b4540ffd94667b4cf1aaac04654497f7f692) - **docs**: complete page *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`5555113`](https://github.com/HydroRoll-Team/HydroRoll/commit/5555113f058304edc77ad72b412f6318c313c1e5) - **docs**: complete pages for about chapter *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`c0abf6b`](https://github.com/HydroRoll-Team/HydroRoll/commit/c0abf6bffbf1ec4e4b992b10ab3f548fd719affe) - **docs**: complete pages content for about chapter *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`e5f3bc6`](https://github.com/HydroRoll-Team/HydroRoll/commit/e5f3bc6f0f832a9617432fe488c7a89e8b5f444d) - **deps**: bump the npm_and_yarn group across 1 directory with 2 updates *(PR [#96](https://github.com/HydroRoll-Team/HydroRoll/pull/96) by [@dependabot[bot]](https://github.com/apps/dependabot))*
+- [`8f9b49e`](https://github.com/HydroRoll-Team/HydroRoll/commit/8f9b49eb2151607e546ead7f34ede1762b3e1e4b) - **readme**: add badge for CodeQL *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`6ea6359`](https://github.com/HydroRoll-Team/HydroRoll/commit/6ea635975a770cb8f95d544534a10a370663c63c) - **readme**: sync with banner fix *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`1a8296d`](https://github.com/HydroRoll-Team/HydroRoll/commit/1a8296d9a698185406fe4e72678dc430fff0760a) - Update README.rst *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`5a3d0c9`](https://github.com/HydroRoll-Team/HydroRoll/commit/5a3d0c96a7b62e82a43eff9e5a7fd7dd15985b95) - Update .gitmodules *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`9e5f95a`](https://github.com/HydroRoll-Team/HydroRoll/commit/9e5f95a735c6e7884feeeaeb95557499c1f39240) - **deps**: rename package && add more docs deps *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`a9f6964`](https://github.com/HydroRoll-Team/HydroRoll/commit/a9f696460e0e3a2b5b2509c08f7841996a643e56) - **deps**: add dev deps maturin ^^ *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`e914584`](https://github.com/HydroRoll-Team/HydroRoll/commit/e914584e3e441a5b875e68d9443d99a745164e34) - **deps**: add ruff dev deps for lint code *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`dfec9f9`](https://github.com/HydroRoll-Team/HydroRoll/commit/dfec9f99d1726b3c3a4e9426f50c955fcaddb623) - **format**: ruff lint code *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`e960ff1`](https://github.com/HydroRoll-Team/HydroRoll/commit/e960ff10b9e9a0d8c9842d23aa278d524b7de124) - **deps**: remove IDE-related files from .gitignore *(commit by [@NtskwK](https://github.com/NtskwK))*
+- [`7b6a0d4`](https://github.com/HydroRoll-Team/HydroRoll/commit/7b6a0d472c88f55e6f31aa633099f96cd28be8b5) - solve the anomalies of  appearance *(commit by [@NtskwK](https://github.com/NtskwK))*
+- [`09f5a26`](https://github.com/HydroRoll-Team/HydroRoll/commit/09f5a2634c1817780a068a224d1d0f21f8e18009) - **deps**: bump axios *(PR [#99](https://github.com/HydroRoll-Team/HydroRoll/pull/99) by [@dependabot[bot]](https://github.com/apps/dependabot))*
+- [`8a32052`](https://github.com/HydroRoll-Team/HydroRoll/commit/8a32052835e155b5577fe15cd2b09b7aa56a8d65) - **readme**: update intro content *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`30b6798`](https://github.com/HydroRoll-Team/HydroRoll/commit/30b679877d1360d932d6a45f963c12f011fca89a) - **deps**: bump actions/download-artifact *(PR [#103](https://github.com/HydroRoll-Team/HydroRoll/pull/103) by [@dependabot[bot]](https://github.com/apps/dependabot))*
+- [`93a01aa`](https://github.com/HydroRoll-Team/HydroRoll/commit/93a01aafb3a58bf08be48ae3b7bfb5d44a25b87e) - **deps**: bump cargo dependencies *(PR [#106](https://github.com/HydroRoll-Team/HydroRoll/pull/106) by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+
 ## [v0.1.8-alpha.2] - 2024-02-27
 ### Bug Fixes
 - [`0013c4f`](https://github.com/HydroRoll-Team/HydroRoll/commit/0013c4ffe35ecd1c65fdf0d77bb741696a2ae1a2) - **workflow**: update release step, add pypi_api_token *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
@@ -86,3 +180,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.1.8a1]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.7...v0.1.8a1
 [v0.1.8-alpha.1]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.7...v0.1.8-alpha.1
 [v0.1.8-alpha.2]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.8-alpha.1...v0.1.8-alpha.2
+[v0.1.9-alpha.1]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.8-alpha.2...v0.1.9-alpha.1
