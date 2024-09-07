@@ -82,7 +82,7 @@ dependencies = [
 
 [[package]]
 name = "hydro_roll"
-version = "0.1.9-alpha.2"
+version = "0.1.9"
 dependencies = [
  "printpdf",
  "pyo3",
