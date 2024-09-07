@@ -1,4 +1,4 @@
-name: api build
+name: Build API Doc
 
 on:
     push:
@@ -8,7 +8,7 @@ on:
       inputs:
         reason:
           type: string
-          required: true
+          required: false
           description: 'The reason to manually trigger api doc build'
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
             run: pdm sync
 
           - name: Install dependencies
-            run: pdm install -dG docs
+            run: pdm install --group docs --dev --no-default
     
           - name: Remove API Doc
             run: rm -rf docs/source/api
