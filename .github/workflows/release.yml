@@ -13,6 +13,11 @@ on:
       - 'v*'
   pull_request:
   workflow_dispatch:
+    inputs:
+      version:
+        type: string
+        required: true
+        description: 'The version to update'
 
 permissions:
   contents: read

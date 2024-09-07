@@ -5,6 +5,11 @@ on:
         tags:
           - "v*"
     workflow_dispatch:
+      inputs:
+        version:
+          type: string
+          required: true
+          description: 'The version to update'
 
 jobs:
     update-api-doc:
