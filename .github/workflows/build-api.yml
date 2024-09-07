@@ -5,6 +5,11 @@ on:
         tags:
           - "v*"
     workflow_dispatch:
+      inputs:
+        reason:
+          type: string
+          required: true
+          description: 'The reason to manually trigger api doc build'
 
 jobs:
     update-api-doc:
@@ -20,10 +25,14 @@ jobs:
           - uses: pdm-project/setup-pdm@v4
             name: Setup PDM
             with:
-              python-version: 3.9
-              cache: true
+              python-version: 3.10
+              # cache: true
+
+          - name: sync pdm.lock
+            run: pdm sync
+
           - name: Install dependencies
-            run: pdm install
+            run: pdm install -dG docs
     
           - name: Remove API Doc
             run: rm -rf docs/source/api
