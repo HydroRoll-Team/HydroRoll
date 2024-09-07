@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.1.9-alpha.2] - 2024-09-07
+### Chores
+- [`11970c0`](https://github.com/HydroRoll-Team/HydroRoll/commit/11970c0e42e5db0ceff1dae64672e484baae5535) - **docs**: update build-api workflow to remove API docs *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`d6c2085`](https://github.com/HydroRoll-Team/HydroRoll/commit/d6c208583ef98fec27c51e9e32ccfe601078c360) - **workflow**: downgrade actions/download-artifact to v3 *(PR [#107](https://github.com/HydroRoll-Team/HydroRoll/pull/107) by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`8540cb8`](https://github.com/HydroRoll-Team/HydroRoll/commit/8540cb842c22aa431b8f6ae017b4c69c717e5410) - **deps**: update cargo dependencies *(PR [#108](https://github.com/HydroRoll-Team/HydroRoll/pull/108) by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`7103a54`](https://github.com/HydroRoll-Team/HydroRoll/commit/7103a54bc899bcf1725ee844310123c19bb52637) - **workflow**: update inputs for version in workflows *(PR [#110](https://github.com/HydroRoll-Team/HydroRoll/pull/110) by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`3e8c3d7`](https://github.com/HydroRoll-Team/HydroRoll/commit/3e8c3d78b17ad9efde8aea62077ec4308fb0c9d3) - **deps**: update cargo dependencies *(PR [#108](https://github.com/HydroRoll-Team/HydroRoll/pull/108) by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+
 ## [v0.1.9-alpha.1] - 2024-09-07
 ### BREAKING CHANGES
 - due to [`e2c9fe7`](https://github.com/HydroRoll-Team/HydroRoll/commit/e2c9fe71fd6133f9c97943cd6c7d664a73e94ab0) - setup docs toc tree *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*:
@@ -181,3 +190,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.1.8-alpha.1]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.7...v0.1.8-alpha.1
 [v0.1.8-alpha.2]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.8-alpha.1...v0.1.8-alpha.2
 [v0.1.9-alpha.1]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.8-alpha.2...v0.1.9-alpha.1
+[v0.1.9-alpha.2]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.9-alpha.1...v0.1.9-alpha.2
