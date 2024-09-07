@@ -18,7 +18,6 @@ dependencies = [
     "requests>=2.31.0",
     "apscheduler>=3.10.4",
     "lupa>=2.1",
-    "windows-curses>=2.3.2",
     "lark>=1.1.8",
     "cachetools>=5.3.2",
     "iamai[onebot11]>=0.0.2",
@@ -56,6 +55,7 @@ dev = [
     "pip>=24.0",
     "maturin>=1.6.0",
     "ruff>=0.4.9",
+    "windows-curses>=2.3.3",
 ]
 docs = [
     "docutils>=0.20.1",

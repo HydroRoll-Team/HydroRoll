@@ -5,7 +5,7 @@
 groups = ["default", "dev", "docs", "pygments"]
 strategy = ["cross_platform"]
 lock_version = "4.4.2"
-content_hash = "sha256:ce1780a6546ec8cc24388ad2a62b0134e583d0b60e02a4c3fbf5137f84afd1d4"
+content_hash = "sha256:0e33b096b40908e2bb0610cfbff8f8d1924420fc9bc71a67fd00924e91620f11"
 
 [[package]]
 name = "aiohttp"
