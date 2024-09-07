@@ -7,17 +7,17 @@ name: Release
 
 on:
   push:
-    branches:
-      - main
+    # branches:
+    #   - main
     tags:
       - 'v*'
   pull_request:
   workflow_dispatch:
     inputs:
-      version:
+      reason:
         type: string
         required: true
-        description: 'The version to update'
+        description: 'The reason to manually trigger release(build only)'
 
 permissions:
   contents: read
