@@ -18,7 +18,6 @@ Submodules
    hydro_roll.cli
    hydro_roll.config
    hydro_roll.exceptions
-   hydro_roll.hydro_roll
    hydro_roll.typing
    hydro_roll.utils
 
