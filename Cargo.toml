@@ -1,13 +1,13 @@
 [package]
 name = "hydro_roll"
-version = "0.1.8-alpha.2"
+version = "0.1.9-alpha.1"
 edition = "2021"
 description = "A simple rust library for HydroRoll."
 license = "MIT"
 documentation = "https://docs.hydroroll.team/"
 homepage = "https://hydroroll.team/"
 repository = "https://github.com/HydroRoll-Team/HydroRoll"
-authors = ["HsiangNianian <i@jyunko.cn>"]
+authors = ["HsiangNianian"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]

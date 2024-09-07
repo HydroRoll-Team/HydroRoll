@@ -7,7 +7,7 @@ name = "hydro-roll"
 dynamic = ["version"]
 description = "跨平台、多模态、高度自定义的骰系开发框架。"
 authors = [
-    {name = "简律纯", email = "i@jyunko.cn"},
+    {name = "HsiangNianian", email = "i@jyunko.cn"},
 ]
 dependencies = [
     "watchfiles<1.0.0,>=0.18.0",
