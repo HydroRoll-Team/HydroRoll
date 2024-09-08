@@ -1,6 +1,14 @@
 OneRoll package
 ===============
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   OneRoll.oneroll
+
 Submodules
 ----------
 

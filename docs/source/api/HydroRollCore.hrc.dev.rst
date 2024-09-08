@@ -1,5 +1,5 @@
-GetPlayerCard package
-=====================
+HydroRollCore.hrc.dev package
+=============================
 
 Subpackages
 -----------
@@ -7,7 +7,7 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   GetPlayerCard.get_pc
+   HydroRollCore.hrc.dev.grps
 
 Submodules
 ----------
@@ -15,12 +15,13 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
-   GetPlayerCard.version
+   HydroRollCore.hrc.dev.character
+   HydroRollCore.hrc.dev.echo
 
 Module contents
 ---------------
 
-.. automodule:: GetPlayerCard
+.. automodule:: HydroRollCore.hrc.dev
    :members:
    :undoc-members:
    :show-inheritance:

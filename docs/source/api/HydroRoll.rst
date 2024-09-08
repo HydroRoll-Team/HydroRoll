@@ -7,6 +7,7 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
+   HydroRoll.hydro_roll
    HydroRoll.models
 
 Submodules
