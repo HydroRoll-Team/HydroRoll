@@ -1,3 +1,18 @@
 [submodule "echo"]
 	path = echo
 	url = https://github.com/HydroRoll-Team/echo
+[submodule "TRPGNivis"]
+	path = TRPGNivis
+	url = https://github.com/HydroRoll-Team/TRPGNivis
+[submodule "HydroRollCore"]
+	path = HydroRollCore
+	url = https://github.com/HydroRoll-Team/HydroRollCore
+[submodule "GetPlayerCard"]
+	path = GetPlayerCard
+	url = https://github.com/HydroRoll-Team/GetPlayerCard
+[submodule "conventional_role_play"]
+	path = conventional_role_play
+	url = https://github.com/HydroRoll-Team/conventional_role_play
+[submodule "DiceParser"]
+	path = DiceParser
+	url = https://github.com/HydroRoll-Team/DiceParser
