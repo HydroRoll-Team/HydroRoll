@@ -64,13 +64,14 @@ jobs:
               rm -rf getPCCard
               rm -rf HRC
               rm -rf TRPGNivisSDK
+              ls docs/source/api
 
           - name: Remove Submodule
             run: |
-              git submodule deinit -f OneRoll
-              git submodule deinit -f getPCCard
+              git submodule deinit -f DiceParser
+              git submodule deinit -f GetPlayerCard
               git submodule deinit -f HydroRollCore
-              git submodule deinit -f TRPGNivisSDK
+              git submodule deinit -f TRPGNivis
 
           - name: Commit 
             uses: stefanzweifel/git-auto-commit-action@v5
