@@ -39,6 +39,7 @@ jobs:
 
           - name: Moving Submodule
             run: |
+              ls
               mv DiceParser/src/oneroll OneRoll
               mv GetPlayerCard/get_pc getPCCard
               mv HydroRollCore/hrc HydroRollCore
@@ -64,5 +65,5 @@ jobs:
           - name: Commit 
             uses: stefanzweifel/git-auto-commit-action@v5
             with:
-              branch: main
+              branch: ${{ github.event.branch }}
               commit_message: "chore(docs): update api docs with sphinx-apidoc"
