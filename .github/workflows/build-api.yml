@@ -44,33 +44,23 @@ jobs:
           - name: Moving Submodule
             run: |
               ls
-              mv DiceParser/src/oneroll OneRoll
-              mv GetPlayerCard/get_pc getPCCard
-              mv HydroRollCore/hrc HRC
-              mv TRPGNivis/nivis_python TRPGNivisSDK
+              mkdir modules
+              mv DiceParser/src/oneroll modules/OneRoll
+              mv GetPlayerCard/get_pc modules/GetPlayerCard
+              mv HydroRollCore/hrc modules/HydroRollCore
+              mv TRPGNivis/nivis_python modules/TRPGNivisSDK
 
           - name: Build API Doc For HydroRoll
             run: |
-              pdm run sphinx-apidoc -o docs/source/api hydro_roll getPCCard HRC TRPGNivisSDK OneRoll -f -e --tocfile index
-              # pdm run sphinx-apidoc -o docs/source/api getPCCard -f -e --tocfile index
-              # pdm run sphinx-apidoc -o docs/source/api HRC -f -e --tocfile index
-              # pdm run sphinx-apidoc -o docs/source/api TRPGNivisSDK -f -e --tocfile index
-              # pdm run sphinx-apidoc -o docs/source/api OneRoll -f -e --tocfile index
+              cp hydro_roll modules/HydroRoll
+              pdm run sphinx-apidoc -o docs/source/api modules -f -e --tocfile index
 
-          - name: Remove Temp Folder
-            run: |
-              rm -rf OneRoll
-              rm -rf getPCCard
-              rm -rf HRC
-              rm -rf TRPGNivisSDK
-              ls docs/source/api
-
-          - name: Remove Submodule
-            run: |
-              git submodule deinit -f DiceParser
-              git submodule deinit -f GetPlayerCard
-              git submodule deinit -f HydroRollCore
-              git submodule deinit -f TRPGNivis
+          # - name: Remove Submodule
+          #   run: |
+          #     git submodule deinit -f DiceParser
+          #     git submodule deinit -f GetPlayerCard
+          #     git submodule deinit -f HydroRollCore
+          #     git submodule deinit -f TRPGNivis
 
           - name: Commit 
             uses: stefanzweifel/git-auto-commit-action@v5
