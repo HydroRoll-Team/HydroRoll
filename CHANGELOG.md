@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.1.10] - 2024-09-08
+### Chores
+- [`9cd70c8`](https://github.com/HydroRoll-Team/HydroRoll/commit/9cd70c827584704d923b99442b8607a7160d57fd) - **docs**: update api docs with sphinx-apidoc *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+- [`9562a90`](https://github.com/HydroRoll-Team/HydroRoll/commit/9562a906cac2982fd45069056b5e83f0eddff8ac) - **deps**: update Cargo.lock and Cargo.toml dependencies and version for hydro_roll *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+
 ## [v0.1.9-alpha.2] - 2024-09-07
 ### Chores
 - [`11970c0`](https://github.com/HydroRoll-Team/HydroRoll/commit/11970c0e42e5db0ceff1dae64672e484baae5535) - **docs**: update build-api workflow to remove API docs *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
@@ -191,3 +197,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.1.8-alpha.2]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.8-alpha.1...v0.1.8-alpha.2
 [v0.1.9-alpha.1]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.8-alpha.2...v0.1.9-alpha.1
 [v0.1.9-alpha.2]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.9-alpha.1...v0.1.9-alpha.2
+[v0.1.10]: https://github.com/HydroRoll-Team/HydroRoll/compare/v0.1.9...v0.1.10
