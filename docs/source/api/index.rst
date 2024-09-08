@@ -1,7 +1,7 @@
-hydro_roll
-==========
+OneRoll
+=======
 
 .. toctree::
    :maxdepth: 4
 
-   hydro_roll
+   OneRoll
