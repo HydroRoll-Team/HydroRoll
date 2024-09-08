@@ -61,5 +61,5 @@ jobs:
           - name: Commit 
             uses: stefanzweifel/git-auto-commit-action@v5
             with:
-              branch: ${{ github.event.branch }}
+              branch: main
               commit_message: "chore(docs): update api docs with sphinx-apidoc"
