@@ -52,7 +52,7 @@ jobs:
 
           - name: Build API Doc For HydroRoll
             run: |
-              cp hydro_roll modules/HydroRoll
+              cp -r hydro_roll modules/HydroRoll
               pdm run sphinx-apidoc -o docs/source/api modules -f -e --tocfile index
 
           # - name: Remove Submodule
