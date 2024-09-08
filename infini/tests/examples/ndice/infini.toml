@@ -1,9 +1,0 @@
-[infini]
-name = "ndice"
-version = "0.1.0"
-description = "基础掷骰指令规则包"
-license = "Apache-2.0"
-
-[requirements]
-
-[dependencies]
