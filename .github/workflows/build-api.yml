@@ -37,6 +37,10 @@ jobs:
           - name: Remove API Doc
             run: rm -rf docs/source/api
 
+          - name: Clone Submodule
+            run: |
+              git submodule update --init --recursive
+
           - name: Moving Submodule
             run: |
               ls
@@ -44,7 +48,6 @@ jobs:
               mv GetPlayerCard/get_pc getPCCard
               mv HydroRollCore/hrc HydroRollCore
               mv TRPGNivis/nivis_python TRPGNivisSDK
-
 
           - name: Build API Doc For HydroRoll
             run: |
@@ -55,12 +58,19 @@ jobs:
               pdm run sphinx-apidoc -o docs/source/api OneRoll -f -e --tocfile index
             shell: bash
 
-          - name: Remove Submodule
+          - name: Remove Temp Folder
             run: |
               rm -rf OneRoll
               rm -rf getPCCard
               rm -rf HydroRollCore
               rm -rf TRPGNivisSDK
+
+          - name: Remove Submodule
+            run: |
+              git submodule deinit -f OneRoll
+              git submodule deinit -f getPCCard
+              git submodule deinit -f HydroRollCore
+              git submodule deinit -f TRPGNivisSDK
 
           - name: Commit 
             uses: stefanzweifel/git-auto-commit-action@v5
