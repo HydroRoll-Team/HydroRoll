@@ -1,7 +1,7 @@
-hydro\_roll.typing module
+TRPGNivisSDK.lexer module
 =========================
 
-.. automodule:: hydro_roll.typing
+.. automodule:: TRPGNivisSDK.lexer
    :members:
    :undoc-members:
    :show-inheritance:

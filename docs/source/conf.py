@@ -67,6 +67,7 @@ html_static_path = ["../_static"]
 _html_logo = (
     "https://cdn.jsdelivr.net/gh/HydroRoll-Team/HydroRoll@main/docs/_static/logo.png"
 )
+html_logo = _html_logo
 html_favicon = _html_logo
 
 html_css_files = [
@@ -74,11 +75,20 @@ html_css_files = [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
 ]
 
+html_copy_source = True
+html_show_sourcelink = True
+
 html_theme_options = {
     "announcement": "<em><a href='#'>documentation</a> is still under construction now, welcome any <a href='contributing.html'>contribution</a>!</em>",
     "source_repository": "https://github.com/HydroRoll-Team/HydroRoll/",
     "source_branch": "main",
     "source_directory": "docs/source/",
+    # Toc options
+    # "collapse_navigation": True,
+    # "sticky_navigation": False,
+    # "navigation_depth": 1,
+    # "includehidden": False,
+    # "titles_only": True,
     "footer_icons": [
         {
             "name": "GitHub",
@@ -94,3 +104,15 @@ html_theme_options = {
         },
     ],
 }
+
+# html_sidebars = {
+#     "**": [
+#         "sidebar/scroll-start.html",
+#         "sidebar/brand.html",
+#         "sidebar/search.html",
+#         "sidebar/navigation.html",
+#         "sidebar/ethical-ads.html",
+#         "sidebar/scroll-end.html",
+#     ]
+# }
+

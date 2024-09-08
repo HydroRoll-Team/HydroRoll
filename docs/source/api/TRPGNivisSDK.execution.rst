@@ -1,7 +1,7 @@
-hydro\_roll.exceptions module
+TRPGNivisSDK.execution module
 =============================
 
-.. automodule:: hydro_roll.exceptions
+.. automodule:: TRPGNivisSDK.execution
    :members:
    :undoc-members:
    :show-inheritance:

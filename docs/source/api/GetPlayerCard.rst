@@ -1,5 +1,5 @@
-hydro\_roll package
-===================
+GetPlayerCard package
+=====================
 
 Subpackages
 -----------
@@ -7,7 +7,7 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   hydro_roll.models
+   GetPlayerCard.get_pc
 
 Submodules
 ----------
@@ -15,16 +15,12 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
-   hydro_roll.cli
-   hydro_roll.config
-   hydro_roll.exceptions
-   hydro_roll.typing
-   hydro_roll.utils
+   GetPlayerCard.version
 
 Module contents
 ---------------
 
-.. automodule:: hydro_roll
+.. automodule:: GetPlayerCard
    :members:
    :undoc-members:
    :show-inheritance:

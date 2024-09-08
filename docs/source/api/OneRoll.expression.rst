@@ -1,7 +1,7 @@
-hydro\_roll.config module
+OneRoll.expression module
 =========================
 
-.. automodule:: hydro_roll.config
+.. automodule:: OneRoll.expression
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,5 +1,5 @@
-hydro\_roll.models package
-==========================
+HydroRoll.models package
+========================
 
 Submodules
 ----------
@@ -7,12 +7,12 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
-   hydro_roll.models.utils
+   HydroRoll.models.utils
 
 Module contents
 ---------------
 
-.. automodule:: hydro_roll.models
+.. automodule:: HydroRoll.models
    :members:
    :undoc-members:
    :show-inheritance:

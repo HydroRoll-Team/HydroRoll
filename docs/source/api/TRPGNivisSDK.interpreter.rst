@@ -1,7 +1,7 @@
-hydro\_roll.models.utils module
+TRPGNivisSDK.interpreter module
 ===============================
 
-.. automodule:: hydro_roll.models.utils
+.. automodule:: TRPGNivisSDK.interpreter
    :members:
    :undoc-members:
    :show-inheritance:

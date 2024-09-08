@@ -1,7 +1,11 @@
-hydro_roll
-==========
+modules
+=======
 
 .. toctree::
    :maxdepth: 4
 
-   hydro_roll
+   GetPlayerCard
+   HydroRoll
+   HydroRollCore
+   OneRoll
+   TRPGNivisSDK

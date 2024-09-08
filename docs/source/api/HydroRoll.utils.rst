@@ -1,7 +1,7 @@
-hydro\_roll.cli module
+HydroRoll.utils module
 ======================
 
-.. automodule:: hydro_roll.cli
+.. automodule:: HydroRoll.utils
    :members:
    :undoc-members:
    :show-inheritance:
