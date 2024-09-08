@@ -55,12 +55,9 @@ jobs:
               cp -r hydro_roll modules/HydroRoll
               pdm run sphinx-apidoc -o docs/source/api modules -f -e --tocfile index
 
-          # - name: Remove Submodule
-          #   run: |
-          #     git submodule deinit -f DiceParser
-          #     git submodule deinit -f GetPlayerCard
-          #     git submodule deinit -f HydroRollCore
-          #     git submodule deinit -f TRPGNivis
+          - name: Remove Temp Folder
+            run: |
+              rm -rf modules
 
           - name: Commit 
             uses: stefanzweifel/git-auto-commit-action@v5
