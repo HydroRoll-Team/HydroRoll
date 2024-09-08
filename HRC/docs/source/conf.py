@@ -3,7 +3,8 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-import os, sys
+import os
+import sys
 
 if sys.version_info >= (3, 11):
     import tomllib
@@ -23,12 +24,12 @@ AUTHORS = ",".join([f"{aut}" for aut in AUTHOR_TABLE])
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "HydroRoll"  # PROJECT_NAME
+project = PROJECT_NAME  # "HydroRollCore"
 release = PROJECT_VERSION  # "latest"
 copyright = "2023-PRESENT, HydroRoll-Team."
 author = AUTHORS  # "Hsiang Nianian"
 
-# html_title = "HydroRoll Docs"
+html_title = "HydroRollCore"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -46,8 +47,8 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 extlinks = {
-    "issue": ("https://github.com/HydroRoll-Team/HydroRoll/%s", "issue %s"),
-    "doc": ("https://docs.hydroroll.team/zh_CN/latest/%s", "pages/%s"),
+    "issue": ("https://github.com/HydroRoll-Team/HydroRollCore/%s", "issue %s"),
+    "doc": ("https://core.hydroroll.team/zh-cn/latest/%s", "pages/%s"),
 }
 source_suffix = {
     ".rst": "restructuredtext",
@@ -64,10 +65,7 @@ gettext_uuid = True  # optional.
 
 html_theme = "furo"
 html_static_path = ["../_static"]
-_html_logo = (
-    "https://cdn.jsdelivr.net/gh/HydroRoll-Team/HydroRoll@main/docs/_static/logo.png"
-)
-html_logo = _html_logo
+_html_logo = "https://cdn.jsdelivr.net/gh/HydroRoll-Team/HydroRollCore@main/docs/_static/logo.png"
 html_favicon = _html_logo
 
 html_css_files = [
@@ -75,44 +73,23 @@ html_css_files = [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
 ]
 
-html_copy_source = True
-html_show_sourcelink = True
-
 html_theme_options = {
-    "announcement": "<em><a href='#'>documentation</a> is still under construction now, welcome any <a href='contributing.html'>contribution</a>!</em>",
-    "source_repository": "https://github.com/HydroRoll-Team/HydroRoll/",
+    "announcement": "🎉 <em><a href='#'>documentation</a> is still under construction now, welcome any <a href='contributing.html'>contribution</a>!</em>",
+    "source_repository": "https://github.com/HydroRoll-Team/HydroRollCore/",
     "source_branch": "main",
     "source_directory": "docs/source/",
-    # Toc options
-    # "collapse_navigation": True,
-    # "sticky_navigation": False,
-    # "navigation_depth": 1,
-    # "includehidden": False,
-    # "titles_only": True,
     "footer_icons": [
         {
             "name": "GitHub",
-            "url": "https://github.com/HydroRoll-Team/HydroRoll/",
+            "url": "https://github.com/HydroRoll-Team/HydroRollCore/",
             "html": "",
             "class": "fa-brands fa-github",
         },
         {
             "name": "Pypi",
-            "url": "https://pypi.org/project/hydro_roll/",
+            "url": "https://pypi.org/project/hydroroll-core/",
             "html": "",
             "class": "fa-brands fa-python",
         },
     ],
 }
-
-# html_sidebars = {
-#     "**": [
-#         "sidebar/scroll-start.html",
-#         "sidebar/brand.html",
-#         "sidebar/search.html",
-#         "sidebar/navigation.html",
-#         "sidebar/ethical-ads.html",
-#         "sidebar/scroll-end.html",
-#     ]
-# }
-

@@ -1,0 +1,2 @@
+[core]
+rule_dirs = ["rules"]

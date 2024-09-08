@@ -1,0 +1,3 @@
+# MyRule
+
+class Wiki(): ...
