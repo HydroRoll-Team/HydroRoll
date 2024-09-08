@@ -46,14 +46,14 @@ jobs:
               ls
               mv DiceParser/src/oneroll OneRoll
               mv GetPlayerCard/get_pc getPCCard
-              mv HydroRollCore/hrc HydroRollCore
+              mv HydroRollCore/hrc HRC
               mv TRPGNivis/nivis_python TRPGNivisSDK
 
           - name: Build API Doc For HydroRoll
             run: |
               pdm run sphinx-apidoc -o docs/source/api hydro_roll -f -e --tocfile index
               pdm run sphinx-apidoc -o docs/source/api getPCCard -f -e --tocfile index
-              pdm run sphinx-apidoc -o docs/source/api HydroRollCore -f -e --tocfile index
+              pdm run sphinx-apidoc -o docs/source/api HRC -f -e --tocfile index
               pdm run sphinx-apidoc -o docs/source/api TRPGNivisSDK -f -e --tocfile index
               pdm run sphinx-apidoc -o docs/source/api OneRoll -f -e --tocfile index
             shell: bash
@@ -62,7 +62,7 @@ jobs:
             run: |
               rm -rf OneRoll
               rm -rf getPCCard
-              rm -rf HydroRollCore
+              rm -rf HRC
               rm -rf TRPGNivisSDK
 
           - name: Remove Submodule
