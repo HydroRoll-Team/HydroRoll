@@ -1,14 +1,6 @@
 GetPlayerCard package
 =====================
 
-Subpackages
------------
-
-.. toctree::
-   :maxdepth: 4
-
-   GetPlayerCard.get_pc
-
 Submodules
 ----------
 

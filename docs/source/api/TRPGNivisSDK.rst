@@ -1,14 +1,6 @@
 TRPGNivisSDK package
 ====================
 
-Subpackages
------------
-
-.. toctree::
-   :maxdepth: 4
-
-   TRPGNivisSDK.nivis_python
-
 Submodules
 ----------
 

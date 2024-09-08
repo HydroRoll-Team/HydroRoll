@@ -10,7 +10,6 @@ Subpackages
    HydroRollCore.dev
    HydroRollCore.doc
    HydroRollCore.feat
-   HydroRollCore.hrc
    HydroRollCore.perf
    HydroRollCore.rule
 
