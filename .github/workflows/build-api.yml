@@ -37,10 +37,29 @@ jobs:
           - name: Remove API Doc
             run: rm -rf docs/source/api
 
-          - name: Build API Doc
+          - name: Moving Submodule
+            run: |
+              mv DiceParser/src/oneroll OneRoll
+              mv GetPlayerCard/get_pc getPCCard
+              mv HydroRollCore/hrc HydroRollCore
+              mv TRPGNivis/nivis_python TRPGNivisSDK
+
+
+          - name: Build API Doc For HydroRoll
             run: |
               pdm run sphinx-apidoc -o docs/source/api hydro_roll -f -e --tocfile index
+              pdm run sphinx-apidoc -o docs/source/api getPCCard -f -e --tocfile index
+              pdm run sphinx-apidoc -o docs/source/api HydroRollCore -f -e --tocfile index
+              pdm run sphinx-apidoc -o docs/source/api TRPGNivisSDK -f -e --tocfile index
+              pdm run sphinx-apidoc -o docs/source/api OneRoll -f -e --tocfile index
             shell: bash
+
+          - name: Remove Submodule
+            run: |
+              rm -rf OneRoll
+              rm -rf getPCCard
+              rm -rf HydroRollCore
+              rm -rf TRPGNivisSDK
 
           - name: Commit 
             uses: stefanzweifel/git-auto-commit-action@v5
