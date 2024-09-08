@@ -16,3 +16,6 @@
 [submodule "DiceParser"]
 	path = DiceParser
 	url = https://github.com/HydroRoll-Team/DiceParser
+[submodule "infini"]
+	path = infini
+	url = https://github.com/HydroRoll-Team/infini
