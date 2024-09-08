@@ -44,7 +44,7 @@ jobs:
           - name: Moving Submodule
             run: |
               ls
-              mkdir modules
+              mkdir modules -Force
               mv DiceParser/src/oneroll modules/OneRoll
               mv GetPlayerCard/get_pc modules/GetPlayerCard
               mv HydroRollCore/hrc modules/HydroRollCore
