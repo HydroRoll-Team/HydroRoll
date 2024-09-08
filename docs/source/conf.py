@@ -67,7 +67,7 @@ html_static_path = ["../_static"]
 _html_logo = (
     "https://cdn.jsdelivr.net/gh/HydroRoll-Team/HydroRoll@main/docs/_static/logo.png"
 )
-html_logo = _html_logo
+# html_logo = _html_logo
 html_favicon = _html_logo
 
 html_css_files = [
