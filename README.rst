@@ -115,7 +115,7 @@
 |FOSSA Status|
 
 .. uri list above:
-.. _传送门: https://github.com/HydroRoll-Team/examples-hydro
+.. _传送门: https://github.com/HydroRoll-Team/examples-hydrogen
 .. _自动热重载: https://docs.hydroroll.team/addons/hot-reload
 .. _调度任务: https://docs.hydroroll.team/addons/apscheduler
 .. _基础模型: https://docs.hydroroll.team/addons/base-model
