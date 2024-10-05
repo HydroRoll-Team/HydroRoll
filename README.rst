@@ -1,7 +1,7 @@
 |official site| |community| |ruff| |python_v| |crates_v| |release_img| |docs_status| |CodeQL| 
 
 跨平台、多模态、高度自定义的骰系开发框架 |Structure2|
-==================================
+########################################
 
 .. start-index
 
@@ -27,7 +27,7 @@
 ----
 
 安装与使用
-----------
+**********
 
 在安装 **3.9+** 版本的 *Python* 之后，请先全局安装 *pdm* 依赖，接着全局安装 *hydro-roll* 包。
 
@@ -51,7 +51,7 @@
 ----
 
 开发示例
---------
+******
 
 你可以选择从框架端开始开发水系骰子。
 
@@ -83,11 +83,22 @@
 
 ----
 
+社区与贡献
+**********
+
+HydroRoll[水系] 不仅仅是一个骰系开发框架，更是一个不断壮大的用户和框架开发者社区。
+
+我们已经在水系的文档主页上列出了主要的社区交流渠道。与核心框架开发人员取得联系的最佳方式是加入 HydroRoll[水系] 社区论坛 `Github Discussions`_。
+
+如果你想要开始为 `HydroRoll-Team_` 组织下的任何项目做贡献，请参阅 `贡献指南`_，这本指南还包括了提交 Issue 与 PullRequest 的指南。
+
+----
+
 知识问答
---------
+********
 
 “谁适合水系？”
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 :世界主: 规则书作者。水系基于通用规则包（规则书的 *Python* 实现）标准架构，可以为你一键生成规则书
   的 *pdf* 版本与一个在线规则书浏览站点，同时允许你在规则包内自定义高优先级的骰系内建指令。一个规则
@@ -106,11 +117,10 @@
 #. 水系是一个骰系开发框架: 允许你方便快捷的开发自己的骰系。抛开人工智能模块的水系的第一用户是世界主。
 #. 水系不是一个具体的骰系: 但是水系有一个官方的规则书与骰系实现(`传送门`_)。在水系社区，骰系概念是被弱化的，一个加载了独特的规则包的骰子，便是一个骰系（针对此规则包所对应的规则书而言）。
 
-
 ----
 
 许可证
--------
+******
 
 `AFLv3.0`_ & `AGPLv3.0`_ © 2023-PRESENT `简律纯`_ & `HydroRoll-Team`_。
 
@@ -125,9 +135,11 @@
 .. _基础模型: https://docs.hydroroll.team/addons/base-model
 .. _规则包: https://docs.hydroroll.team/advanced/rule-package
 .. _官方文档: https://docs.hydroroll.team/
+.. _简律纯: https://github.com/HsiangNianian
+.. _Github Discussions: https://github.com/HydroRoll-Team/HydroRoll/discussions
+.. _贡献指南: https://docs.hydroroll.team/zh-cn/latest/contributing/index.html
 .. _AFLv3.0: https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE
 .. _AGPLv3.0: https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE-AGPL-3
-.. _简律纯: https://github.com/HsiangNianian
 .. _HydroRoll-Team: https://github.com/HydroRoll-Team
 .. _Blockly: https://blockly.hydroroll.team/
 .. _oneroll: https://github.com/HydroRoll-Team/DiceParser
