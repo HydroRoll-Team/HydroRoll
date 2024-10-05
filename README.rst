@@ -136,7 +136,7 @@ HydroRoll[水系] 不仅仅是一个骰系开发框架，更是一个不断壮�
 .. _规则包: https://docs.hydroroll.team/advanced/rule-package
 .. _官方文档: https://docs.hydroroll.team/
 .. _简律纯: https://github.com/HsiangNianian
-.. _Github Discussions: https://github.com/HydroRoll-Team/HydroRoll/discussions
+.. _Github Discussions: https://github.com/orgs/HydroRoll-Team/discussions
 .. _贡献指南: https://docs.hydroroll.team/zh-cn/latest/contributing/index.html
 .. _AFLv3.0: https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE
 .. _AGPLv3.0: https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE-AGPL-3
