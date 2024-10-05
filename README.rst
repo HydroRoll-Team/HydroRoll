@@ -22,6 +22,9 @@
 - 🎢 渐进式学习框架，从编写简单的 *nivis reply* 脚本，到编写满足小需求的 *lua*、 *python* 脚本，再到成为世界主编写自己的规则包模块，甚至训练水系模型，层层递进，轻松学习。
 - 🔓 更多特性等你发掘！
 
+.. _Blockly: https://blockly.hydroroll.team/
+.. _oneroll: https://github.com/HydroRoll-Team/DiceParser
+
 .. end-index
 
 ----
@@ -141,8 +144,6 @@ HydroRoll[水系] 不仅仅是一个骰系开发框架，更是一个不断壮�
 .. _AFLv3.0: https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE
 .. _AGPLv3.0: https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE-AGPL-3
 .. _HydroRoll-Team: https://github.com/HydroRoll-Team
-.. _Blockly: https://blockly.hydroroll.team/
-.. _oneroll: https://github.com/HydroRoll-Team/DiceParser
 
 .. image list above:
 .. |docs_status| image:: https://readthedocs.org/projects/hydro-roll-docs/badge/?version=latest
