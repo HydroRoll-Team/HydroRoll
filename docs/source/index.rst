@@ -42,4 +42,4 @@
     :hidden:
     :caption: 开放 API 手册
 
-    参考 <api/index.rst>
+    类参考 <api/index.rst>
