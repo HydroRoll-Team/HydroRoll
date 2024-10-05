@@ -6,14 +6,6 @@
     if: contained!(event.message, r"Hello") => p", World!" ? false;
 
 
-.. code-block:: rust
-
-    fn main() {
-        println!("Hello, world!");
-    }
-
-
-:issue:`23`
 
 在开始之前
 ----------------------------

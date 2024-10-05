@@ -5,3 +5,4 @@ myst-parser>=3.0.1
 sphinx>=7.3.7
 tomli>=2.0.1
 sphinx-intl>=2.2.0
+sphinxcontrib-httpdomain

@@ -16,30 +16,24 @@
 
 .. toctree::
     :hidden:
-
-    getting_started/index
-
-
-.. toctree::
-    :hidden:
-
-    tutorials/index
+    :caption: Learning
     
+    getting_started/index
+    tutorials/index
+
 
 .. toctree::
     :hidden:
+    :caption: Community
 
     contributing/index
-
-
-.. toctree::
-    :hidden:
-
     community/index
 
 
 .. toctree::
     :hidden:
-    :caption: 开放 API 手册
+    :caption: Development
 
-    类参考 <api/index.rst>
+    类参考手册 <api/index.rst>
+    restful
+    

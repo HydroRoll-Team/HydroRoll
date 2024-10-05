@@ -11,4 +11,4 @@
     complying_with_licenses
     release_policy
     changelog
-
+    docs_changelog

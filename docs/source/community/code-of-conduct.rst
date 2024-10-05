@@ -95,15 +95,14 @@
 参见
 ----
 
-本行为准则改编自 [Contributor Covenant][homepage] 2.1 版, 参见 [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1]。
+本行为准则改编自 `Contributor Covenant`_ 2.1 版, 参见 `Code of Conduct`_。
 
-社区处理方针灵感来源于 [Mozilla's code of conduct enforcement ladder][Mozilla CoC]。
+社区处理方针灵感来源于 `Mozilla's code of conduct enforcement ladder`_。
 
-有关本行为准则的常见问题的答案，参见 [https://www.contributor-covenant.org/faq][FAQ]。
-其他语言翻译参见 [https://www.contributor-covenant.org/translations][translations]。
+有关本行为准则的常见问题的答案，参见 https://www.contributor-covenant.org/faq。
 
-[homepage]: https://www.contributor-covenant.org
-[v2.1]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
-[Mozilla CoC]: https://github.com/mozilla/diversity
-[FAQ]: https://www.contributor-covenant.org/faq
-[translations]: https://www.contributor-covenant.org/translations
+其他语言翻译参见 https://www.contributor-covenant.org/translations。
+
+.. _Contributor Covenant: https://www.contributor-covenant.org
+.. _Code of Conduct: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
+.. _Mozilla's code of conduct enforcement ladder: https://github.com/mozilla/diversity
