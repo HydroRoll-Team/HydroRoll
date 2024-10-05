@@ -121,8 +121,8 @@
 .. _基础模型: https://docs.hydroroll.team/addons/base-model
 .. _规则包: https://docs.hydroroll.team/advanced/rule-package
 .. _官方文档: https://docs.hydroroll.team/
-.. _AFLv3.0: https://github.com/HydroRoll-Team/HydroRoll?tab=AFL-3.0-1-ov-file
-.. _AGPLv3.0: https://github.com/HydroRoll-Team/HydroRoll?tab=AGPL-3.0-5-ov-file
+.. _AFLv3.0: https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE
+.. _AGPLv3.0: https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE-AGPL-3
 .. _简律纯: https://github.com/HsiangNianian
 .. _HydroRoll-Team: https://github.com/HydroRoll-Team
 .. _Blockly: https://blockly.hydroroll.team/
