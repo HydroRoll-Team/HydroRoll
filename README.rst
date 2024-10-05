@@ -16,8 +16,8 @@
 - 🛠️ 灵活的配置，高度自定义，就像搭积木与拼拼图一样简单高效。
 - 🔌 可选的拓展模块，兼容 *shiki* 的 *lua* 模块、兼容青果 *onedice* 标准的骰子表达式解析模块等...
 - 👍 跨平台，对接 *onebot* 协议、 *kook* 平台、 *dingtalk* 软件、 *telegram*、 *discord*、 *minecraft*...与自研 *IM* 平台。
-- 🧩 兼容的插件设计，可编写 *lua*、 *python*、 *javascript* 脚本，为附加功能赋能， *Blockly* 傻瓜式在线可视化编写水系脚本插件。
-- 🎲 *Meta* 级别的掷骰表达式解析库，可自定义任何解析规则，或可用于一条指令执行多个操作~>学习 `oneroll <https://github.com/HydroRoll-Team/DiceParser>`_。
+- 🧩 兼容的插件设计，可编写 *lua*、 *python*、 *javascript* 脚本，为附加功能赋能， `Blockly`_ 傻瓜式在线可视化编写水系脚本插件。
+- 🎲 *Meta* 级别的掷骰表达式解析库，可自定义任何解析规则，或可用于一条指令执行多个操作~>学习 `oneroll`_。
 - 🤖 内嵌 *AI* 工具——水系模型工作流， *webui* 管理各个单一任务模型的输入输出与嵌套关系，低成本实现媲美大模型的多任务功能。
 - 🎢 渐进式学习框架，从编写简单的 *nivis reply* 脚本，到编写满足小需求的 *lua*、 *python* 脚本，再到成为世界主编写自己的规则包模块，甚至训练水系模型，层层递进，轻松学习。
 - 🔓 更多特性等你发掘！
@@ -108,7 +108,7 @@
 
 ----
 
-`MIT`_ © 2023-PRESENT `简律纯`_ & `HydroRoll-Team`_.
+`AFLv3.0`_ & `AGPLv3.0`_ © 2023-PRESENT `简律纯`_ & `HydroRoll-Team`_.
 
 |license icon|
 
@@ -121,9 +121,12 @@
 .. _基础模型: https://docs.hydroroll.team/addons/base-model
 .. _规则包: https://docs.hydroroll.team/advanced/rule-package
 .. _官方文档: https://docs.hydroroll.team/
-.. _MIT: https://github.com/HydroRoll-Team/HydroRoll/blob/main/LICENSE
+.. _AFLv3.0: https://github.com/HydroRoll-Team/HydroRoll?tab=AFL-3.0-1-ov-file
+.. _AGPLv3.0: https://github.com/HydroRoll-Team/HydroRoll?tab=AGPL-3.0-5-ov-file
 .. _简律纯: https://github.com/HsiangNianian
 .. _HydroRoll-Team: https://github.com/HydroRoll-Team
+.. _Blockly: https://blockly.hydroroll.team/
+.. _oneroll: https://github.com/HydroRoll-Team/DiceParser
 
 .. image list above:
 .. |docs_status| image:: https://readthedocs.org/projects/hydro-roll-docs/badge/?version=latest
