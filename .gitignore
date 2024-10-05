@@ -178,3 +178,6 @@ examples/config.toml
 examples/HydroRoll/**
 examples/plugins/**/*.py
 examples/logs/**/*.log
+
+# visual studio
+.vscode/**
