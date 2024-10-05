@@ -40,25 +40,34 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.autosummary",
     "sphinx.ext.extlinks",
+    "sphinx.ext.intersphinx",
     "myst_parser",
 ]
 
+intersphinx_mapping = {'python': ('https://docs.python.org/3', None)}
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 extlinks = {
-    "issue": ("https://github.com/HydroRoll-Team/HydroRoll/%s", "issue %s"),
-    "doc": ("https://docs.hydroroll.team/zh_CN/latest/%s", "pages/%s"),
+    "issue": ("https://github.com/HydroRoll-Team/HydroRoll/issues/%s", "[issue %s]"),
 }
 source_suffix = {
     ".rst": "restructuredtext",
     ".txt": "markdown",
     ".md": "markdown",
 }
-
+rst_epilog = """
+.. |psf| replace:: Python Software Foundation
+"""
 locale_dirs = ["../locales/"]  # path is example but recommended.
 gettext_compact = False  # optional.
 gettext_uuid = True  # optional.
-
+numfig = True # Figures, tables and code blocks are automatically numbered if they have a title
+pygments_style = "colorful" # default sphinx, change the style of code block
+math_number_all = True # Number all equations, figures, tables and code blocks
+html_additional_pages = {
+    'copy': 'copying.html',
+}
+html_split_index = True # Split the index page by each alphabet
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
@@ -106,13 +115,6 @@ html_theme_options = {
 }
 
 # html_sidebars = {
-#     "**": [
-#         "sidebar/scroll-start.html",
-#         "sidebar/brand.html",
-#         "sidebar/search.html",
-#         "sidebar/navigation.html",
-#         "sidebar/ethical-ads.html",
-#         "sidebar/scroll-end.html",
-#     ]
+#    '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html', 'relations.html'],
+#    'using/windows': ['windowssidebar.html', 'searchbox.html'],
 # }
-

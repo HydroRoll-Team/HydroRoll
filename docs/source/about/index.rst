@@ -2,7 +2,7 @@
 ====
 
 .. toctree::
-    :hidden:
+    .. :hidden:
     
     introduction
     list_of_features
@@ -11,3 +11,4 @@
     complying_with_licenses
     release_policy
     changelog
+

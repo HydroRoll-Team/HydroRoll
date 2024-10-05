@@ -10,4 +10,5 @@ https://en.wikipedia.org/wiki/Lists_of_colors
 -->
 
 ```{include} ../../../CHANGELOG.md
+:tocdepth: 2
 ```
