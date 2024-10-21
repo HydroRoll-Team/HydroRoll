@@ -94,7 +94,7 @@ HydroRoll[水系] 不仅仅是一个骰系开发框架，更是一个不断壮�
 
 我们已经在水系的文档主页上列出了主要的社区交流渠道。与核心框架开发人员取得联系的最佳方式是加入 HydroRoll[水系] 社区论坛 `Github Discussions`_。
 
-如果你想要开始为 `HydroRoll-Team`_ 组织下的任何项目做贡献，请参阅 `贡献指南`_，这本指南还包括了提交 Issue 与 PullRequest 的指南。
+如果你想要开始为 `HydroRoll-Team`_ 组织下的任何项目做贡献，请参阅 `贡献指南`_，这本指南还包括了提交 Issue 与 PullRequest 的规范。
 
 ----
 
