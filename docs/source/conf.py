@@ -86,6 +86,8 @@ rst_prolog = """
 """
 rst_epilog = """
 .. |psf| replace:: Python Software Foundation
+.. |hr| replace:: HydroRoll
+.. |hrc| replace:: HydroRollCore
 """
 locale_dirs = ["../locales/"]  # path is example but recommended.
 gettext_compact = False  # optional.
