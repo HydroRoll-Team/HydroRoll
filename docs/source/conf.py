@@ -86,6 +86,8 @@ rst_prolog = """
 """
 rst_epilog = """
 .. |psf| replace:: Python Software Foundation
+.. |hr| replace:: HydroRoll
+.. |hrc| replace:: HydroRollCore
 """
 locale_dirs = ["../locales/"]  # path is example but recommended.
 gettext_compact = False  # optional.
@@ -103,7 +105,7 @@ html_split_index = True # Split the index page by each alphabet
 html_theme = "furo"
 html_static_path = ["../_static"]
 _html_logo = (
-    "https://cdn.jsdelivr.net/gh/HydroRoll-Team/HydroRoll@main/docs/_static/logo.png"
+    "https://files.hydroroll.team/hotlink-ok/files/image/logo.png"
 )
 # html_logo = _html_logo
 html_favicon = _html_logo
