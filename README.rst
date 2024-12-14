@@ -104,7 +104,7 @@ HydroRoll[水系] 不仅仅是一个骰系开发框架，更是一个不断壮�
 “谁适合水系？”
 ~~~~~~~~~~~~~~~~
 
-:世界主: 规则书作者。水系基于通用规则包（规则书的 *Python* 实现）标准架构，可以为你一键生成规则书
+:世界主: 规则书作者。水系基于通用规则包（规则书的 *对应语言* 实现）标准架构，可以为你一键生成规则书
   的 *pdf* 版本与一个在线规则书浏览站点，同时允许你在规则包内自定义高优先级的骰系内建指令。一个规则
   包，便是一个骰系。
 :插件爱好者: 下游插件开发者。水系插件可用 *lua*、 *python*、 *javascript* 编写，同时，支持在线将其他骰
@@ -133,7 +133,7 @@ HydroRoll[水系] 不仅仅是一个骰系开发框架，更是一个不断壮�
 |FOSSA Status|
 
 .. uri list above:
-.. _传送门: https://github.com/HydroRoll-Team/examples-hydrogen
+.. _传送门: https://github.com/HydroRoll-Team/example-hydrogen
 .. _自动热重载: https://docs.hydroroll.team/addons/hot-reload
 .. _调度任务: https://docs.hydroroll.team/addons/apscheduler
 .. _基础模型: https://docs.hydroroll.team/addons/base-model
