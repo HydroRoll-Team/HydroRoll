@@ -1,11 +1,11 @@
 |official site| |community| |ruff| |python_v| |crates_v| |release_img| |docs_status| |CodeQL| 
 
-跨平台、多模态、高度自定义的骰系开发框架 |Structure2|
+跨平台、多任务、高度自定义的骰系开发框架 |Structure2|
 =================================================
 
 .. start-index
 
-欢迎来到 *HydroRoll* [水系]，一个依据科学原理架构并由多个专家模型赋能，使用 *Rust* 与 *Python* 编写的高性能、跨平台、去中心化骰系开发框架。
+欢迎来到 *HydroRoll* [水系]，一个由多个专家模型赋能，使用 *Rust* 与 *Python* 编写的高性能、跨平台、多任务、去中心化的骰系开发框架。
 
   🌏 此框架主要用于解决 **“如何更好的为冷门规则书做适配”** 与 **“如何更好的实现人机交互”** 两个问题。如果你是世界主、规则书作者、人工智能（自然语言处理方向）爱好者，那么水系或许是你的不二之选。
 
@@ -108,7 +108,7 @@ HydroRoll[水系] 不仅仅是一个骰系开发框架，更是一个不断壮�
   的 *pdf* 版本与一个在线规则书浏览站点，同时允许你在规则包内自定义高优先级的骰系内建指令。一个规则
   包，便是一个骰系。
 :插件爱好者: 下游插件开发者。水系插件可用 *lua*、 *python*、 *javascript* 编写，同时，支持在线将其他骰
-  系的插件文件（如 *shiki* 的 *lua* 脚本，青果的 *python* 插件，海豹的 *js* 插件等）转换为水系对应语言的插
+  系的插件文件（如 *shiki* 的 *lua* 脚本，青果的 *python* 插件 :strike:`,海豹的 *js* 插件` 等）转换为水系对应语言的插
   件脚本实现，另有使用 `Blockly`_ 搭建的可视化编程站点，轻松编写插件脚本。
 :ML/AI 爱好者: 水系继承自多模态机器学习框架 *iamai*，能够同时训练与推理多个模型，试想你的骰子拥有
   自己的独特人格...
@@ -184,3 +184,6 @@ HydroRoll[水系] 不仅仅是一个骰系开发框架，更是一个不断壮�
    :target: https://app.fossa.com/projects/git%2Bgithub.com%2FHydroRoll-Team%2FHydroRoll?ref=badge_large&issueType=license
 .. |CodeQL| image:: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/github-code-scanning/codeql/badge.svg
    :target: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/github-code-scanning/codeql
+
+.. role:: strike
+   :class: strike
