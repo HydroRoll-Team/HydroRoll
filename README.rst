@@ -188,6 +188,3 @@ ML/AI 爱好者
    :target: https://app.fossa.com/projects/git%2Bgithub.com%2FHydroRoll-Team%2FHydroRoll?ref=badge_large&issueType=license
 .. |CodeQL| image:: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/github-code-scanning/codeql/badge.svg
    :target: https://github.com/HydroRoll-Team/HydroRoll/actions/workflows/github-code-scanning/codeql
-
-.. role:: strike
-   :class: strike
